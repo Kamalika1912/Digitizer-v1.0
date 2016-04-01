@@ -27,7 +27,7 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 0. Clone project `git clone https://github.com/Kamalika1912/Digitizer-v1.0.git`
 1. Install node and bower dependencies: `npm install`
 2. Run the application: `gulp serve`
-3. go to [http://localhost:4300](http://localhost:4300)
+3. go to [http://localhost:3000](http://localhost:3000)
 4. Enter username: user1, password: user1pass
 
 ## Project structure
