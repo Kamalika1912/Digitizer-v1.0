@@ -1,7 +1,7 @@
 {
   "name": "digitizer",
   "version": "1.0.0-beta",
-  "description": "Angular Dashboard Seed",
+  "description": "Digitizer",
   "ignore": [
     "**/.*",
     "node_modules",

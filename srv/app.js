@@ -12,8 +12,12 @@ var path = require('path');
 
 
 var app = express();
+var favicon = require('serve-favicon');
 
-app.set('port', process.env.PORT || 4300);
+var app = express();
+app.use(favicon(__dirname + '/../img/favicon.ico'));
+
+app.set('port', process.env.PORT || 3000);
 
 app.use(bodyParser.json());
 app.use(cookieParser());

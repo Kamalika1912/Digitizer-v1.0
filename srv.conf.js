@@ -1,3 +1,3 @@
 exports.config = {
-    instance: 'localhost:4300'
+    instance: 'localhost:3000'
 };
