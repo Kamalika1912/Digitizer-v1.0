@@ -14,9 +14,6 @@ var path = require('path');
 var app = express();
 var favicon = require('serve-favicon');
 
-var app = express();
-app.use(favicon(__dirname + '/../img/favicon.ico'));
-
 app.set('port', process.env.PORT || 3000);
 
 app.use(bodyParser.json());
