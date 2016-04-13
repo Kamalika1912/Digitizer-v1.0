@@ -4,7 +4,7 @@ var stubs = [
         id: 1,
         username: 'user1',
         email: 'user1@email.com',
-        password: 'user1pass',
+        password: 'pass1',
         firstName: 'Kamalika',
         lastName: 'Dutta'
     },
@@ -12,31 +12,17 @@ var stubs = [
         id: 2,
         username: 'user2',
         email: 'user2@email.com',
-        password: 'user2pass'
+        password: 'pass2',
+        firstName: 'Wolfgang',
+        lastName: 'Prinz'
     },
     {
         id: 3,
         username: 'user3',
         email: 'user3@email.com',
-        password: 'user3pass'
-    },
-    {
-        id: 4,
-        username: 'user4',
-        email: 'user4@email.com',
-        password: 'user4pass'
-    },
-    {
-        id: 5,
-        username: 'user5',
-        email: 'user5@email.com',
-        password: 'user5pass'
-    },
-    {
-        id: 6,
-        username: 'user6',
-        email: 'user6@email.com',
-        password: 'user6pass'
+        password: 'pass3',
+        firstName: 'Sebastian',
+        lastName: 'Franken'
     }
 ];
 

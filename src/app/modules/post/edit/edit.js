@@ -14,7 +14,7 @@
     vm.update = function() {
       vm.post.date = (new Date()).toISOString();
       postResource.update(vm.post, function(p) {
-        notificator.success('Post was successfully updated')
+        notificator.success('Project was successfully updated')
       });
     };
 
@@ -26,7 +26,7 @@
       vm.post.date = (new Date()).toISOString();
       postResource.save(this.post, function(savedPost) {
         shortHistory.goTo('from');
-        notificator.success('Post was successfully saved')
+        notificator.success('Project was successfully saved')
       });
     };
   }
