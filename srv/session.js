@@ -16,7 +16,7 @@ var localStrategy = new LocalStrategy(
         process.nextTick(function () {
             usersData.getOneBy({username: username}).then(function(user) {
                 if (!user || user.password != password) {
-                    return done(null, false, {message: 'To login use user1/user1pass'});
+                    return done(null, false, {message: 'Incorrect password'});
                 } else {
                     var noPassUser = u.hidePassword(user);
                     return done(null, noPassUser);
