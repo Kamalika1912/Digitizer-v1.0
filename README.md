@@ -3,7 +3,7 @@
 Digitizer is a business procedure modeling tool that lets user draw a business model, supports the association and mapping of business procedure elements to digital services, provides a set of digital services for every element and outputs a final digital business procedure model. Digitizer allows service providers to make digital services directly available on this modelling platform for businesses to incorporate them in their business procedure models.
 
 
-## Features
+## Libraries and Features
 * AngularJS
 * Angular UI Router
 * Bootstrap3
@@ -12,7 +12,6 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 * Gulp build
 * Responsive layout
 * Authentication and authorization
-* CRUD operations examples
 * Browsersync
 * Toastr notifications
 
