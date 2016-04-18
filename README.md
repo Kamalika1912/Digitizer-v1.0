@@ -4,19 +4,19 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 
 
 ## Libraries and Features
-*Scaffolding tool: Yeoman
-*Build tools: Gulp.js, Uglify.js
-*Software Package Management: NPM, Bower
-*Front-end:
-**Technologies: HTML/HTML5, CSS, JavaScript 
-**MV Framework: AngularJS 
-**UML Modeling: JointJS
-*Back-end:
-**Technology: Node.JS
-**Framework: Express
-**Architecture: REST
-*Testing: Karma, Jasmine, PhantomJS
-*Database: NoSQL: MongoDB
+* Scaffolding tool: Yeoman
+* Build tools: Gulp.js, Uglify.js
+* Software Package Management: NPM, Bower
+* Front-end:
+* Technologies: HTML/HTML5, CSS, JavaScript 
+* MV Framework: AngularJS 
+* UML Modeling: JointJS
+* Back-end:
+* Technology: Node.JS
+* Framework: Express
+* Architecture: REST
+* Testing: Karma, Jasmine, PhantomJS
+* Database: NoSQL: MongoDB
 * Responsive layout
 * Authentication and authorization
 * Browsersync
