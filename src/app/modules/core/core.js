@@ -20,7 +20,7 @@
     });
 
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-      $('body').toggleClass('nav-shown', false); //TODO: shitty, change later (all the callback, by the way :) )
+      $('body').toggleClass('nav-shown', false); 
     });
 
     $rootScope.$on('$userSet', function(event, user) {
