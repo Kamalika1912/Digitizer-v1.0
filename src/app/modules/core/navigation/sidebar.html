@@ -1,15 +1,15 @@
 <header class="logo">
-  <a>ngDashboard <sup class="text-danger fw-semi-bold">beta</sup></a>
+  <a>Digitizer <sup class="text-danger fw-semi-bold">beta</sup></a>
 </header>
 <ul class="sidebar-nav">
   <li>
-    <a ui-sref="app.dashboard" ui-sref-active="active"><i class="glyphicon glyphicon-tree-conifer mr-xs"></i> Dashboard</a>
+    <a ui-sref="app.dashboard" ui-sref-active="active"><i class="fa fa-tachometer" class="glyphicon glyphicon-dashboard mr-xs"> </i> Dashboard</a>
   </li>
   <li>
     <a data-target="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.posts') || $state.includes('app.editPost') ? 'active' : ''">
-      <i class="glyphicon glyphicon-list-alt mr-xs"></i>
-      Posts
+      <i class="fa fa-list" class="glyphicon glyphicon-list-alt mr-xs"></i>
+      Projects
       <b class="caret"></b>
     </a>
     <ul id="sidebar-dashboard" class="collapse in">
@@ -23,7 +23,7 @@
   </li>
   <li>
     <a ui-sref="app.profile" ui-sref-active="active">
-      <i class="glyphicon glyphicon-user mr-xs"></i>
+      <i class="fa fa-user" class="glyphicon glyphicon-user mr-xs"></i>
       Profile
     </a>
   </li>
