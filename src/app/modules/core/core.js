@@ -1,5 +1,4 @@
-(function() {
-  'use strict';
+(function() {  'use strict';
 
   angular
     .module('app.core')
@@ -20,7 +19,7 @@
     });
 
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-      $('body').toggleClass('nav-shown', false); 
+      $('body').toggleClass('nav-shown', false);
     });
 
     $rootScope.$on('$userSet', function(event, user) {

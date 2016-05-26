@@ -1,5 +1,4 @@
-(function() {
-  'use strict';
+(function() {  'use strict';
 
   var module = angular.module('app.post', ['ui.router', 'ngResource', 'app.data', 'app.common']);
 

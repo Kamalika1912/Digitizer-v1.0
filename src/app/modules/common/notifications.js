@@ -1,5 +1,4 @@
-(function() {
-    'use strict';
+(function() {    'use strict';
 
     angular.module('app.common')
         .config(notificatorConfig)
