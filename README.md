@@ -10,7 +10,6 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 * Front-end:
 * Technologies: HTML/HTML5, CSS, JavaScript 
 * MV Framework: AngularJS 
-* UML Modeling: JointJS
 * Back-end:
 * Technology: Node.JS
 * Framework: Express
