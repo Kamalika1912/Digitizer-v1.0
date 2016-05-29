@@ -7,19 +7,23 @@
     <widget-stat widget-class="bg-sidebar"
                  ui-sref="app.posts"
                  icon-text="{{posts.length}}" icon-class="text-success">
-      posts total
+      Projects
     </widget-stat>
   </div>
   <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-sidebar"
-                 icon-class="fa fa-shopping-cart mt-n-xs text-white">
-      new orders
-    </widget-stat>
+    <a ui-sref="app.editPost" ui-sref-active="active">
+      <widget-stat widget-class="bg-sidebar"
+                 icon-class="fa fa-plus-square mt-n-xs text-white">
+
+        {{$state.includes('app.editPost') && $state.params.id ? 'Post editing' : 'New Project'}}
+      </widget-stat>
+    </a>
+
   </div>
   <div class="col-md-3 col-sm-6">
     <widget-stat widget-class="bg-sidebar"
                  ui-sref="app.editPost({id: lastEditedPost.id})"
-                 icon-class="fa fa-calendar text-white">
+                 icon-class="fa fa-clock-o text-white">
       last edited
     </widget-stat>
   </div>
@@ -33,43 +37,15 @@
 </div>
 
 <div class="row">
+
   <div class="col-md-6">
-    <widget ng-include="'app/modules/dashboard/dash_users/dash_users.html'">
-    </widget>
+      <div ng-include="'app/modules/dashboard/widget-tables/dash_projects.html'"></div>
   </div>
+
   <div class="col-md-6">
-    <alert data-ng-repeat="alert in alerts" data-type="{{alert.type}} alert-sm" data-close="closeAlert($index)">
-      <div data-ng-bind-html="alert.msg"></div>
-    </alert>
+    <div ng-include="'app/modules/dashboard/widget-tables/dash_services.html'"></div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <widget>
-      <small class="pull-right"><a class="td-underline text-muted" href="#"><span class="text-muted">Options</span></a></small>
-      <h5 class="widget-title">
-        Recently <span class="fw-semi-bold">Published</span>
-        <span class="badge bg-success">17</span>
-      </h5>
-      <p class="text-muted mt-n-sm small">posts, that have been created recently</p>
-      <table class="table table-no-border table-sm mb-0">
-        <tr ng-repeat="post in postsRecently">
-          <td>{{post.date | date:' MMM dd, hh:mm'}}</td>
-          <td>
-            <a ui-sref="app.editPost({id: post.id})">{{post.title}}</a>
-          </td>
-        </tr>
-      </table>
-    </widget>
-  </div>
-  <div class="col-md-6">
-    <div class="list-group no-border">
-      <a href="#" class="list-group-item"><i class="glyphicon glyphicon-phone mr-xs opacity-70"></i> Incoming calls <span class="badge bg-danger">3</span></a>
-      <a href="#" class="list-group-item"><i class="glyphicon glyphicon-bell mr-xs opacity-70"></i> Notifications <span class="badge bg-warning">6</span></a>
-      <a href="#" class="list-group-item"><i class="glyphicon glyphicon-comment mr-xs opacity-70"></i> Messages <span class="badge bg-success">18</span></a>
-      <a href="#" class="list-group-item"><i class="glyphicon glyphicon-eye-open mr-xs opacity-70"></i> Visits total</a>
-      <a href="#" class="list-group-item"><i class="glyphicon glyphicon-cloud mr-xs opacity-70"></i> Inbox <i class="fa fa-chevron-right pull-right text-gray-light"></i></a>
-    </div>
-  </div>
+
+
 </div>
 

@@ -4756,7 +4756,6 @@ tbody.collapse.in {
   color: #555;
   text-align: center;
   background-color: #eee;
-  border: 1px solid #ccc;
   border-radius: 4px
 }
 
@@ -10386,7 +10385,7 @@ button.close {
   top: 0;
   bottom: 0;
   width: 200px;
-  background-color: #50585A;
+  background-color: #7f8c8d;
   color: #f8f8f8;
   border-right: 1px solid transparent
 }
@@ -10406,7 +10405,7 @@ button.close {
 }
 
 .logo a sup {
-  color: #F0AD4E
+  color: #2f96b4
 }
 
 .sidebar-nav {
@@ -10449,7 +10448,7 @@ button.close {
 .sidebar-nav>li ul {
   padding: 3px 0;
   font-size: 14px;
-  background-color: #495052;
+  background-color: #7f8c8d;
   list-style: none
 }
 
@@ -10707,8 +10706,8 @@ fieldset[disabled] .btn-gray.active {
 
 .btn-sidebar {
   color: #fff;
-  background-color: #50585A;
-  border-color: #444b4d
+  background-color: #2f96b4;
+  border-color: #2f96b4
 }
 
 .btn-sidebar:hover,
@@ -11085,7 +11084,7 @@ a.text-gray-light:hover {
 }
 
 .rounded {
-  border-radius: 5px
+  border-radius: 2px
 }
 
 .circle-lg,
@@ -11399,11 +11398,11 @@ a.bg-white:hover {
 }
 
 .bg-sidebar {
-  background-color: #50585A
+  background-color: #7f8c8d
 }
 
 a.bg-sidebar:hover {
-  background-color: #383e3f
+  background-color: #7f8c8d
 }
 
 .thumb-lg {
