@@ -10385,7 +10385,7 @@ button.close {
   top: 0;
   bottom: 0;
   width: 200px;
-  background-color: #7f8c8d;
+  background-color: #455556;
   color: #f8f8f8;
   border-right: 1px solid transparent
 }
@@ -10425,7 +10425,7 @@ button.close {
 }
 
 .sidebar-nav li a:hover {
-  background-color: #596163
+  background-color: #556566
 }
 
 .sidebar-nav>li>a {
@@ -10448,7 +10448,7 @@ button.close {
 .sidebar-nav>li ul {
   padding: 3px 0;
   font-size: 14px;
-  background-color: #7f8c8d;
+  background-color: #354546;
   list-style: none
 }
 
@@ -10462,7 +10462,7 @@ button.close {
   left: 0;
   right: 0;
   padding: 10px;
-  background-color: #5a6365
+  background-color: #556566
 }
 
 .notifications {
@@ -11398,11 +11398,15 @@ a.bg-white:hover {
 }
 
 .bg-sidebar {
-  background-color: #7f8c8d
+  background-color: #455556
+}
+
+.bg-sidebar:hover {
+  background-color: #556566
 }
 
 a.bg-sidebar:hover {
-  background-color: #7f8c8d
+  background-color: #556566
 }
 
 .thumb-lg {

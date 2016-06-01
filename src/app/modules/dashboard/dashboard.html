@@ -10,28 +10,28 @@
       Projects
     </widget-stat>
   </div>
-  <div class="col-md-3 col-sm-6">
-    <a ui-sref="app.editPost" ui-sref-active="active">
-      <widget-stat widget-class="bg-sidebar"
-                 icon-class="fa fa-plus-square mt-n-xs text-white">
 
-        {{$state.includes('app.editPost') && $state.params.id ? 'Post editing' : 'New Project'}}
-      </widget-stat>
-    </a>
+  <div class="col-md-3 col-sm-6">
+     <widget-stat widget-class="bg-sidebar"
+                  ui-sref="app.editPost"
+                  icon-class="fa fa-plus-square text-white">
+       New project
+     </widget-stat>
 
   </div>
+
   <div class="col-md-3 col-sm-6">
     <widget-stat widget-class="bg-sidebar"
                  ui-sref="app.editPost({id: lastEditedPost.id})"
                  icon-class="fa fa-clock-o text-white">
-      last edited
+      Last edited
     </widget-stat>
   </div>
   <div class="col-md-3 col-sm-6">
     <widget-stat widget-class="bg-sidebar"
                  ui-sref="app.posts"
                  icon-text="{{postsLastMonth.length}}" icon-class="text-warning">
-      posts last month
+      projects last month
     </widget-stat>
   </div>
 </div>

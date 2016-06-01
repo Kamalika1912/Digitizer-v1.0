@@ -466,8 +466,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
+  src: url("/fonts/glyphicons-halflings-regular.eot");
+  src: url("/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
 }
 
 .glyphicon {
@@ -4756,7 +4756,6 @@ tbody.collapse.in {
   color: #555;
   text-align: center;
   background-color: #eee;
-  border: 1px solid #ccc;
   border-radius: 4px
 }
 
@@ -10386,7 +10385,7 @@ button.close {
   top: 0;
   bottom: 0;
   width: 200px;
-  background-color: #50585A;
+  background-color: #455556;
   color: #f8f8f8;
   border-right: 1px solid transparent
 }
@@ -10406,7 +10405,7 @@ button.close {
 }
 
 .logo a sup {
-  color: #F0AD4E
+  color: #2f96b4
 }
 
 .sidebar-nav {
@@ -10426,7 +10425,7 @@ button.close {
 }
 
 .sidebar-nav li a:hover {
-  background-color: #596163
+  background-color: #556566
 }
 
 .sidebar-nav>li>a {
@@ -10449,7 +10448,7 @@ button.close {
 .sidebar-nav>li ul {
   padding: 3px 0;
   font-size: 14px;
-  background-color: #495052;
+  background-color: #354546;
   list-style: none
 }
 
@@ -10463,7 +10462,7 @@ button.close {
   left: 0;
   right: 0;
   padding: 10px;
-  background-color: #5a6365
+  background-color: #556566
 }
 
 .notifications {
@@ -10707,8 +10706,8 @@ fieldset[disabled] .btn-gray.active {
 
 .btn-sidebar {
   color: #fff;
-  background-color: #50585A;
-  border-color: #444b4d
+  background-color: #2f96b4;
+  border-color: #2f96b4
 }
 
 .btn-sidebar:hover,
@@ -11059,7 +11058,7 @@ a.text-gray-light:hover {
 }
 
 .td-n-none {
-  text-decoration: -none
+  text-decoration: none
 }
 
 .td-underline {
@@ -11067,7 +11066,7 @@ a.text-gray-light:hover {
 }
 
 .td-n-underline {
-  text-decoration: -underline
+  text-decoration: underline
 }
 
 .circle,
@@ -11085,7 +11084,7 @@ a.text-gray-light:hover {
 }
 
 .rounded {
-  border-radius: 5px
+  border-radius: 2px
 }
 
 .circle-lg,
@@ -11399,11 +11398,15 @@ a.bg-white:hover {
 }
 
 .bg-sidebar {
-  background-color: #50585A
+  background-color: #455556
+}
+
+.bg-sidebar:hover {
+  background-color: #556566
 }
 
 a.bg-sidebar:hover {
-  background-color: #383e3f
+  background-color: #556566
 }
 
 .thumb-lg {
