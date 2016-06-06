@@ -223,7 +223,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -466,8 +465,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/fonts/glyphicons-halflings-regular.eot");
-  src: url("/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
+  src: url("/../fonts/glyphicons-halflings-regular.eot");
+  src: url("/../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/../fonts/glyphicons-halflings-regular.woff") format("woff"), url("/../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
 }
 
 .glyphicon {
@@ -4948,7 +4947,7 @@ tbody.collapse.in {
 .nav-pills>li.active>a:hover,
 .nav-pills>li.active>a:focus {
   color: #fff;
-  background-color: #337ab7
+  background-color: #337ab7;
 }
 
 .nav-stacked>li {
@@ -7428,36 +7427,26 @@ button.close {
   line-height: 1
 }
 
-@media all and (transform-3d),
-(-webkit-transform-3d) {
-  .carousel-inner>.item {
-    transition: -webkit-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    perspective: 1000
-  }
-  .carousel-inner>.item.next,
-  .carousel-inner>.item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    left: 0
-  }
-  .carousel-inner>.item.prev,
-  .carousel-inner>.item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    left: 0
-  }
-  .carousel-inner>.item.next.left,
-  .carousel-inner>.item.prev.right,
-  .carousel-inner>.item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    left: 0
-  }
+.carousel-inner>.item.next,
+.carousel-inner>.item.active.right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  left: 0
 }
+.carousel-inner>.item.prev,
+.carousel-inner>.item.active.left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  left: 0
+}
+.carousel-inner>.item.next.left,
+.carousel-inner>.item.prev.right,
+.carousel-inner>.item.active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  left: 0
+}
+
 
 .carousel-inner>.active,
 .carousel-inner>.next,
@@ -7703,8 +7692,9 @@ button.close {
 }
 
 @-ms-viewport {
-  width: device-width
+  min-width: auto;
 }
+
 
 .visible-xs,
 .visible-sm,
@@ -8115,8 +8105,8 @@ button.close {
 
 @-webkit-keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
   }
   100% {
     -webkit-transform: rotate(359deg);
@@ -8126,8 +8116,8 @@ button.close {
 
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
   }
   100% {
     -webkit-transform: rotate(359deg);
@@ -11098,32 +11088,16 @@ a.text-gray-light:hover {
   width: 50px
 }
 
-.width-n-50 {
-  width: -50px
-}
-
 .width-100 {
   width: 100px
-}
-
-.width-n-100 {
-  width: -100px
 }
 
 .width-150 {
   width: 150px
 }
 
-.width-n-150 {
-  width: -150px
-}
-
 .width-200 {
   width: 200px
-}
-
-.width-n-200 {
-  width: -200px
 }
 
 .fw-semi-bold {
@@ -11161,72 +11135,36 @@ a.text-gray-light:hover {
   opacity: .1
 }
 
-.opacity-n-10 {
-  opacity: -.1
-}
-
 .opacity-20 {
   opacity: .2
-}
-
-.opacity-n-20 {
-  opacity: -.2
 }
 
 .opacity-30 {
   opacity: .3
 }
 
-.opacity-n-30 {
-  opacity: -.3
-}
-
 .opacity-40 {
   opacity: .4
-}
-
-.opacity-n-40 {
-  opacity: -.4
 }
 
 .opacity-50 {
   opacity: .5
 }
 
-.opacity-n-50 {
-  opacity: -.5
-}
-
 .opacity-60 {
   opacity: .6
-}
-
-.opacity-n-60 {
-  opacity: -.6
 }
 
 .opacity-70 {
   opacity: .7
 }
 
-.opacity-n-70 {
-  opacity: -.7
-}
-
 .opacity-80 {
   opacity: .8
 }
 
-.opacity-n-80 {
-  opacity: -.8
-}
-
 .opacity-90 {
   opacity: .9
-}
-
-.opacity-n-90 {
-  opacity: -.9
 }
 
 .text-primary {
