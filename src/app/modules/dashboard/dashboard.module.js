@@ -12,12 +12,12 @@
         url: '/dashboard',
         templateUrl: 'app/modules/dashboard/dashboard.html',
         resolve: {
-          posts: ['postResource', function(postResource) {
-            return postResource.query().$promise;
+          projects: ['projectResource', function(projectResource) {
+            return projectResource.query().$promise;
           }]
         },
         controller: 'dashboardController',
         controllerAs: 'vm'
-      })
+      });
   }
 })();

@@ -4,12 +4,12 @@
   angular.module('app.dashboard')
     .controller('dashboardController', dashboardController);
 
-  dashboardController.$inject = ['$scope', '$sce', 'posts', 'postsUtils'];
-  function dashboardController($scope, $sce, posts, postsUtils) {
-    $scope.posts = posts;
-    $scope.postsLastMonth = postsUtils.postsDuringInterval(posts, 30);
-    $scope.lastEditedPost = postsUtils.lastEdited(posts);
-    $scope.postsRecently = postsUtils.recent(posts, 5);
+  dashboardController.$inject = ['$scope', '$sce', 'projects', 'projectsUtils'];
+  function dashboardController($scope, $sce, projects, projectsUtils) {
+    $scope.projects = projects;
+    $scope.projectsLastMonth = projectsUtils.projectsDuringInterval(projects, 30);
+    $scope.lastEditedproject = projectsUtils.lastEdited(projects);
+    $scope.projectsRecently = projectsUtils.recent(projects, 5);
     $scope.alerts = [
       { type: 'warning', msg: $sce.trustAsHtml('<span class="fw-semi-bold">Warning:</span> Best check yo self, you\'re not looking too good.') },
       { type: 'success', msg: $sce.trustAsHtml('<span class="fw-semi-bold">Success:</span> You successfully read this important alert message.') },

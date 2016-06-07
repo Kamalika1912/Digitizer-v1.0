@@ -15,7 +15,7 @@
         'iconText': '@'
       },
       templateUrl: 'app/modules/dashboard/widget-stat/widget_stat.html'
-    }
+    };
   }
 
 })();

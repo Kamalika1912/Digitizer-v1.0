@@ -5,15 +5,15 @@
 <div class="row">
   <div class="col-md-3 col-sm-6">
     <widget-stat widget-class="bg-sidebar"
-                 ui-sref="app.posts"
-                 icon-text="{{posts.length}}" icon-class="text-success">
+                 ui-sref="app.projects"
+                 icon-text="{{projects.length}}" icon-class="text-success">
       Projects
     </widget-stat>
   </div>
 
   <div class="col-md-3 col-sm-6">
      <widget-stat widget-class="bg-sidebar"
-                  ui-sref="app.editPost"
+                  ui-sref="app.editProject"
                   icon-class="fa fa-plus-square text-white">
        New project
      </widget-stat>
@@ -22,15 +22,15 @@
 
   <div class="col-md-3 col-sm-6">
     <widget-stat widget-class="bg-sidebar"
-                 ui-sref="app.editPost({id: lastEditedPost.id})"
+                 ui-sref="app.editProject({id: lastEditedProject.id})"
                  icon-class="fa fa-clock-o text-white">
       Last edited
     </widget-stat>
   </div>
   <div class="col-md-3 col-sm-6">
     <widget-stat widget-class="bg-sidebar"
-                 ui-sref="app.posts"
-                 icon-text="{{postsLastMonth.length}}" icon-class="text-warning">
+                 ui-sref="app.projects"
+                 icon-text="{{projectsLastMonth.length}}" icon-class="text-warning">
       projects last month
     </widget-stat>
   </div>

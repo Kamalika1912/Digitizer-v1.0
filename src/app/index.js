@@ -4,7 +4,7 @@
     angular.module('app', [
         'app.core',
         'app.profile',
-        'app.post',
+        'app.project',
         'app.dashboard',
         'app.data',
         'app.common'

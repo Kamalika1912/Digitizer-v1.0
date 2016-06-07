@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var expressSession = require('express-session');
 var passport = require('passport');
 var auth = require('./routes/auth');
-var posts = require('./routes/posts');
+var projects = require('./routes/projects');
 var profiles = require('./routes/profiles');
 var session = require('./session');
 var path = require('path');
@@ -35,7 +35,7 @@ app.get('/', function(req,res) {
 session.configure();
 auth.configure(app);
 app.all('*', session.ensureAuthenticated);
-posts.configure(app);
+projects.configure(app);
 profiles.configure(app);
 
 http.createServer(app).listen(app.get('port'), function(){

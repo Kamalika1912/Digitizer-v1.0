@@ -13,10 +13,10 @@
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="post in postsRecently | filter:searchProject">
-        <td>{{post.date | date:' MMM dd, hh:mm'}}</td>
+      <tr ng-repeat="project in projectsRecently | filter:searchProject">
+        <td>{{project.date | date:' MMM dd, hh:mm'}}</td>
         <td>
-          <a ui-sref="app.editPost({id: post.id})" >{{post.title}}</a>
+          <a ui-sref="app.editProject({id: project.id})" >{{project.title}}</a>
         </td>
       </tr>
       </tbody>
