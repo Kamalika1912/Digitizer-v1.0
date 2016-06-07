@@ -5,6 +5,7 @@
         'app.core',
         'app.profile',
         'app.project',
+        'app.digitalService',
         'app.dashboard',
         'app.data',
         'app.common'

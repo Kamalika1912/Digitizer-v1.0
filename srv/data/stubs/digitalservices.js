@@ -40,24 +40,24 @@ function getAll() {
 }
 
 function getOne(id) {
-    var project = null;
+    var digitalService = null;
     stubs.some( function(stub)  {
-        project = stub.id == id ? stub : null;
-        return project;
+        digitalService = stub.id == id ? stub : null;
+        return digitalService;
     });
-    return q(project);
+    return q(digitalService);
 }
 
-function save(project) {
-    project.id = ++lastStubIndex;
-    stubs.push(project);
-    return q(project);
+function save(digitalService) {
+    digitalService.id = ++lastStubIndex;
+    stubs.push(digitalService);
+    return q(digitalService);
 }
 
-function update(project) {
-    var stubToUpdateIndex = _getStubIndexById(project.id);
-    stubs[stubToUpdateIndex] = project;
-    return q(project);
+function update(digitalService) {
+    var stubToUpdateIndex = _getStubIndexById(digitalService.id);
+    stubs[stubToUpdateIndex] = digitalService;
+    return q(digitalService);
 }
 
 function remove(id) {

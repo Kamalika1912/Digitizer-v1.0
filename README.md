@@ -15,7 +15,7 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 * Framework: Express
 * Architecture: REST
 * Testing: Karma, Jasmine, PhantomJS
-* Database: NoSQL: MongoDB
+* Database: NoSQL: MongoDB (yet to be implemented)
 * Responsive layout
 * Authentication and authorization
 * Browsersync
@@ -28,11 +28,6 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 * [Bower](http://bower.io)
 * [Gulp](http://gulpjs.com)
 
-### Installation
-0. Clone project `git clone https://github.com/Kamalika1912/Digitizer-v1.0.git`
-1. Install node and bower dependencies: `npm install`
-2. Run the application: `gulp serve`
-3. go to [http://localhost:3000](http://localhost:3000)
 
 ## Project structure
 Project structure based on [this yeoman generator](https://github.com/Swiip/generator-gulp-angular). If you have any questions about the build or project structure please drop an email.

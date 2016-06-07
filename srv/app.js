@@ -6,6 +6,7 @@ var expressSession = require('express-session');
 var passport = require('passport');
 var auth = require('./routes/auth');
 var projects = require('./routes/projects');
+var digitalservices = require('./routes/digitalservices');
 var profiles = require('./routes/profiles');
 var session = require('./session');
 var path = require('path');
@@ -36,6 +37,7 @@ session.configure();
 auth.configure(app);
 app.all('*', session.ensureAuthenticated);
 projects.configure(app);
+digitalservices.configure(app);
 profiles.configure(app);
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -23,16 +23,16 @@
   </li>
   <li>
     <a data-target="#sidebar-services" data-toggle="collapse" data-parent="#sidebar"
-       ng-class="$state.includes('app.projects') || $state.includes('app.editProject') ? 'active' : ''">
+       ng-class="$state.includes('app.digitalServices') || $state.includes('app.editDigitalService') ? 'active' : ''">
       <i class="fa fa-cloud" class="glyphicon glyphicon-list-alt mr-xs"></i>
       Services
       <b class="caret"></b>
     </a>
     <ul id="#sidebar-services" class="collapse in">
-      <li><a ui-sref="app.projects" ui-sref-active="active">Show all</a></li>
+      <li><a ui-sref="app.digitalServices" ui-sref-active="active">Show all</a></li>
       <li>
-        <a ui-sref="app.editProject" ui-sref-active="active">
-          {{$state.includes('app.editProject') && $state.params.id ? 'Project editing' : 'Create new'}}
+        <a ui-sref="app.editDigitalService" ui-sref-active="active">
+          {{$state.includes('app.editDigitalService') && $state.params.id ? 'Edit digitalService' : 'Create new'}}
         </a>
       </li>
     </ul>

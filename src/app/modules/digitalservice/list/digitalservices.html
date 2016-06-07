@@ -1,0 +1,32 @@
+<ol class="breadcrumb">
+  <li><span class="text-muted">YOU ARE HERE</span></li>
+  <li class="active">Digital Services</li>
+</ol>
+<div class="row">
+    <div class="col-md-12">
+        <widget>
+            <header>
+              <button type="button" class="btn btn-sm btn-gray mt-n-xs pull-right" ui-sref="app.editDigitalService({id: null})">Create new Digital Service</button>
+              <h4 class="widget-title">Digital Services</h4>
+            </header>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Last updated</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="digitalService in vm.digitalServices">
+                    <td>{{digitalService.title}}</td>
+                    <td><span>{{digitalService.date | date: 'short'}}</span></td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-default" ui-sref="app.editDigitalService({id: digitalservice.id})">Edit</button>
+                        <button type="button" class="btn btn-danger" ng-click="vm.delete(digitalService)">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </widget>
+    </div>
+</div>
