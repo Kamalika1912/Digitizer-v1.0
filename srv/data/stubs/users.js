@@ -1,6 +1,14 @@
 var q = require('q');
 var stubs = [
     {
+      id: 0,
+      username: 'user',
+      email: 'user1@email.com',
+      password: 'pass',
+      firstName: 'Admin',
+      lastName: 'User'
+    },
+    {
         id: 1,
         username: 'user1',
         email: 'user1@email.com',

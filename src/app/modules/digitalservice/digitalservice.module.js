@@ -28,7 +28,7 @@
             return $stateParams.id ? digitalServiceResource.get({id: $stateParams.id}).$promise : {};
           }]
         },
-        controller: 'DigitalServiceListController',
+        controller: 'DigitalServiceController',
         controllerAs: 'vm'
       });
   }

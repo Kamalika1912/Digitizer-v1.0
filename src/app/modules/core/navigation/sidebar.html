@@ -6,13 +6,13 @@
     <a ui-sref="app.dashboard" ui-sref-active="active"><i class="fa fa-tachometer" class="glyphicon glyphicon-dashboard mr-xs"> </i> Dashboard</a>
   </li>
   <li>
-    <a data-target="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar"
+    <a data-target="#sidebar-project" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.projects') || $state.includes('app.editProject') ? 'active' : ''">
       <i class="fa fa-list" class="glyphicon glyphicon-list-alt mr-xs"></i>
       Projects
       <b class="caret"></b>
     </a>
-    <ul id="sidebar-dashboard" class="collapse in">
+    <ul id="sidebar-project" class="collapse in">
       <li><a ui-sref="app.projects" ui-sref-active="active">Show all</a></li>
       <li>
         <a ui-sref="app.editProject" ui-sref-active="active">
@@ -22,17 +22,17 @@
     </ul>
   </li>
   <li>
-    <a data-target="#sidebar-services" data-toggle="collapse" data-parent="#sidebar"
+    <a data-target="#sidebar-service" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.digitalServices') || $state.includes('app.editDigitalService') ? 'active' : ''">
       <i class="fa fa-cloud" class="glyphicon glyphicon-list-alt mr-xs"></i>
       Services
       <b class="caret"></b>
     </a>
-    <ul id="#sidebar-services" class="collapse in">
+    <ul id="sidebar-service" class="collapse in">
       <li><a ui-sref="app.digitalServices" ui-sref-active="active">Show all</a></li>
       <li>
         <a ui-sref="app.editDigitalService" ui-sref-active="active">
-          {{$state.includes('app.editDigitalService') && $state.params.id ? 'Edit digitalService' : 'Create new'}}
+          {{$state.includes('app.editDigitalService') && $state.params.id ? 'Editing Digital Service' : 'Create new'}}
         </a>
       </li>
     </ul>
