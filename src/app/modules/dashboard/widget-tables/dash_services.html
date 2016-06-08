@@ -1,4 +1,5 @@
 <div class="panel panel-default">
+
   <div class="panel-heading">
     <div class="pull-right mt-n-xs"><input class="form-control input-sm" type="search" placeholder="Search..."/></div>
     <h5 class="widget-title">
@@ -6,55 +7,23 @@
       Recently Added Services
     </h5>
   </div>
-
+  <widget>
     <table class="table table-hover mb-0">
       <thead>
       <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Provider</th>
+        <th>Digital Service</th>
         <th>Tags</th>
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>1</td>
-        <td>Payment</td>
+      <tr ng-repeat="service in digitalServicesRecently | filter:searchProject">
+        <td>{{service.digital_component}}</td>
         <td>
-          PayPal
-        </td>
-        <td>
-          <span class="label bg-gray-light">payment</span>
-          <span class="label bg-gray-light">pay</span>
-          <span class="label bg-gray-light">transactions</span>
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Tracking</td>
-        <td>
-          deCarta
-        </td>
-        <td>
-          <span class="label bg-gray-light">track</span>
-          <span class="label bg-gray-light">GPS</span>
-          <span class="label bg-gray-light">navigation</span>
-        </td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Wireless</td>
-        <td >
-          Deutsche Telekom
-        </td>
-        <td>
-          <span class="label bg-gray-light">message</span>
-          <span class="label bg-gray-light">broadcast</span>
-          <span class="label bg-gray-light">order</span>
-          <span class="label bg-gray-light">call</span>
+          <a ui-sref="app.editProject({id: project.id})" >{{service.tags}}</a>
         </td>
       </tr>
       </tbody>
     </table>
+  </widget>
 
 </div>

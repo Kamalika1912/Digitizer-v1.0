@@ -12,9 +12,13 @@
         url: '/dashboard',
         templateUrl: 'app/modules/dashboard/dashboard.html',
         resolve: {
-          projects: ['projectResource', function(projectResource) {
+          projects: ['projectResource', 'digitalServiceResource', function(projectResource, digitalServiceResource) {
             return projectResource.query().$promise;
-          }]
+          }],
+          digitalServices: ['projectResource', 'digitalServiceResource', function(projectResource, digitalServiceResource) {
+            return digitalServiceResource.query().$promise;
+
+    }]
         },
         controller: 'dashboardController',
         controllerAs: 'vm'

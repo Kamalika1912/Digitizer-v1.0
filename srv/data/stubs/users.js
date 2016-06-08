@@ -1,15 +1,15 @@
 var q = require('q');
 var stubs = [
     {
-      id: 0,
+      id: 1,
       username: 'user',
-      email: 'user1@email.com',
+      email: 'admin@email.com',
       password: 'pass',
       firstName: 'Admin',
       lastName: 'User'
     },
     {
-        id: 1,
+        id: 2,
         username: 'user1',
         email: 'user1@email.com',
         password: 'pass1',
@@ -17,7 +17,7 @@ var stubs = [
         lastName: 'Dutta'
     },
     {
-        id: 2,
+        id: 3,
         username: 'user2',
         email: 'user2@email.com',
         password: 'pass2',
@@ -25,7 +25,7 @@ var stubs = [
         lastName: 'Prinz'
     },
     {
-        id: 3,
+        id: 4,
         username: 'user3',
         email: 'user3@email.com',
         password: 'pass3',

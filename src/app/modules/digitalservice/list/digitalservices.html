@@ -12,16 +12,16 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Last updated</th>
+                    <th>Digital Component</th>
+                    <th>Tags</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr ng-repeat="digitalService in vm.digitalServices">
-                    <td>{{digitalService.title}}</td>
-                    <td><span>{{digitalService.date | date: 'short'}}</span></td>
+                    <td>{{digitalService.digital_component}}</td>
+                    <td><span>{{digitalService.tags | date: 'short'}}</span></td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-default" ui-sref="app.editDigitalService({id: digitalservice.id})">Edit</button>
+                        <button type="button" class="btn btn-default" ui-sref="app.editDigitalService({id: digitalService.id})">Edit</button>
                         <button type="button" class="btn btn-danger" ng-click="vm.delete(digitalService)">Delete</button>
                     </td>
                 </tr>
