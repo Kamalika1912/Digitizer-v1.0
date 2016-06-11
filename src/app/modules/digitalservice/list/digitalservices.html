@@ -12,19 +12,20 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Digital Component</th>
-                    <th>Tags</th>
+                  <th>ID</th>
+                  <th>Digital Component</th>
+                  <th>Tags</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr ng-repeat="digitalService in vm.digitalServices">
-                    <td>{{digitalService.digital_component}}</td>
-                    <td><span>{{digitalService.tags | date: 'short'}}</span></td>
-                    <td class="text-right">
-                        <button type="button" class="btn btn-default" ui-sref="app.editDigitalService({id: digitalService.id})">Edit</button>
-                        <button type="button" class="btn btn-danger" ng-click="vm.delete(digitalService)">Delete</button>
-                    </td>
-                </tr>
+                  <td class="col-md-1">{{digitalService.id}}</td>
+                  <td class="col-md-2">{{digitalService.digital_component}}</td>
+                  <td><label ng-repeat="tag in digitalService.tags track by $index"><label class="label label-info"> {{tag}}</label>&nbsp;</label></td>
+                  <td class="text-right col-md-2"><div class="btn-group inline pull-left">
+                        <button type="button" class="btn btn-default btn-small" ui-sref="app.editDigitalService({id: digitalService.id})">Edit</button>
+                        <button type="button" class="btn btn-danger btn-small" ng-click="vm.delete(digitalService)">Delete</button>
+                    </div></td>
                 </tbody>
             </table>
         </widget>
