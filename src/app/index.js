@@ -5,9 +5,12 @@
         'app.core',
         'app.profile',
         'app.project',
+        'app.element',
         'app.digitalService',
         'app.dashboard',
         'app.data',
-        'app.common'
+        'app.common',
+        'ngDragDrop',
+        'ngTagsInput'
     ]);
 })();

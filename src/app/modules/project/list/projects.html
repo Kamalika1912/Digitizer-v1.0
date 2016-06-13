@@ -6,7 +6,8 @@
     <div class="col-md-12">
         <widget>
             <header>
-              <button type="button" class="btn btn-sm btn-gray mt-n-xs pull-right" ui-sref="app.editProject({id: null})">Create new project</button>
+              <button type="button" class="btn btn-sm btn-gray pull-right" ui-sref="app.editProject({id: null})">Create new project</button>
+              <div class="pull-right col-md-8"><input ng-model="searchProject" class="form-control input-sm" type="search" placeholder="Search for a service..."/></div>
               <h4 class="widget-title">Projects</h4>
             </header>
             <table class="table table-striped">
@@ -17,13 +18,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="project in vm.projects">
+                <tr ng-repeat="project in vm.projects | filter:searchProject">
                     <td>{{project.title}}</td>
                     <td><span>{{project.date | date: 'short'}}</span></td>
-                    <td class="text-right">
+                    <td class="text-right col-md-2"><div class="btn-group inline pull-left">
                         <button type="button" class="btn btn-default" ui-sref="app.editProject({id: project.id})">Edit</button>
                         <button type="button" class="btn btn-danger" ng-click="vm.delete(project)">Delete</button>
-                    </td>
+                    </div></td>
                 </tr>
                 </tbody>
             </table>

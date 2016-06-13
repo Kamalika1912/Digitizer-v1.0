@@ -27,7 +27,7 @@
 
 <div class="app"  data-ui-view></div>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.6.7/go-debug.js"></script>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -39,6 +39,10 @@
 <script src="../bower_components/angular-animate/angular-animate.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="../bower_components/jquery-touchswipe/jquery.touchSwipe.js"></script>
+<script src="../bower_components/gojs/release/go.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="../bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
+<script src="../bower_components/ng-tags-input/ng-tags-input.js"></script>
 <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
@@ -55,9 +59,17 @@
 
 <script src="app/modules/project/edit/edit.js"></script>
 
+<script src="app/modules/project/draw/drawmodel.js"></script>
+
 <script src="app/modules/profile/edit/edit.js"></script>
 
 <script src="app/modules/profile/auth/auth.js"></script>
+
+<script src="app/modules/element/element.module.js"></script>
+
+<script src="app/modules/element/list/elements.js"></script>
+
+<script src="app/modules/element/edit/edit.js"></script>
 
 <script src="app/modules/digitalservice/digitalservice.module.js"></script>
 
@@ -81,11 +93,15 @@
 
 <script src="app/modules/project/delete_project_modal.js"></script>
 
+<script src="app/modules/element/delete_element_modal.js"></script>
+
 <script src="app/modules/digitalservice/delete_digitalservice_modal.js"></script>
 
 <script src="app/modules/data/data.module.js"></script>
 
 <script src="app/modules/data/projects.js"></script>
+
+<script src="app/modules/data/elements.js"></script>
 
 <script src="app/modules/data/digitalservices.js"></script>
 

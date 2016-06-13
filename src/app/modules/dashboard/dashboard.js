@@ -11,7 +11,7 @@
     $scope.lastEditedproject = projectsUtils.lastEdited(projects);
     $scope.projectsRecently = projectsUtils.recent(projects, 5);
     $scope.digitalServices = digitalServices;
-    $scope.digitalServicesRecently = digitalServiceUtils.recent(digitalServices, 5);
+    $scope.digitalServicesRecently = digitalServiceUtils.recent(digitalServices, 4);
     $scope.alerts = [
       { type: 'warning', msg: $sce.trustAsHtml('<span class="fw-semi-bold">Warning:</span> Best check yo self, you\'re not looking too good.') },
       { type: 'success', msg: $sce.trustAsHtml('<span class="fw-semi-bold">Success:</span> You successfully read this important alert message.') },

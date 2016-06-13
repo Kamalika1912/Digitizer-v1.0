@@ -72,6 +72,7 @@
     "protractor": "~1.4.0",
     "require-dir": "~0.1.0",
     "uglify-save-license": "~0.4.1",
-    "wiredep": "~2.2.0"
+    "wiredep": "~2.2.0",
+    "gojs": "~1.6.9"
   }
 }

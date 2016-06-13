@@ -1,0 +1,35 @@
+<ol class="breadcrumb">
+  <li><span class="text-muted">YOU ARE HERE</span></li>
+  <li class="active">Elements</li>
+</ol>
+<div class="row">
+    <div class="col-md-12">
+        <widget>
+            <header>
+              <button type="button" class="btn btn-gray pull-right" ui-sref="app.editElement({id: null})">Create new Element</button>
+              <div class="pull-right col-md-6"><input ng-model="searchElement" class="form-control input-sm" type="search" placeholder="Search for an element..."/></div>
+
+              <h4 class="widget-title">Elements</h4>
+            </header>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Model Elements</th>
+                  <th>Tags</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="element in vm.elements | filter:searchElement">
+                  <td class="col-md-1">{{element.id}}</td>
+                  <td class="col-md-2">{{element.model_element}}</td>
+                  <td><label ng-repeat="tag in element.tags track by $index"><label class="label label-info"> {{tag}}</label>&nbsp;</label></td>
+                  <td class="text-right col-md-2"><div class="btn-group inline pull-left">
+                        <button type="button" class="btn btn-default btn-small" ui-sref="app.editElement({id: element.id})">Edit</button>
+                        <button type="button" class="btn btn-danger outline btn-small" ng-click="vm.delete(element)">Delete</button>
+                    </div></td>
+                </tbody>
+            </table>
+        </widget>
+    </div>
+</div>

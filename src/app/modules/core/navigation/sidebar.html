@@ -5,6 +5,7 @@
   <li>
     <a ui-sref="app.dashboard" ui-sref-active="active"><i class="fa fa-tachometer" class="glyphicon glyphicon-dashboard mr-xs"> </i> Dashboard</a>
   </li>
+
   <li>
     <a data-target="#sidebar-project" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.projects') || $state.includes('app.editProject') ? 'active' : ''">
@@ -21,6 +22,24 @@
       </li>
     </ul>
   </li>
+
+  <li>
+    <a data-target="#sidebar-element" data-toggle="collapse" data-parent="#sidebar"
+       ng-class="$state.includes('app.elements') || $state.includes('app.editElement') ? 'active' : ''">
+      <i class="fa fa-list" class="glyphicon glyphicon-list-alt mr-xs"></i>
+      Elements
+      <b class="caret"></b>
+    </a>
+    <ul id="sidebar-element" class="collapse in">
+      <li><a ui-sref="app.elements" ui-sref-active="active">Show all</a></li>
+      <li>
+        <a ui-sref="app.editElement" ui-sref-active="active">
+          {{$state.includes('app.editElement') && $state.params.id ? 'Element editing' : 'Create new'}}
+        </a>
+      </li>
+    </ul>
+  </li>
+
   <li>
     <a data-target="#sidebar-service" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.digitalServices') || $state.includes('app.editDigitalService') ? 'active' : ''">
@@ -37,6 +56,7 @@
       </li>
     </ul>
   </li>
+
   <li>
     <a ui-sref="app.profile" ui-sref-active="active">
       <i class="fa fa-user" class="glyphicon glyphicon-user mr-xs"></i>
