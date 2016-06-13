@@ -20,14 +20,13 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 * Authentication and authorization
 * Browsersync
 * Toastr notifications
+* Project structure based on [this yeoman generator](https://github.com/Swiip/generator-gulp-angular).
 
-## Setup
-
-### Required tools
+### Tools
 * [Node and npm](http://nodejs.org)
 * [Bower](http://bower.io)
 * [Gulp](http://gulpjs.com)
 
 
-## Project structure
-Project structure based on [this yeoman generator](https://github.com/Swiip/generator-gulp-angular). If you have any questions about the build or project structure please drop an email.
+## Demo
+Work in progress. Demo: (https://digitizer-test.herokuapp.com/)
