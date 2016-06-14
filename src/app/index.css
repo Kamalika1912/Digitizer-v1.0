@@ -11607,4 +11607,44 @@ tags-input .autocomplete .suggestion-item em {
 
 /*# sourceMappingURL=ng-tags-input.css.map */
 
+.analog-canvas {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 200px;
+}
 
+.element {
+  display: inline;
+  padding: .6em 1em .6em;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 3;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .50em;
+  background-color: #5cb85c;
+}
+
+.element + .element {
+  margin-left: 8px;
+}
+
+.element:empty {
+  display: none
+}
+
+
+.element:hover,
+.element:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: move;
+  background-color: #449d44;
+}
+
+.element-widget{
+
+
+}

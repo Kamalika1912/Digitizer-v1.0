@@ -3,7 +3,7 @@
   <li class="active">{{vm.project.id ? 'Edit project' : 'Create new'}}</li>
 </ol>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-8">
         <widget>
             <h4 class="mt-0">{{vm.project.id ? 'Editing ' : 'Creating new'}} project</h4>
             <form novalidate role="form" name="projectForm" class="form-horizontal mt" ng-submit="projectForm.$valid && (vm.project.id ? vm.update() : vm.save())" >
@@ -28,7 +28,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-2">Description</label>
                     <div class="col-sm-10">
-                        <textarea name="description" class="form-control" rows="1" ng-model="vm.project.description"
+                        <textarea name="description" class="form-control" rows="2" ng-model="vm.project.description"
                                   required ng-minlength=1 />
                         <div ng-show="projectForm.description.$invalid && (projectForm.description.$dirty  || projectForm.$submitted)">
                             <small class="error" ng-show="projectForm.description.$error.required">
@@ -43,9 +43,7 @@
               <div class="form-group">
                 <label class="control-label col-sm-2">Drawing Area</label>
                 <div class="col-sm-10">
-                  <div class="col-md-6">
                     <div ng-include="'app/modules/project/draw/drawmodel.html'"></div>
-                  </div>
                 </div>
               </div>
 
@@ -59,4 +57,18 @@
             </form>
         </widget>
     </div>
+    <div class="col-md-4">
+    <widget>
+        <h5 class="widget-title">
+          <i class="fa fa-cloud">&emsp;</i>
+          Available elements
+        </h5>
+      <input ng-model="searchElement" class="form-control input-sm" type="search" placeholder="Search..."/>
+      <div class="mt-sm">
+      <element ng-repeat="element in vm.elements | filter:searchElement" class="inline-block">
+        <element class="element" data-drag="true" jqyoui-draggable = "{placeholder:true,animate:true}"> {{element.model_element}}</element>&nbsp;
+      </element>
+      </div>
+    </widget>
+  </div>
 </div>

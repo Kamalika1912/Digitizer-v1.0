@@ -59,7 +59,14 @@ var stubs = [
   {"id":"A57","model_element":"Stock/Storage/Warehouse","tags": ["planning","purchase","consumption","usage","resource","stock","inventory"]},
   {"id":"A58","model_element":"Financial Planning","tags": ["bill","billing","account","invoice","planning","summary","overview","status","finance","budget"]},
   {"id":"A59","model_element":"Material Planning","tags":["planning","stock","inventory","usage","consumption","resources","documentation"]},
-  {"id":"A60","model_element":"Recommendation","tags": ["customer","actor","user","reputation","recommendation","acquisition"]}
+  {"id":"A60","model_element":"Recommendation","tags": ["customer","actor","user","reputation","recommendation","acquisition"]},
+  {"id":"A61","model_element":"Call Taxi hiring agency","tags": ["order","call","request"]},
+  {"id":"A62","model_element":"Assign job to Taxi","tags": ["job","assign","order","schedule"]},
+  {"id":"A63","model_element":"Taxi rides to customer","tags": ["transport","transportation","tracking","GPS","GPS-Tracking"]},
+  {"id":"A64","model_element":"Customer is transported","tags": ["transport","transportation","tracking","GPS","GPS-Tracking"]},
+  {"id":"A65","model_element":"Customer pays","tags": ["payment","pay","billing","transaction"]},
+  {"id":"A65","model_element":"Customer ends process","tags": ["evaluation","evaluate","review","rating"]}
+
 
 ];
 

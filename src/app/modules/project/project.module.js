@@ -24,8 +24,11 @@
         url: '/projects/edit/:id',
         templateUrl: 'app/modules/project/edit/edit.html',
         resolve: {
-          data: ['$stateParams', 'projectResource', function($stateParams, projectResource){
+          projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
             return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
+          }],
+          elements: ['elementResource', function(elementResource) {
+            return elementResource.query().$promise;
           }]
         },
         controller: 'ProjectController',

@@ -5,10 +5,11 @@
     .module('app.profile')
     .controller('ProjectController', projectController);
 
-  projectController.$inject = ['data', 'projectResource', '$state', 'shortHistory', 'notificator'];
-  function projectController(data, projectResource, $state, shortHistory, notificator) {
+  projectController.$inject = ['projects', 'projectResource', 'elements','$state', 'shortHistory', 'notificator'];
+  function projectController(projects, projectResource, elements, $state, shortHistory, notificator) {
     var vm = this;
-    vm.project = data;
+    vm.project = projects;
+    vm.elements = elements;
     vm.showReturnBtn = vm.project.id && shortHistory.from.state.name;
 
     vm.update = function() {
