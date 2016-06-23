@@ -81,7 +81,7 @@ function getOne(id) {
 }
 
 function save(digitalService) {
-    digitalService.id = ++lastStubIndex;
+    digitalService.id = 'D' + ++lastStubIndex;
     stubs.push(digitalService);
     return q(digitalService);
 }

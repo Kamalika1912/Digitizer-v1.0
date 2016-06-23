@@ -27,9 +27,8 @@ function update(req) {
     var id = req.params.id;
     var digitalService = {
         id: id,
-        date: req.body.date,
-        title: req.body.title,
-        description: req.body.description
+        digital_component: req.body.digital_component,
+        tags: req.body.tags
     };
     return digitalServicesData.update(digitalService);
 }

@@ -14,6 +14,7 @@
     vm.update = function() {
       vm.element.date = (new Date()).toISOString();
       elementResource.update(vm.element, function(p) {
+        shortHistory.goTo('from');
         notificator.success('Element was successfully updated')
       });
     };

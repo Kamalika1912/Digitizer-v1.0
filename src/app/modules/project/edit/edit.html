@@ -44,13 +44,16 @@
                 <label class="col-sm-4">Business Procedure Model</label>
                 <div class="col-sm-12">
                     <div ng-include="'app/modules/project/draw/drawmodel.html'"></div>
+                  <div ng-include="'app/modules/project/draw/joint-test.html'"></div>
                 </div>
               </div>
 
                 <div class="text-right">
                     <span ng-if="vm.showReturnBtn">
                         <button type="button" class="btn" ng-click="vm.return()">Return</button>
+
                     </span>
+                    <button type="button" class="btn" ng-click="vm.reset()">Reset</button>
                     <button type="submit" class="btn btn-primary">Digitize</button>
                 </div>
             </form>

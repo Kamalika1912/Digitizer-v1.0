@@ -27,9 +27,8 @@ function update(req) {
     var id = req.params.id;
     var element = {
         id: id,
-        date: req.body.date,
-        title: req.body.title,
-        description: req.body.description
+        model_element: req.body.model_element,
+        tags: req.body.tags
     };
     return elementsData.update(element);
 }

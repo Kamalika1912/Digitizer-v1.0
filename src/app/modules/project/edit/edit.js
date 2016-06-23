@@ -15,12 +15,17 @@
     vm.update = function() {
       vm.project.date = (new Date()).toISOString();
       projectResource.update(vm.project, function(p) {
+        shortHistory.goTo('from');
         notificator.success('Project was successfully updated')
       });
     };
 
     vm.return = function() {
         $state.go(shortHistory.from.state.name, shortHistory.from.params);
+    };
+
+    vm.reset = function() {
+      $state.reload();
     };
 
     vm.save = function() {

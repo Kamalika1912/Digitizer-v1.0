@@ -26,20 +26,13 @@
     notificationsRun.$inject = ['$rootScope', 'notificator', '$timeout'];
     function notificationsRun($rootScope, notificator, $timeout) {
         $rootScope.$on('$userLoggedIn', function() {
-            notificator.success('Hey there!');
+            notificator.success('Hey there! Welcome to Digitizer!');
 
             $timeout(function(){
-                notificator.info('Welcome to Digitizer! ' +
-                'A platform for Business Procedure Modelling and Digitization ', {
-                    timeOut: 10000
+                notificator.info('Use the Dashboard to access latest projects and services ;)', {
+                    timeOut: 6000
                 });
-            },3000);
-
-            $timeout(function(){
-                notificator.info('Use the Dashboard to draw your business idea, or navigate to the projects or services views;)', {
-                    timeOut: 10000
-                });
-            },15000)
+            },4000)
         });
         $rootScope.$on('$userLoggedOut', function() {
             notificator.success('Logged out successfully');

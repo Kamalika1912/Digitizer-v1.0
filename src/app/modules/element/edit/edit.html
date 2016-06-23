@@ -26,25 +26,16 @@
                     </div>
                     </div>
 
-                    <div class="form-group" ng-show="vm.element.id">
-                        <label class="col-sm-2 control-label  mt-n-xs" for="title">Tags</label>
-                      <div class="col-sm-10">
-                        <label ng-repeat="tag in vm.element.tags track by $index"><label class="label label-info"> {{tag}}</label>&nbsp;</label>
-                      </div>
-                    </div>
-
                     <div class="form-group">
                     <label class="control-label col-sm-2">Add Tags</label>
                     <div class="col-sm-10">
-                        <tags-input ng-model="tags">
-                        <auto-complete source="loadTags($query)"></auto-complete>
-                        </tags-input>
+                        <tags-input ng-model="vm.element.tags" display-property="text"></tags-input>
                         <div ng-show="elementForm.tags.$invalid && (elementForm.tags.$dirty  || elementForm.$submitted)">
                             <small class="error" ng-show="elementForm.tags.$error.required">
                                 Tags is required.
                             </small>
                             <small class="error" ng-show="elementForm.tags.$error.minlength">
-                                Description is required to be at least 5 characters. Eg. "tag1", tag2" etc
+                                Enter at least 3 tags. Eg. "tag1", tag2" etc
                             </small>
                         </div>
 

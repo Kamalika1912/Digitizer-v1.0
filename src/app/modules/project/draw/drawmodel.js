@@ -1,5 +1,7 @@
-(function() {
+(function(){
   'use strict';
-  $('[data-toggle="tooltip"]').tooltip()
-}) ();
-
+  $('[data-toggle="tooltip"]').tooltip();
+  $scope.reset = function(){
+    $state.reload();
+  };
+})();
