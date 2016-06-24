@@ -3,7 +3,7 @@
   <li class="active">{{vm.project.id ? 'Edit project' : 'Create new'}}</li>
 </ol>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-9">
         <widget>
             <h4 class="mt-0">{{vm.project.id ? 'Editing ' : 'Creating new'}} project</h4>
             <form novalidate role="form" name="projectForm" class="form-horizontal mt" ng-submit="projectForm.$valid && (vm.project.id ? vm.update() : vm.save())" >
@@ -59,7 +59,7 @@
         </widget>
     </div>
 
-  </div>
-<div class="row">
-  <div class="col-md-12" ng-include="'app/modules/project/edit/available_elements.html'"></div>
+
+  <div class="col-md-3" ng-include="'app/modules/project/edit/available_elements.html'"></div>
+
 </div>
