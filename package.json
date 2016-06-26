@@ -2,7 +2,7 @@
   "name": "digitizer",
   "version": "1.0.0-beta",
   "description": "Digitizer",
-  "authors": [],
+  "authors": ["Kamalika Dutta"],
   "engines": {
     "node": "0.10.x"
   },

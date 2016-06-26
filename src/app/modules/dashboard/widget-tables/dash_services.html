@@ -1,8 +1,8 @@
 <div class="panel panel-default">
 
   <div class="panel-heading">
-    <div class="pull-right mt-n-xs"><input ng-model="searchDigitalService" class="form-control input-sm" type="search" placeholder="Search..."/></div>
-    <h5 class="widget-title">
+    <div class="pull-right"><input ng-model="searchDigitalService" class="form-control input-sm" type="search" placeholder="Search..."/></div>
+    <h5 class="widget-title mt-xs">
       <i class="fa fa-cloud">&emsp;</i>
       Recently Added Services
     </h5>
@@ -18,7 +18,7 @@
       <tbody>
       <tr ng-repeat="service in digitalServicesRecently | filter:searchDigitalService">
         <td><a ui-sref="app.editDigitalService({id: service.id})" >{{service.digital_component}}</a></td>
-        <td><label ng-repeat="tag in service.tags track by $index"><label class="label label-info"> {{tag}}</label>&nbsp;</label></td>
+        <td><label ng-repeat="tag in service.tags track by $index"><label class="label label-info"> {{tag.text}}</label>&nbsp;</label></td>
       </tr>
       </tbody>
     </table>

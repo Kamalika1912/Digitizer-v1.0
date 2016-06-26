@@ -1,37 +1,5 @@
 var q = require('q');
-var stubs = [
-    {
-        id: 1,
-        title: 'Taxi Hiring App',
-        description: "This project digitizes the business procedure model of a taxi hiring app. Inspiration: Uber, Lyft ",
-        date: "2016-01-07T15:10:13.022Z"
-    },
-    {
-        id: 2,
-        title: 'Apartment Renting and Lodging',
-        description: "This project digitizes the apartment renting and lodging business. Inspiration: AirBnB",
-        date: "2016-03-24T14:40:36.022Z"
-    },
-    {
-        id: 3,
-        title: 'Emergency Healthcare',
-        description: 'This project digitizes the process of providing medical attention in an emergency. Inspiration: Ginger.io',
-        date: "2016-02-01T09:01:25.022Z"
-    },
-    {
-        id: 4,
-        title: 'Moving and Delivery on demand',
-        description: 'This project digitizes the business model of moving and delivery on-demand. Inspiration:BuddyTruk, Muver, GoShare',
-        date: "2016-02-29T16:41:58.022Z"
-    },
-    {
-        id: 5,
-        title: 'Borrowing/Lending items',
-        description: 'This project enables people to borrow the things they need from others in their neighborhood. Inspiration: Peerby',
-        date: "2015-03-16T18:20:04.022Z"
-    }
-
-];
+var stubs = require("../json/projects.json");
 
 var lastStubIndex = stubs.length;
 
