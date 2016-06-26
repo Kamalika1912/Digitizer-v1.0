@@ -29,7 +29,9 @@ function update(req) {
         id: id,
         date: req.body.date,
         title: req.body.title,
-        description: req.body.description
+        description: req.body.description,
+        author: req.body.author,
+        elements: req.body.elements
     };
     return projectsData.update(project);
 }

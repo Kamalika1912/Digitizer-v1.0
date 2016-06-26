@@ -43,7 +43,15 @@
               <div class="form-group">
                 <label class="col-sm-4">Business Procedure Model</label>
                 <div class="col-sm-12">
-                    <div ng-include="'app/modules/project/draw/drawmodel.html'"></div>
+                  <div data-drop="true" ng-model="vm.project.elements" data-jqyoui-options jqyoui-droppable="{onDrop:'vm.dropCallback(vm.element.model_element)'}">
+                    <canvas class="analog-canvas" data-toggle="tooltip" data-placement="right" title="Drag and drop elements to draw your model">
+
+                    </canvas>
+                  </div>
+
+                </div>
+                <div class="col-sm-12">
+                  <div>{{vm.project.elements}}</div>
                 </div>
               </div>
 

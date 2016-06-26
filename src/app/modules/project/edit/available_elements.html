@@ -10,8 +10,8 @@
     </h5>
   </div>
     <div class="mt-sm">
-      <element ng-repeat="element in vm.elements | filter:searchElement">
-        <element class="element" data-drag="true"  jqyoui-draggable = "{placeholder:true,animate:true}" data-jqyoui-options="{revert: 'invalid'}">
+      <element ng-repeat="element in vm.element | filter:searchElement">
+        <element class="element" data-drag="true" ng-bind="element.model_element" ng-model="element.model_element" jqyoui-draggable = "{placeholder:true,animate:true}" data-jqyoui-options="{revert: 'invalid'}">
           {{element.model_element}}
         </element>&nbsp;
       </element>

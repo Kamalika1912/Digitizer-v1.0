@@ -9,7 +9,7 @@
   function projectController(projects, projectResource, elements, $state, shortHistory, notificator) {
     var vm = this;
     vm.project = projects;
-    vm.elements = elements;
+    vm.element = elements;
     vm.showReturnBtn = vm.project.id && shortHistory.from.state.name;
 
     vm.update = function() {
@@ -35,6 +35,11 @@
         notificator.success('Project was successfully saved')
       });
     };
+
+    vm.dropCallback = function(modelElement) {
+      console.log(modelElement);
+      vm.project.elements.push({});
+    }
   }
 
 })();
