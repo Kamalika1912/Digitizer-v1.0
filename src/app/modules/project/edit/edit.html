@@ -2,8 +2,10 @@
   <li><span class="text-muted">YOU ARE HERE</span></li>
   <li class="active">{{vm.project.id ? 'Edit project' : 'Create new'}}</li>
 </ol>
-<div class="row">
+
     <div class="col-md-9">
+
+      <div class="row">
         <widget>
             <h4 class="mt-0">{{vm.project.id ? 'Editing ' : 'Creating new'}} project</h4>
             <form novalidate role="form" name="projectForm" class="form-horizontal mt" ng-submit="projectForm.$valid && (vm.project.id ? vm.update() : vm.save())" >
@@ -43,15 +45,13 @@
               <div class="form-group">
                 <label class="col-sm-4">Business Procedure Model</label>
                 <div class="col-sm-12">
-                  <div data-drop="true" ng-model="vm.project.elements" data-jqyoui-options jqyoui-droppable="{onDrop:'vm.dropCallback(vm.element.model_element)'}">
-                    <canvas class="analog-canvas" data-toggle="tooltip" data-placement="right" title="Drag and drop elements to draw your model">
-
-                    </canvas>
+                  <div class="analog-canvas" data-drop="true" ng-model="vm.project.elements" jqyoui-droppable="{multiple:true}">
+                    <element ng-repeat="element in vm.project.elements">
+                      <element class="element element-model">
+                        {{element.model_element}}
+                      </element>
+                    </element>
                   </div>
-
-                </div>
-                <div class="col-sm-12">
-                  <div>{{vm.project.elements}}</div>
                 </div>
               </div>
 
@@ -61,13 +61,15 @@
 
                     </span>
                     <button type="button" class="btn" ng-click="vm.reset()">Reset</button>
-                    <button type="submit" class="btn btn-primary">Digitize</button>
+                    <button type="button" class="btn" ng-click="vm.digitize()">Digitize</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                 </div>
             </form>
         </widget>
     </div>
-
-
+      <div class="row" ng-include="'app/modules/project/draw/digitized_model.html'"></div>
+    </div>
   <div class="col-md-3" ng-include="'app/modules/project/edit/available_elements.html'"></div>
 
-</div>
+
+

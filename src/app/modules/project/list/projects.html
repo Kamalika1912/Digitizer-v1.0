@@ -18,11 +18,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="project in vm.projects | filter:searchProject">
-                    <td>{{project.title}}</td>
-                    <td><span>{{project.date | date: 'short'}}</span></td>
-                    <td>{{project.author}}</td>
-                    <td>{{project.elements}}</td>
+                <tr ng-repeat="project in vm.projects | filter:searchProject | orderBy:vm.projects.date">
+                    <td class="col-md-3">{{project.title}}</td>
+                    <td class="col-md-1"><span>{{project.date | date: 'short'}}</span></td>
+                    <td class="col-md-6">
+                      <element ng-repeat="element in project.elements">
+                        <element class="element">
+                          {{element.model_element}}
+                        </element>
+                      </element>
+                    </td>
                     <td class="text-right col-md-2"><div class="btn-group inline pull-left">
                         <button type="button" class="btn btn-default" ui-sref="app.editProject({id: project.id})">Edit</button>
                         <button type="button" class="btn btn-danger" ng-click="vm.delete(project)">Delete</button>

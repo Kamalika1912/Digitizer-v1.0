@@ -36,10 +36,6 @@
       });
     };
 
-    vm.dropCallback = function(modelElement) {
-      console.log(modelElement);
-      vm.project.elements.push({});
-    }
   }
 
 })();
