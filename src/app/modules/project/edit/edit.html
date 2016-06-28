@@ -56,18 +56,15 @@
               </div>
 
                 <div class="text-right">
-                    <span ng-if="vm.showReturnBtn">
-                        <button type="button" class="btn" ng-click="vm.return()">Return</button>
-
-                    </span>
-                    <button type="button" class="btn" ng-click="vm.reset()">Reset</button>
-                    <button type="button" class="btn" ng-click="vm.digitize()">Digitize</button>
+                    <button type="button" class="btn" ui-sref="app.projects">Return</button>
+                    <button type="button" class="btn btn-warning" ng-click="vm.reset()">Reset</button>
+                    <button type="button" class="btn btn-info" ui-sref="app.digitize({id: vm.project.id})">Digitize</button>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </div>
             </form>
         </widget>
     </div>
-      <div class="row" ng-include="'app/modules/project/draw/digitized_model.html'"></div>
+      <!-- <div class="row" ng-include="'app/modules/project/digitize/digitize.html'"></div> -->
     </div>
   <div class="col-md-3" ng-include="'app/modules/project/edit/available_elements.html'"></div>
 

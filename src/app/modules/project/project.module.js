@@ -33,6 +33,25 @@
         },
         controller: 'ProjectController',
         controllerAs: 'vm'
+      })
+      .state('app.digitize', {
+        url: '/projects/digitize/:id',
+        templateUrl: 'app/modules/project/digitize/digitize.html',
+        resolve: {
+          projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
+            return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
+          }],
+          elements: ['elementResource', function(elementResource) {
+            return elementResource.query().$promise;
+          }],
+          digitalServices: ['$stateParams', 'digitalServiceUtils', 'digitalServiceResource', function($stateParams, digitalServiceUtils, digitalServiceResource) {
+            return digitalServiceResource.query().$promise.then(function(allDigitalServices) {
+              return $stateParams.interval ? digitalServiceUtils.digitalServicesDuringInterval(allDigitalServices, $stateParams.interval) : allDigitalServices;
+            });
+          }]
+        },
+        controller: 'DigitizeController',
+        controllerAs: 'vm'
       });
   }
 })();

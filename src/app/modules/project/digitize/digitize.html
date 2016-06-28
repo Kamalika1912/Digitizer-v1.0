@@ -1,0 +1,24 @@
+<ol class="breadcrumb">
+  <li><span class="text-muted">YOU ARE HERE</span></li>
+  <li ui-sref="app.editProject({id: vm.project.id})">{{vm.project.title}}</li>
+  <li class="active">{{vm.project.id ? 'Digitizing' : 'Create new'}}</li>
+</ol>
+
+
+<div class="services-canvas">
+
+  <service ng-repeat="service in vm.services | filter:{tags:vm.project.elements.tags} ">
+    <service class="service">
+      {{service.digital_component}}
+    </service>
+  </service>
+</div>
+
+<div class="digital-canvas">
+<element ng-repeat="element in vm.project.elements">
+  <element class="element">
+    {{element.model_element}}
+  </element>
+</element>
+</div>
+
