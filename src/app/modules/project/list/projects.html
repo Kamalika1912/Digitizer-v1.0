@@ -22,7 +22,6 @@
                 <tbody>
                 <tr ng-repeat="project in vm.projects | filter:searchProject | orderBy:vm.projects.date">
                     <td class="col-md-2">{{project.title}}</td>
-                  <td class="col-md-2">{{project.services}}</td>
                     <td class="col-md-1"><span>{{project.date | date: 'short'}}</span></td>
                     <td class="col-md-3">
                       <element ng-repeat="element in project.elements">
@@ -34,7 +33,7 @@
                   <td class="col-md-3">
                     <service ng-repeat="service in project.services">
                       <service class="service">
-                        {{service.id}}
+                        {{service.digital_component}}
                       </service>
                     </service>
                   </td>
