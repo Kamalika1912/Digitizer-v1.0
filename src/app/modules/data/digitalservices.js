@@ -16,6 +16,7 @@
 
   digitalServiceUtils.$inject = ['digitalServiceResource'];
   function digitalServiceUtils(digitalServiceResource) {
+
     function digitalServicesDuringInterval(digitalServices, days) {
       var today = new Date();
       var interval = 86400000 * days;
@@ -44,10 +45,16 @@
       return lastEdited;
     }
 
+    function filteredByTags(digitalServices, tags) {
+      var filteredByTags;
+
+    }
+
     return {
       digitalServicesDuringInterval: digitalServicesDuringInterval,
       lastEdited: lastEdited,
-      recent: recent
+      recent: recent,
+      filteredByTags: filteredByTags
     }
   }
 })();

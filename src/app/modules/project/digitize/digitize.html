@@ -6,9 +6,8 @@
 
 
 <div class="services-canvas">
-
-  <service ng-repeat="service in vm.services | filter:{tags:vm.project.elements.tags} ">
-    <service class="service">
+  <service ng-repeat="service in vm.project.services">
+    <service class="service" data-drag="true" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
       {{service.digital_component}}
     </service>
   </service>
@@ -16,8 +15,8 @@
 
 <div class="digital-canvas">
 <element ng-repeat="element in vm.project.elements">
-  <element class="element">
-    {{element.model_element}}
+  <element class="element" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{animate: true, multiple:true}">
+    {{element.model_element}}{{vm.project.services.digital_component}}
   </element>
 </element>
 </div>

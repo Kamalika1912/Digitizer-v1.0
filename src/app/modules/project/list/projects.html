@@ -13,21 +13,31 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Last updated</th>
+                  <th>Title</th>
+                  <th>Last updated</th>
+                  <th>Elements</th>
+                  <th>Digital Services</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr ng-repeat="project in vm.projects | filter:searchProject | orderBy:vm.projects.date">
-                    <td class="col-md-3">{{project.title}}</td>
+                    <td class="col-md-2">{{project.title}}</td>
+                  <td class="col-md-2">{{project.services}}</td>
                     <td class="col-md-1"><span>{{project.date | date: 'short'}}</span></td>
-                    <td class="col-md-6">
+                    <td class="col-md-3">
                       <element ng-repeat="element in project.elements">
                         <element class="element">
                           {{element.model_element}}
                         </element>
                       </element>
                     </td>
+                  <td class="col-md-3">
+                    <service ng-repeat="service in project.services">
+                      <service class="service">
+                        {{service.id}}
+                      </service>
+                    </service>
+                  </td>
                     <td class="text-right col-md-2"><div class="btn-group inline pull-left">
                         <button type="button" class="btn btn-default" ui-sref="app.editProject({id: project.id})">Edit</button>
                         <button type="button" class="btn btn-danger" ng-click="vm.delete(project)">Delete</button>

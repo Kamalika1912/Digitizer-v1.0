@@ -56,10 +56,10 @@
               </div>
 
                 <div class="text-right">
-                    <button type="button" class="btn" ui-sref="app.projects">Return</button>
-                    <button type="button" class="btn btn-warning" ng-click="vm.reset()">Reset</button>
-                    <button type="button" class="btn btn-info" ui-sref="app.digitize({id: vm.project.id})">Digitize</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                  <button type="button" class="btn" ui-sref="app.projects">Return</button>
+                  <button type="button" class="btn btn-warning" ng-click="vm.reset()">Undo</button>
+                  <button type="submit" class="btn btn-primary">Save Model</button>
+                  <button type="submit" class="btn btn-info" ui-sref="app.digitize({id: vm.project.id})">Digitize</button>
                 </div>
             </form>
         </widget>

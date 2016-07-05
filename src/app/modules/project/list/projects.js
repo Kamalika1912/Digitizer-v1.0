@@ -10,5 +10,8 @@
       var vm = this;
       vm.projects = projects;
       vm.delete = deleteProjectModal.getDeleteMethod(vm.projects);
+      vm.projects.services = projects.services;
+      console.log(vm.projects.services);
+      console.log(vm.projects);
     }
 })();
