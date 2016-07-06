@@ -5,12 +5,20 @@
     .module('app.profile')
     .controller('ProjectController', projectController);
 
-  projectController.$inject = ['projects', 'projectResource', 'elements','$state', 'shortHistory', 'notificator'];
+  projectController.$inject = ['projects', 'projectResource', 'elements', '$state', 'shortHistory', 'notificator'];
   function projectController(projects, projectResource, elements, $state, shortHistory, notificator) {
     var vm = this;
     vm.project = projects;
     vm.element = elements;
     vm.showReturnBtn = vm.project.id && shortHistory.from.state.name;
+    for (var projectKey in vm.project){
+      for (var serviceKey in vm.project[projectKey].services) {
+
+        console.log(vm.project[projectKey].services[serviceKey].id);
+
+      }
+    }
+
 
     vm.update = function() {
       vm.project.date = (new Date()).toISOString();
@@ -35,6 +43,8 @@
         notificator.success('Project was successfully saved')
       });
     };
+
+
 
   }
 

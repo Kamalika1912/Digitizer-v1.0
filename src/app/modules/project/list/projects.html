@@ -2,15 +2,16 @@
   <li><span class="text-muted">YOU ARE HERE</span></li>
   <li class="active">Projects</li>
 </ol>
+<div class="panel panel-default">
 <div class="row">
     <div class="col-md-12">
-        <widget>
-            <header>
-              <button type="button" class="btn btn-sm btn-gray pull-right" ui-sref="app.editProject({id: null})">Create new project</button>
+      <div class="panel-heading">
+              <button type="button" class="btn btn-sm btn-primary pull-right" ui-sref="app.editProject({id: null})">Create new project</button>
               <div class="pull-right col-md-8"><input ng-model="searchProject" class="form-control input-sm" type="search" placeholder="Search for a service..."/></div>
-              <h4 class="widget-title">Projects</h4>
-            </header>
-            <table class="table table-striped">
+              <h4 class="widget-title text-blue">Projects</h4>
+        </div>
+      <widget>
+            <table class="table table-hover">
                 <thead>
                 <tr>
                   <th>Title</th>
@@ -46,4 +47,5 @@
             </table>
         </widget>
     </div>
+</div>
 </div>

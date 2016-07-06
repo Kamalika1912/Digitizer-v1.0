@@ -4070,6 +4070,56 @@ fieldset[disabled] .btn-success.active {
   background-color: #fff
 }
 
+.btn-turquoise {
+  color: #fff;
+  background-color: #1fb8b0;
+  border-color: #1fb8b0
+}
+
+.btn-turquoise:hover,
+.btn-turquoise:focus,
+.btn-turquoise.focus,
+.btn-turquoise:active,
+.btn-turquoise.active,
+.open>.btn-turquoise.dropdown-toggle {
+  color: #fff;
+  background-color: #06888a;
+  border-color: #06888a
+}
+
+.btn-turquoise:active,
+.btn-turquoise.active,
+.open>.btn-turquoise.dropdown-toggle {
+  background-image: none
+}
+
+.btn-turquoise.disabled,
+.btn-turquoise.disabled:hover,
+.btn-turquoise.disabled:focus,
+.btn-turquoise.disabled.focus,
+.btn-turquoise.disabled:active,
+.btn-turquoise.disabled.active,
+.btn-turquoise[disabled],
+.btn-turquoise[disabled]:hover,
+.btn-turquoise[disabled]:focus,
+.btn-turquoise[disabled].focus,
+.btn-turquoise[disabled]:active,
+.btn-turquoise[disabled].active,
+fieldset[disabled] .btn-turquoise,
+fieldset[disabled] .btn-turquoise:hover,
+fieldset[disabled] .btn-turquoise:focus,
+fieldset[disabled] .btn-turquoise.focus,
+fieldset[disabled] .btn-turquoise:active,
+fieldset[disabled] .btn-turquoise.active {
+  background-color: #06888a;
+  border-color: #06888a
+}
+
+.btn-turquoise .badge {
+  color: #1fb8b0;
+  background-color: #fff
+}
+
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
@@ -10568,7 +10618,6 @@ th {
 }
 
 .widget-title {
-  margin-top: 0;
   color: #777
 }
 
@@ -11306,6 +11355,14 @@ a.bg-danger:hover {
   background-color: #c9302c
 }
 
+.bg-turquoise {
+  background-color: #1fb8b0
+}
+
+a.bg-turquoise:hover {
+  background-color: #06888a
+}
+
 .bg-body {
   background-color: #E5E9EC
 }
@@ -11622,13 +11679,25 @@ tags-input .autocomplete .suggestion-item em {
 }
 
 .services-canvas {
-  padding: 60px 40px;
   position: relative;
   width: 100%;
   min-height: 450px;
   text-align: center;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cloud {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
   background-image: url('../assets/images/cloud.png');
@@ -11637,10 +11706,29 @@ tags-input .autocomplete .suggestion-item em {
   background-position: center;
 }
 
-.cloud {
+.selected-service {
+  display: inline-block;
+  margin: 2px;
+  padding:  0.6em;
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .50em;
+  border: 1px dashed #3A3A3A;
+}
+.selected-services-canvas {
+  position: relative;
   width: 100%;
-  height: auto;
-  z-index: -1;
+  min-height: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .element {
@@ -11712,4 +11800,19 @@ tags-input .autocomplete .suggestion-item em {
   text-decoration: none;
   cursor: move;
   background-color: #06888a;
+}
+
+.service, .services-canvas {
+  margin-bottom: 10px;
+}
+
+.text-turquoise {
+  color: #06888a
+}
+.text-green {
+  color: #449d44
+}
+
+.text-blue {
+  color: #337ab7;
 }

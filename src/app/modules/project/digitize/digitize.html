@@ -5,12 +5,17 @@
 </ol>
 
 
-<div class="services-canvas">
+<div class="services-canvas cloud">
   <service ng-repeat="service in vm.project.services">
     <service class="service" data-drag="true" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
       {{service.digital_component}}
     </service>
   </service>
+</div>
+<div class="selected-services-canvas">
+  <selected-service class="selected-service" ng-repeat="element in vm.project.elements" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{multiple:true}">
+    Drop service here
+  </selected-service>
 </div>
 
 <div class="digital-canvas">
@@ -19,5 +24,6 @@
     {{element.model_element}}{{vm.project.services.digital_component}}
   </element>
 </element>
+
 </div>
 
