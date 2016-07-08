@@ -10930,6 +10930,9 @@ fieldset[disabled] .btn-sidebar.active {
 .text-gray {
   color: #555
 }
+.text-light-gray {
+  color: #ddd
+}
 
 a.text-gray:hover {
   color: #3c3c3c
@@ -11363,6 +11366,27 @@ a.bg-turquoise:hover {
   background-color: #06888a
 }
 
+.bg-amethyst {
+  background-color: #8e44ad
+}
+
+a.bg-amethyst:hover {
+  background-color: #06888a
+}
+
+.text-amethyst {
+  color: #9b59b6
+}
+
+.text-green {
+  color: #449d44
+}
+
+.text-blue {
+  color: #337ab7;
+}
+
+
 .bg-body {
   background-color: #E5E9EC
 }
@@ -11668,15 +11692,6 @@ tags-input .autocomplete .suggestion-item em {
   align-items: center;
   flex-wrap: wrap;
 }
-.digital-canvas {
-  width: 100%;
-  background-color: transparent;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
 
 .services-canvas {
   position: relative;
@@ -11705,8 +11720,18 @@ tags-input .autocomplete .suggestion-item em {
   background-size: contain;
   background-position: center;
 }
-
+.selected-services-canvas {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
 .selected-service {
+  min-width: 150px;
+  min-height: 25px;
   display: inline-block;
   margin: 2px;
   padding:  0.6em;
@@ -11715,25 +11740,41 @@ tags-input .autocomplete .suggestion-item em {
   line-height: 1;
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: center;
   border-radius: .50em;
   border: 1px dashed #3A3A3A;
 }
+
 .selected-services-canvas {
   position: relative;
   width: 100%;
   min-height: 60px;
   text-align: center;
-  justify-content: center;
   align-items: center;
   align-content: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.arrow {
+
+}
+
+.digital-canvas {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .element {
   display: inline-block;
-  margin: 2px;
+  margin: 2px 5px 5px 1px;
   padding:  0.6em;
   font-size: 100%;
   font-weight: 300;
@@ -11763,13 +11804,6 @@ tags-input .autocomplete .suggestion-item em {
   background-color: #449d44;
 }
 
-.element-model {
-  margin-left: 12px;
-}
-.element-model:after{
-
-}
-
 .service {
   display: inline-block;
   margin: 2px;
@@ -11782,7 +11816,7 @@ tags-input .autocomplete .suggestion-item em {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: .50em;
-  background-color: #1fb8b0;
+  background-color: #9b59b6;
 }
 
 .service + .service {
@@ -11799,20 +11833,9 @@ tags-input .autocomplete .suggestion-item em {
   color: #fff;
   text-decoration: none;
   cursor: move;
-  background-color: #06888a;
+  background-color: #8e44ad;
 }
 
 .service, .services-canvas {
   margin-bottom: 10px;
-}
-
-.text-turquoise {
-  color: #06888a
-}
-.text-green {
-  color: #449d44
-}
-
-.text-blue {
-  color: #337ab7;
 }

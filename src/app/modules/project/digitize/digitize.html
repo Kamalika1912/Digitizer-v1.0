@@ -13,16 +13,18 @@
   </service>
 </div>
 <div class="selected-services-canvas">
-  <selected-service class="selected-service" ng-repeat="element in vm.project.elements" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{multiple:true}">
-    Drop service here
+  <selected-service class="selected-service" ng-repeat="element in vm.project.elements" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{animate: true}">
+Hello there
   </selected-service>
 </div>
 
 <div class="digital-canvas">
-<element ng-repeat="element in vm.project.elements">
+<element ng-repeat="element in vm.project.elements track by $index">
+  <img src="../assets/images/right-arrow.png" class="arrow" ng-show="$index != 0">
   <element class="element" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{animate: true, multiple:true}">
-    {{element.model_element}}{{vm.project.services.digital_component}}
+    {{element.model_element}}
   </element>
+
 </element>
 
 </div>

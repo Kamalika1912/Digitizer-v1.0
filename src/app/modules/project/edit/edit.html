@@ -46,7 +46,8 @@
                 <label class="col-sm-4">Business Procedure Model</label>
                 <div class="col-sm-12">
                   <div class="analog-canvas" data-drop="true" ng-model="vm.project.elements" jqyoui-droppable="{multiple:true}">
-                    <element ng-repeat="element in vm.project.elements">
+                    <element ng-repeat="element in vm.project.elements track by $index">
+                      <img src="../assets/images/right-arrow.png" class="arrow" ng-show="$index != 0">
                       <element class="element element-model">
                         {{element.model_element}}
                       </element>
