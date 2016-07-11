@@ -29,8 +29,8 @@ Digitizer is a business procedure modeling tool that lets user draw a business m
 
 
 ## Demo
-Work in progress. 
-Projects > Select project > Digitize
+Work in progress. <br />
+Workflow: Projects > Select project > Digitize. <br />
 Demo: (https://digitizer-test.herokuapp.com/)
 
 
