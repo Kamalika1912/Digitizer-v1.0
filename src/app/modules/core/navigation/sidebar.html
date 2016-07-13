@@ -7,9 +7,9 @@
   </li>
 
   <li>
-    <a data-target="#sidebar-project" data-toggle="collapse" data-parent="#sidebar"
+    <a class="text-blue" data-target="#sidebar-project" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.projects') || $state.includes('app.editProject') ? 'active' : ''">
-      <i class="fa fa-folder" class="glyphicon glyphicon-list-alt mr-xs"></i>
+      <i class="fa fa-folder fa-lg text-blue" class="glyphicon glyphicon-list-alt mr-xs"></i>&nbsp;
       Projects
       <b class="caret"></b>
     </a>
@@ -26,7 +26,7 @@
   <li>
     <a data-target="#sidebar-element" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.elements') || $state.includes('app.editElement') ? 'active' : ''">
-      <i class="fa fa-list" class="glyphicon glyphicon-list-alt mr-xs"></i>
+      <i class="fa fa-list fa-lg text-green" class="glyphicon glyphicon-list-alt mr-xs"></i>&nbsp;
       Elements
       <b class="caret"></b>
     </a>
@@ -43,7 +43,7 @@
   <li>
     <a data-target="#sidebar-service" data-toggle="collapse" data-parent="#sidebar"
        ng-class="$state.includes('app.digitalServices') || $state.includes('app.editDigitalService') ? 'active' : ''">
-      <i class="fa fa-cloud" class="glyphicon glyphicon-list-alt mr-xs"></i>
+      <i class="fa fa-cloud fa-lg text-amethyst" class="glyphicon glyphicon-list-alt mr-xs"></i>&nbsp;
       Services
       <b class="caret"></b>
     </a>
@@ -64,13 +64,6 @@
     </a>
   </li>
   <li class="hidden-md hidden-lg">
-    <a href="#" ng-click="logout()">Logout</a>
+    <a href="#" ng-click="logout()"><i class="fa fa-sign-out"></i> Logout</a>
   </li>
 </ul>
-
-<footer class="sidebar-footer">
-  <p class="small text-gray-lighter opacity-60 ml-xs mr-xs mb-xs">80% ready</p>
-  <div class="progress progress-xs mb-sm">
-    <div class="progress-bar progress-bar-success" style="width: 80%"></div>
-  </div>
-</footer>
