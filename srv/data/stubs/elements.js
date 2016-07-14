@@ -1,6 +1,7 @@
 var q = require('q');
 var stubs = require("../json/elements.json");
 
+
 var lastStubIndex = stubs.length;
 
 function getAll() {
@@ -19,13 +20,16 @@ function getOne(id) {
 function save(element) {
     element.id = 'A'+ ++lastStubIndex;
     stubs.push(element);
+  console.log(JSON.stringify(element));
     return q(element);
 }
 
 function update(element) {
     var stubToUpdateIndex = _getStubIndexById(element.id);
     stubs[stubToUpdateIndex] = element;
+  console.log(JSON.stringify(element));
     return q(element);
+
 }
 
 function remove(id) {

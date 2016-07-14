@@ -64,5 +64,5 @@
   {"id":"A63","model_element":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
   {"id":"A64","model_element":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
   {"id":"A65","model_element":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
-  {"id":"A65","model_element":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}
+  {"id":"A66","model_element":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}
 ]

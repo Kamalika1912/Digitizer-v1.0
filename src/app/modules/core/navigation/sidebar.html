@@ -3,7 +3,7 @@
 </header>
 <ul class="sidebar-nav">
   <li>
-    <a ui-sref="app.dashboard" ui-sref-active="active"><i class="fa fa-tachometer" class="glyphicon glyphicon-dashboard mr-xs"> </i> Dashboard</a>
+    <a ui-sref="app.dashboard" ui-sref-active="active"><i class="fa fa-tachometer fa-lg" class="glyphicon glyphicon-dashboard mr-xs"> </i>&nbsp; Dashboard</a>
   </li>
 
   <li>
@@ -14,9 +14,12 @@
       <b class="caret"></b>
     </a>
     <ul id="sidebar-project" class="collapse in">
-      <li><a ui-sref="app.projects" ui-sref-active="active">Show all</a></li>
+      <li><a ui-sref="app.projects" ui-sref-active="active">
+        <i class="fa fa-circle-thin fa-fw" aria-hidden="true"></i>&nbsp;
+        Show all</a></li>
       <li>
         <a ui-sref="app.editProject" ui-sref-active="active">
+          <i class="fa fa-plus fa-fw" aria-hidden="true"></i>&nbsp;
           {{$state.includes('app.editProject') && $state.params.id ? 'Project editing' : 'Create new'}}
         </a>
       </li>
@@ -31,9 +34,12 @@
       <b class="caret"></b>
     </a>
     <ul id="sidebar-element" class="collapse in">
-      <li><a ui-sref="app.elements" ui-sref-active="active">Show all</a></li>
+      <li><a ui-sref="app.elements" ui-sref-active="active">
+        <i class="fa fa-circle-thin fa-fw" aria-hidden="true"></i>&nbsp;
+        Show all</a></li>
       <li>
         <a ui-sref="app.editElement" ui-sref-active="active">
+          <i class="fa fa-plus fa-fw" aria-hidden="true"></i>&nbsp;
           {{$state.includes('app.editElement') && $state.params.id ? 'Element editing' : 'Create new'}}
         </a>
       </li>
@@ -48,9 +54,12 @@
       <b class="caret"></b>
     </a>
     <ul id="sidebar-service" class="collapse in">
-      <li><a ui-sref="app.digitalServices" ui-sref-active="active">Show all</a></li>
+      <li><a ui-sref="app.digitalServices" ui-sref-active="active">
+        <i class="fa fa-circle-thin fa-fw" aria-hidden="true"></i>&nbsp;
+        Show all</a></li>
       <li>
         <a ui-sref="app.editDigitalService" ui-sref-active="active">
+          <i class="fa fa-plus fa-fw" aria-hidden="true"></i>&nbsp;
           {{$state.includes('app.editDigitalService') && $state.params.id ? 'Editing Digital Service' : 'Create new'}}
         </a>
       </li>
@@ -59,11 +68,11 @@
 
   <li>
     <a ui-sref="app.profile" ui-sref-active="active">
-      <i class="fa fa-user" class="glyphicon glyphicon-user mr-xs"></i>
+      <i class="fa fa-user fa-lg" class="glyphicon glyphicon-user mr-xs"></i>&nbsp;
       Profile
     </a>
   </li>
-  <li class="hidden-md hidden-lg">
-    <a href="#" ng-click="logout()"><i class="fa fa-sign-out"></i> Logout</a>
+  <li>
+    <a href="#" ng-click="logout()"><i class="fa fa-sign-out fa-lg"></i>&nbsp; Logout</a>
   </li>
 </ul>

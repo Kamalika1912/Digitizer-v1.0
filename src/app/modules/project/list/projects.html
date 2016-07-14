@@ -25,7 +25,8 @@
                     <td class="col-md-2">{{project.title}}</td>
                     <td class="col-md-2"><span>{{project.date | date: 'short'}}</span></td>
                     <td class="col-md-1">
-                      <element ng-repeat="element in project.elements">
+                      <element ng-repeat="element in project.elements track by $index">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true" ng-show="$index != 0"></i>
                         <element class="element">
                           {{element.model_element}}
                         </element>
