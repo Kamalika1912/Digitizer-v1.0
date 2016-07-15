@@ -19,7 +19,8 @@ function update(req){
     }
     var updatedUser = {
       password: updateInfo.newPassword || staleUser.password,
-      email: updateInfo.email || staleUser.email,
+      firstName: updateInfo.firstName || staleUser.firstName,
+      lastName: updateInfo.lastName || staleUser.lastName,
       username: updateInfo.username || staleUser.username,
       id: staleUser.id
     };

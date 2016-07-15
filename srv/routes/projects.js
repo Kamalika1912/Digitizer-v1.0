@@ -31,7 +31,8 @@ function update(req) {
         title: req.body.title,
         description: req.body.description,
         author: req.body.author,
-        elements: req.body.elements
+        elements: req.body.elements,
+        services: req.body.services,
     };
     return projectsData.update(project);
 }

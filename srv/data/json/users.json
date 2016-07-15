@@ -1,34 +1,79 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "username": "user",
-    "email": "admin@email.com",
     "password": "pass",
     "firstName": "Admin",
     "lastName": "User"
   },
   {
-    "id": 2,
+    "id": 1,
     "username": "user1",
-    "email": "user1@email.com",
     "password": "pass1",
     "firstName": "Kamalika",
     "lastName": "Dutta"
   },
   {
-    "id": 3,
+    "id": 2,
     "username": "user2",
-    "email": "user2@email.com",
     "password": "pass2",
     "firstName": "Wolfgang",
     "lastName": "Prinz"
   },
   {
-    "id": 4,
+    "id": 3,
     "username": "user3",
-    "email": "user3@email.com",
     "password": "pass3",
     "firstName": "Sebastian",
     "lastName": "Franken"
+  },
+  {
+    "id": 4,
+    "username": "user4",
+    "password": "pass4",
+    "firstName": "User",
+    "lastName": "User"
+  },
+  {
+    "id": 5,
+    "username": "user5",
+    "password": "pass5",
+    "firstName": "User",
+    "lastName": "User"
+  },
+  {
+    "id": 6,
+    "username": "user6",
+    "password": "pass6",
+    "firstName": "User",
+    "lastName": "User"
+  },
+  {
+    "id": 7,
+    "username": "user7",
+    "password": "pass7",
+    "firstName": "User",
+    "lastName": "User"
+  },
+  {
+    "id": 8,
+    "username": "user8",
+    "password": "pass8",
+    "firstName": "User",
+    "lastName": "User"
+  },
+  {
+    "id": 9,
+    "username": "user9",
+    "password": "pass9",
+    "firstName": "User",
+    "lastName": "User"
+  },
+  {
+    "id": 10,
+    "username": "user10",
+    "password": "pass10",
+    "firstName": "User",
+    "lastName": "User"
   }
 ]

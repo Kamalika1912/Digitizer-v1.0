@@ -12,7 +12,7 @@
       vm.project.date = (new Date()).toISOString();
       projectResource.update(vm.project, function(p) {
         shortHistory.goTo('from');
-        notificator.success('Project was successfully updated')
+        notificator.success('Project was successfully updated');
       });
     };
     vm.return = function() {
@@ -23,9 +23,12 @@
     };
     vm.save = function() {
       vm.project.date = (new Date()).toISOString();
+      vm.project.elements = [];
+      vm.project.services = [];
       projectResource.save(this.project, function(savedProject) {
         shortHistory.goTo('from');
-        notificator.success('Project was successfully saved')
+        notificator.success('Project was successfully saved');
+        console.log(savedProject);
       });
     };
   }
