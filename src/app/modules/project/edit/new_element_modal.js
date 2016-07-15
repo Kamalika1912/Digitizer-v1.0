@@ -2,16 +2,16 @@
 
   var module = angular.module('app.element');
 
-  module.service('deleteElementModal', deleteElementModal);
+  module.service('newElementModal', newElementModal);
 
-  deleteElementModal.$inject = ['elementResource', 'commonModal', 'notificator'];
-  function deleteElementModal(elementResource, commonModal, notificator) {
+  newElementModal.$inject = ['elementResource', 'commonModal', 'notificator'];
+  function newElementModal(elementResource, commonModal, notificator) {
     var that = this;
     this.modalOptions = {
       closeButtonText: 'Cancel',
       actionButtonText: 'Delete',
-      headerText: 'Confirm element deletion',
-      bodyText: 'The element will be deleted permanently, do you want to continue?'
+      headerText: 'Adding new element',
+      bodyText: 'Element Creation'
     };
     this.modalDefaults = {
       windowClass: 'small-modal'
@@ -23,7 +23,7 @@
           elementResource.delete(element, function() {
             var index = elements.indexOf(element);
             elements.splice(index,1);
-            notificator.success('The element was successfully deleted');
+            notificator.success('The element was successfully created');
           });
         });
       };

@@ -10,7 +10,7 @@
     this.modalOptions = {
       closeButtonText: 'Cancel',
       actionButtonText: 'Delete',
-      headerText: 'Confirm project deletion',
+      headerText: 'Confirm service deletion',
       bodyText: 'The digital service will be deleted permanently, do you want to continue?'
     };
     this.modalDefaults = {

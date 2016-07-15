@@ -11,7 +11,6 @@
     vm.update = function() {
       vm.project.date = (new Date()).toISOString();
       projectResource.update(vm.project, function(p) {
-        shortHistory.goTo('from');
         notificator.success('Project was successfully updated');
       });
     };
@@ -26,9 +25,7 @@
       vm.project.elements = [];
       vm.project.services = [];
       projectResource.save(this.project, function(savedProject) {
-        shortHistory.goTo('from');
         notificator.success('Project was successfully saved');
-        console.log(savedProject);
       });
     };
   }
