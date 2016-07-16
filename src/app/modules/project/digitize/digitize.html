@@ -3,26 +3,37 @@
   <li ui-sref="app.editProject({id: vm.project.id})">{{vm.project.title}}</li>
   <li class="active">{{vm.project.id ? 'Digitizing' : 'Create new'}}</li>
 </ol>
-
-
-<div class="services-canvas cloud">
-  <service ng-repeat="service in vm.suggestedServices">
-    <service class="service" data-drag="true" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
-      {{service.digital_component}}
-    </service>
-  </service>
+<div class="btn-group-horizontal pull-right" role="group">
+  <button type="button" class="btn btn-default" ui-sref="app.editProject({id: vm.project.id})"><i class="fa fa-arrow-left text-gray"
+                                                                          title="Cancel"></i></button>
+    <button type="button" class="btn btn-danger" ng-click="vm.reset()"><i class="fa fa-undo"
+                                                                        title="Reset services"></i></button>
+  <button type="button" class="btn btn-info" ng-click="vm.update()" ui-sref="app.editProject({id: vm.project.id})"><i class="fa fa-floppy-o" title="Save digitized model"></i></button>
 </div>
-<div class="selected-services-canvas">
-  <selected-service class="selected-service" ng-repeat="element in vm.project.elements" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{animate: true}">
+<div class="row">
+<div class="services-canvas cloud">
+  <div ng-repeat="service in vm.suggestedServices">
+    <div class="service" data-drag="true" ng-model="service" ng-show="service.digital_component" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
+      {{service.digital_component}}
+    </div>
+  </div>
+</div>
+<div class="selected-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{multiple: true}">
+  <div class="drop-service  col-md-8"  ng-show="!vm.project.services.length">
   Drop service here
-  </selected-service>
+  </div>
+    <div ng-repeat="service in vm.project.services track by $index">
+      <div class="service selected-service">
+        {{service.digital_component}}
+      </div>
+    </div>
 </div>
 
 <div class="digital-canvas">
 <div ng-repeat="element in vm.project.elements track by $index">
   <i class="fa fa-long-arrow-right fa-2x" style="vertical-align: middle;" ng-show="$index != 0"></i><!--
-  --><div class="element-digital" ng-model="vm.project.services">{{element.model_element}}</div>
+  --><div class="element-digital">{{element.model_element}}</div>
 </div>
-
+</div>
 </div>
 

@@ -11,8 +11,8 @@
     vm.showReturnBtn = vm.project.id && shortHistory.from.state.name;
     vm.suggestedServices = vm.services;
     vm.suggestedServices = vm.services.filter(function(eachService) {
+
       for (var serviceKey in eachService.tags) {
-        //console.log(eachService.tags[serviceKey].text);
         for (var elementKey in vm.project.elements){
           for (var tagKey in vm.project.elements[elementKey].tags) {
             //console.log(vm.project.elements[elementKey].tags[tagKey].text);
@@ -25,8 +25,29 @@
       }
       return false;
     });
-    vm.project.services = vm.suggestedServices;
-    console.log(vm.project.services);
-    console.log(vm.project);
+
+    vm.undo = function() {
+      $state.reload();
+    };
+    vm.reset = function() {
+      vm.project.services = [];
+    };
+
+    vm.update = function() {
+      vm.project.date = (new Date()).toISOString();
+      projectResource.update(vm.project, function(p) {
+        notificator.success('Digitized Model was successfully saved');
+      });
+    };
+
+    //vm.project.services = vm.suggestedServices;
+    console.log('suggested services: \n' + vm.suggestedServices);
+    for (var key in vm.project.services) {
+      console.log('selected services: \n' + vm.project.services[key]);
+    }
+
+    console.log('project: ' + vm.project);
+    console.log('elements: ');
+
   }
 })();

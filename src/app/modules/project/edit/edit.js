@@ -17,8 +17,11 @@
     vm.return = function() {
       $state.go(shortHistory.from.state.name, shortHistory.from.params);
     };
-    vm.reset = function() {
+    vm.undo = function() {
       $state.reload();
+    };
+    vm.reset = function() {
+      vm.project.elements = [];
     };
     vm.save = function() {
       vm.project.date = (new Date()).toISOString();
