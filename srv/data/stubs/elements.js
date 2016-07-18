@@ -1,7 +1,7 @@
 var q = require('q');
-var jsonfile = require('jsonfile')
+var jsonfile = require('jsonfile');
 var stubs = require('../json/elements.json');
-var file = '../json/elements.json'
+var file = '../json/elements.json';
 
 
 var lastStubIndex = stubs.length;
