@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2016. 
+ * Kamalika Dutta
+ */
+
 var express = require('express');
 var http = require('http');
 var bodyParser = require('body-parser');

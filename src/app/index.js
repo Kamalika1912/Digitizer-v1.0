@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2016.
+ * Kamalika Dutta
+ */
+
 (function() {
   'use strict';
 
