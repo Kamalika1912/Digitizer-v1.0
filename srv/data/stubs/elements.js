@@ -1,5 +1,7 @@
 var q = require('q');
-var stubs = require("../json/elements.json");
+var jsonfile = require('jsonfile')
+var stubs = require('../json/elements.json');
+var file = '../json/elements.json'
 
 
 var lastStubIndex = stubs.length;
@@ -22,13 +24,19 @@ function save(element) {
     stubs.push(element);
   console.log(JSON.stringify(element));
     return q(element);
+  jsonfile.writeFile(file, element, function (err) {
+    console.error(err)
+  });
 }
 
 function update(element) {
     var stubToUpdateIndex = _getStubIndexById(element.id);
     stubs[stubToUpdateIndex] = element;
-  console.log(JSON.stringify(element));
+  //console.log(JSON.stringify(element));
     return q(element);
+  jsonfile.writeFile(file, stubs, function (err) {
+    console.error(err)
+  });
 
 }
 

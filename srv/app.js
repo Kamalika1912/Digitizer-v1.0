@@ -11,7 +11,14 @@ var digitalservices = require('./routes/digitalservices');
 var profiles = require('./routes/profiles');
 var session = require('./session');
 var path = require('path');
+var mongoose = require('mongoose');
 
+mongoose.connect('mongodb://user:pass@ds011472.mlab.com:11472/digitizer');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('Connected!');
+});
 
 var app = express();
 var favicon = require('serve-favicon');
