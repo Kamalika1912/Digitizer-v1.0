@@ -11,8 +11,8 @@
   </div>
     <div class="element-canvas mt-sm">
       <div ng-repeat="element in vm.element | filter:searchElement | orderBy:element.date ">
-        <div class="element" data-drag="true" ng-show="element.model_element" ng-model="element" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
-          {{element.model_element}}
+        <div class="element" data-drag="true" ng-show="element.modelElement" ng-model="element" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
+          {{element.modelElement}}
         </div>
       </div>
     </div>

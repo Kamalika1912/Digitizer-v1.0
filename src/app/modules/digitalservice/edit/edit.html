@@ -10,16 +10,16 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="title">Title</label>
                     <div class="col-sm-10">
-                        <input type="text" id="title" name="title" class="form-control" ng-model="vm.digitalService.digital_component"
+                        <input type="text" id="title" name="title" class="form-control" ng-model="vm.digitalService.digitalComponent"
                                required ng-minlength=3 ng-maxlength=100 />
-                        <div ng-show="digitalServiceForm.digital_component.$invalid && (digitalServiceForm.digital_component.$dirty || digitalServiceForm.$submitted)">
-                            <small class="error" ng-show="digitalServiceForm.digital_component.$error.required">
+                        <div ng-show="digitalServiceForm.digitalComponent.$invalid && (digitalServiceForm.digitalComponent.$dirty || digitalServiceForm.$submitted)">
+                            <small class="error" ng-show="digitalServiceForm.digitalComponent.$error.required">
                                 Title of Digital Component is required.
                             </small>
-                            <small class="error" ng-show="digitalServiceForm.digital_component.$error.minlength">
+                            <small class="error" ng-show="digitalServiceForm.digitalComponent.$error.minlength">
                                 Title is required to be at least 3 characters
                             </small>
-                            <small class="error" ng-show="digitalServiceForm.digital_component.$error.maxlength">
+                            <small class="error" ng-show="digitalServiceForm.digitalComponent.$error.maxlength">
                                 Title cannot be longer than 100 characters
                             </small>
                         </div>

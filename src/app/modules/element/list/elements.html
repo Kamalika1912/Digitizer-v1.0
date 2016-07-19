@@ -22,7 +22,7 @@
                 <tbody>
                 <tr ng-repeat="element in vm.elements | filter:searchElement">
                   <td class="col-md-1">{{element.id}}</td>
-                  <td class="col-md-2">{{element.model_element}}</td>
+                  <td class="col-md-2">{{element.modelElement}}</td>
                   <td><label ng-repeat="tag in element.tags track by $index"><label class="label label-info"> {{tag.text}}</label>&nbsp;</label></td>
                   <td class="text-right col-md-2"><div class="btn-group inline pull-left">
                         <button type="button" class="btn btn-default btn-small" ui-sref="app.editElement({id: element.id})">Edit</button>

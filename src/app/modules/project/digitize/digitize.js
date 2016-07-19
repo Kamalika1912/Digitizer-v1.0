@@ -40,14 +40,5 @@
       });
     };
 
-    //vm.project.services = vm.suggestedServices;
-    console.log('suggested services: \n' + vm.suggestedServices);
-    for (var key in vm.project.services) {
-      console.log('selected services: \n' + vm.project.services[key]);
-    }
-
-    console.log('project: ' + vm.project);
-    console.log('elements: ');
-
   }
 })();

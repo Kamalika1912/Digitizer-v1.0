@@ -10,5 +10,7 @@
       var vm = this;
       vm.projects = projects;
       vm.delete = deleteProjectModal.getDeleteMethod(vm.projects);
+      console.log('Projects: \n');
+      console.log(angular.toJson(vm.projects));
     }
 })();

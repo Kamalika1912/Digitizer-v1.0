@@ -13,8 +13,8 @@
 <div class="row">
 <div class="services-canvas cloud">
   <div ng-repeat="service in vm.suggestedServices">
-    <div class="service" data-drag="true" ng-model="service" ng-show="service.digital_component" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
-      {{service.digital_component}}
+    <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
+      {{service.digitalComponent}}
     </div>
   </div>
 </div>
@@ -24,7 +24,7 @@
   </div>
     <div ng-repeat="service in vm.project.services track by $index">
       <div class="service selected-service">
-        {{service.digital_component}}
+        {{service.digitalComponent}}
       </div>
     </div>
 </div>
@@ -32,7 +32,7 @@
 <div class="digital-canvas">
 <div ng-repeat="element in vm.project.elements track by $index">
   <i class="fa fa-long-arrow-right fa-2x" style="vertical-align: middle;" ng-show="$index != 0"></i><!--
-  --><div class="element-digital">{{element.model_element}}</div>
+  --><div class="element-digital">{{element.modelElement}}</div>
 </div>
 </div>
 </div>

@@ -10,10 +10,7 @@
       var vm = this;
       vm.digitalServices = digitalServices;
       vm.delete = deleteDigitalServiceModal.getDeleteMethod(vm.digitalServices);
-      for (var service in vm.digitalServices) {
-        for (var tag in service.tags) {
-          console.log(service.tags[tag]);
-        }
-      }
+      console.log('Digital Services: \n');
+      console.log(angular.toJson(vm.digitalServices));
     }
 })();

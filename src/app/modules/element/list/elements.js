@@ -10,5 +10,7 @@
       var vm = this;
       vm.elements = elements;
       vm.delete = deleteElementModal.getDeleteMethod(vm.elements);
+      console.log('Elements: \n');
+      console.log(angular.toJson(vm.elements));
     }
 })();

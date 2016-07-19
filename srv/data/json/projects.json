@@ -5,12 +5,12 @@
     "description": "This project digitizes the business procedure model of a taxi hiring app. Inspiration: Uber, Lyft ",
     "date": "2016-01-07T15:10:13.022Z",
     "author": "Kamalika Dutta",
-    "elements": [{"id":"A61","model_element":"Call Taxi hiring agency","tags": [{"text":"order"},{"text":"call"},{"text":"request"}]},
-      {"id":"A62","model_element":"Assign job to Taxi","tags": [{"text":"job"},{"text":"assign"},{"text":"order"},{"text":"schedule"}]},
-      {"id":"A63","model_element":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
-      {"id":"A64","model_element":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
-      {"id":"A65","model_element":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
-      {"id":"A65","model_element":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}],
+    "elements": [{"id":"A61","modelElement":"Call Taxi hiring agency","tags": [{"text":"order"},{"text":"call"},{"text":"request"}]},
+      {"id":"A62","modelElement":"Assign job to Taxi","tags": [{"text":"job"},{"text":"assign"},{"text":"order"},{"text":"schedule"}]},
+      {"id":"A63","modelElement":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
+      {"id":"A64","modelElement":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
+      {"id":"A65","modelElement":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
+      {"id":"A65","modelElement":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}],
     "services": []
   },
   {
