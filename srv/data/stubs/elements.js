@@ -22,7 +22,6 @@ function getOne(id) {
 function save(element) {
     element.id = 'A'+ ++lastStubIndex;
     stubs.push(element);
-  console.log(JSON.stringify(element));
     return q(element);
   jsonfile.writeFile(file, element, function (err) {
     console.error(err)

@@ -30,7 +30,13 @@
                     <label class="control-label col-sm-2">Add Tags</label>
                     <div class="col-sm-10">
                         <tags-input ng-model="vm.element.tags" display-property="text">
-
+                          <auto-complete source="vm.loadTags($query)"
+                                         min-length="0"
+                                         load-on-focus="true"
+                                         load-on-empty="true"
+                                         max-results-to-show=""
+                                         template="my-custom-template">
+                          </auto-complete>
                         </tags-input>
                         <div ng-show="elementForm.tags.$invalid && (elementForm.tags.$dirty  || elementForm.$submitted)">
                             <small class="error" ng-show="elementForm.tags.$error.required">
@@ -55,3 +61,7 @@
         </widget>
     </div>
 </div>
+
+<script type="text/ng-template" id="my-custom-template">
+  <label class="label label-info">{{data.text}}</label>
+</script>

@@ -4,7 +4,7 @@
 </ol>
 <div class="panel panel-default">
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 col-sm-12">
           <div class="panel-heading bg-amethyst">
               <button type="button" class="btn btn-sm btn-default pull-right mt-xs" ui-sref="app.editDigitalService({id: null})">Add Service</button>
               <div class="pull-right col-md-8 col-xs-1 mt-xs"><input ng-model="searchDigitalService" class="form-control input-sm" type="search" placeholder="Search for a service..."/></div>
@@ -17,6 +17,7 @@
                   <th>ID</th>
                   <th>Digital Component</th>
                   <th>Tags</th>
+                  <th class="pull-center">Edit/Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -24,9 +25,9 @@
                   <td class="col-md-1">{{digitalService.id}}</td>
                   <td class="col-md-2">{{digitalService.digitalComponent}}</td>
                   <td><label ng-repeat="tag in digitalService.tags track by $index"><label class="label label-info"> {{tag.text}}</label>&nbsp;</label></td>
-                  <td class="text-right col-md-2"><div class="btn-group inline pull-left">
-                        <button type="button" class="btn btn-default btn-small" ui-sref="app.editDigitalService({id: digitalService.id})">Edit</button>
-                        <button type="button" class="btn btn-danger outline btn-small" ng-click="vm.delete(digitalService)">Delete</button>
+                  <td class="text-right col-md-1"><div class="btn-group inline">
+                        <button type="button" class="btn btn-default btn-small" ui-sref="app.editDigitalService({id: digitalService.id})"><i class="fa fa-pencil-square-o" title="Edit" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger outline btn-small" ng-click="vm.delete(digitalService)"><i class="fa fa-trash-o" title="Delete" aria-hidden="true"></i></button>
                     </div></td>
                 </tbody>
         </table>

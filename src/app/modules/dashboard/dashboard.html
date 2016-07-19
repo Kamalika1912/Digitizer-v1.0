@@ -3,46 +3,87 @@
   <li class="active">Dashboard</li>
 </ol>
 <div class="row">
-  <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-sidebar"
-                 ui-sref="app.projects"
-                 icon-text="{{projects.length}}" icon-class="text-success">
-      Projects
-    </widget-stat>
-  </div>
-
-  <div class="col-md-3 col-sm-6">
-     <widget-stat widget-class="bg-transparent"
-                  ui-sref="app.editProject"
-                  icon-class="fa fa-plus-square fa-lg">
-       New project
-     </widget-stat>
-
-  </div>
-
-  <div class="col-md-3 col-sm-6">
+  <div class="col-md-4 col-sm-6">
     <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.editProject({id: lastEditedProject.id})"
-                 icon-class="fa fa-clock-o fa-lg">
-      Last edited
-    </widget-stat>
-  </div>
-  <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-sidebar"
                  ui-sref="app.projects"
-                 icon-text="{{projectsLastMonth.length}}" icon-class="text-warning">
-      projects last month
+                 icon-class="fa fa-folder fa-3x text-blue" style="text-align: center;">
     </widget-stat>
   </div>
+
+  <div class="col-md-4 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.elements"
+                 icon-class="fa fa-list fa-3x text-green">
+    </widget-stat>
+  </div>
+
+  <div class="col-md-4 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.digitalServices"
+                 icon-class="fa fa-cloud fa-3x text-amethyst">
+    </widget-stat>
+  </div>
+
 </div>
 
 <div class="row">
 
-  <div class="col-md-5">
+  <div class="col-md-2 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.projects"
+                 icon-text="{{projects.length}}">
+      Total Projects
+    </widget-stat>
+  </div>
+
+  <div class="col-md-2 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.editProject"
+                 icon-class="fa fa-plus-square fa-1x">
+      Add project
+    </widget-stat>
+  </div>
+
+  <div class="col-md-2 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.editElement"
+                 icon-class="fa fa-plus-circle fa-1x">
+      Add Element
+    </widget-stat>
+  </div>
+
+  <div class="col-md-2 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.editDigitalService"
+                 icon-class="fa fa-plus-circle fa-1x">
+      Add Service
+    </widget-stat>
+  </div>
+
+  <div class="col-md-2 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.editProject({id: lastEditedProject.id})"
+                 icon-class="fa fa-clock-o fa-1x">
+      Last edited project
+    </widget-stat>
+  </div>
+  <div class="col-md-2 col-sm-6">
+    <widget-stat widget-class="bg-transparent"
+                 ui-sref="app.projects"
+                 icon-text="{{projectsLastMonth.length}}">
+      projects last month
+    </widget-stat>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6">
       <div ng-include="'app/modules/dashboard/widget-tables/dash_projects.html'"></div>
   </div>
 
-  <div class="col-md-7">
+  <div class="col-md-6">
     <div ng-include="'app/modules/dashboard/widget-tables/dash_services.html'"></div>
   </div>
 

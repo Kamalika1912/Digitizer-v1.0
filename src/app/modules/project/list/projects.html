@@ -30,9 +30,9 @@
                         <element class="element model-element">{{element.modelElement}}</element>
                       </element>
                     </td>
-                    <td class="text-right col-md-1 col-xs-1"><div class="btn-group inline pull-left">
-                        <button type="button" class="btn btn-default" ui-sref="app.editProject({id: project.id})">Edit</button>
-                        <button type="button" class="btn btn-danger outline" ng-click="vm.delete(project)">Delete</button>
+                    <td class="text-right col-md-1 col-xs-1"><div class="btn-group inline">
+                        <button type="button" class="btn btn-default" ui-sref="app.editProject({id: project.id})"><i class="fa fa-pencil-square-o" title="Edit" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger outline" ng-click="vm.delete(project)"><i class="fa fa-trash-o" title="Delete" aria-hidden="true"></i></button>
                     </div></td>
                 </tr>
                 </tbody>

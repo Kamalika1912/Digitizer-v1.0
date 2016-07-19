@@ -8,7 +8,7 @@
   function dashboardController($scope, $sce, projects, projectsUtils, digitalServices, digitalServiceUtils) {
     $scope.projects = projects;
     $scope.projectsLastMonth = projectsUtils.projectsDuringInterval(projects, 30);
-    $scope.lastEditedproject = projectsUtils.lastEdited(projects);
+    $scope.lastEditedProject = projectsUtils.lastEdited(projects);
     $scope.projectsRecently = projectsUtils.recent(projects, 5);
     $scope.digitalServices = digitalServices;
     $scope.digitalServicesRecently = digitalServiceUtils.recent(digitalServices, 4);
