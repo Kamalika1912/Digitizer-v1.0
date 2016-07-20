@@ -2,87 +2,72 @@
   <li><span class="text-muted">You are here</span></li>
   <li class="active">Dashboard</li>
 </ol>
-<div class="row">
-  <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.projects"
-                 icon-class="fa fa-folder fa-2x text-blue" style="text-align: center;">
-    </widget-stat>
-  </div>
-
-  <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.elements"
-                 icon-class="fa fa-list fa-2x text-green">
-    </widget-stat>
-  </div>
-
-  <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.digitalServices"
-                 icon-class="fa fa-cloud fa-2x text-amethyst">
-    </widget-stat>
-  </div>
-
-  <div class="col-md-3 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.digitalServices"
-                 icon-class="fa fa-user fa-2x text-warning">
-    </widget-stat>
-  </div>
-
+<div class="row mt-lg">
+<div class="col-md-3 col-sm-3 col-xs-6">
+   <div class="dashboard-div-wrapper bg-primary" ui-sref="app.projects">
+       <i  class="fa fa-folder dashboard-div-icon" ></i>
+        <h5><strong>{{projects.length}}</strong> Projects</h5>
+   </div>
 </div>
-
-<div class="row">
-
-  <div class="col-md-2 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.projects"
-                 icon-text="{{projects.length}}">
-      Total Projects
-    </widget-stat>
-  </div>
-
-  <div class="col-md-2 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.editProject"
-                 icon-class="fa fa-plus-square fa-1x">
-      Add project
-    </widget-stat>
-  </div>
-
-  <div class="col-md-2 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.editElement"
-                 icon-class="fa fa-plus-circle fa-1x">
-      Add Element
-    </widget-stat>
-  </div>
-
-  <div class="col-md-2 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.editDigitalService"
-                 icon-class="fa fa-plus-circle fa-1x">
-      Add Service
-    </widget-stat>
-  </div>
-
-  <div class="col-md-2 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.editProject({id: lastEditedProject.id})"
-                 icon-class="fa fa-clock-o fa-1x">
-      Last edited project
-    </widget-stat>
-  </div>
-  <div class="col-md-2 col-sm-6">
-    <widget-stat widget-class="bg-transparent"
-                 ui-sref="app.projects"
-                 icon-text="{{projectsLastMonth.length}}">
-      projects last month
-    </widget-stat>
-  </div>
-
+<div class="col-md-3 col-sm-3 col-xs-6">
+   <div class="dashboard-div-wrapper bg-success" ui-sref="app.elements">
+       <i  class="fa fa-cubes dashboard-div-icon" ></i>
+        <h5><strong>{{elements.length}}</strong> Model Elements</h5>
+   </div>
 </div>
+<div class="col-md-3 col-sm-3 col-xs-6">
+   <div class="dashboard-div-wrapper bg-amethyst" ui-sref="app.digitalServices">
+       <i  class="fa fa-cloud dashboard-div-icon" ></i>
+        <h5><strong>{{digitalServices.length}}</strong> Digital Services</h5>
+   </div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-6">
+   <div class="dashboard-div-wrapper bg-warning" ui-sref="app.profile">
+       <i  class="fa fa-user dashboard-div-icon" ></i>
+        <h5>Profile</h5>
+   </div>
+</div>
+</div>
+<!--
+<div class="row">
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box" ui-sref="app.projects">
+      <span class="info-box-icon bg-primary"><i class="fa fa-folder-o text-white"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-text">Projects</span>
+        <span class="info-box-number">5</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box" ui-sref="app.elements">
+      <span class="info-box-icon bg-success"><i class="fa fa-cubes text-white"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-text">Model Elements</span>
+        <span class="info-box-number">{{elements.length}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box" ui-sref="app.digitalServices">
+      <span class="info-box-icon bg-amethyst"><i class="fa fa-cloud text-white"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-text">Digital Services</span>
+        <span class="info-box-number">{{digitalServices.length}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box" ui-sref="app.profile">
+      <span class="info-box-icon bg-warning"><i class="fa fa-user text-white"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-text">User Profile</span>
+        <span class="info-box-number"></span>
+      </div>
+    </div>
+  </div>
+</div>
+-->
 
 <div class="row">
 
@@ -96,4 +81,3 @@
 
 
 </div>
-

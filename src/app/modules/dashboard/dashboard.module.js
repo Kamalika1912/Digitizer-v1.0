@@ -18,6 +18,10 @@
           digitalServices: ['digitalServiceResource', function(digitalServiceResource) {
             return digitalServiceResource.query().$promise;
 
+          }],
+          elements: ['elementResource', function(elementResource) {
+            return elementResource.query().$promise;
+
           }]
         },
         controller: 'dashboardController',

@@ -4,9 +4,10 @@
   angular.module('app.dashboard')
     .controller('dashboardController', dashboardController);
 
-  dashboardController.$inject = ['$scope', '$sce', 'projects', 'projectsUtils', 'digitalServices', 'digitalServiceUtils'];
-  function dashboardController($scope, $sce, projects, projectsUtils, digitalServices, digitalServiceUtils) {
+  dashboardController.$inject = ['$scope', '$sce', 'projects', 'projectsUtils', 'digitalServices', 'digitalServiceUtils', 'elements'];
+  function dashboardController($scope, $sce, projects, projectsUtils, digitalServices, digitalServiceUtils, elements) {
     $scope.projects = projects;
+    $scope.elements = elements;
     $scope.projectsLastMonth = projectsUtils.projectsDuringInterval(projects, 30);
     $scope.lastEditedProject = projectsUtils.lastEdited(projects);
     $scope.projectsRecently = projectsUtils.recent(projects, 5);
