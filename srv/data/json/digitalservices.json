@@ -52,14 +52,16 @@
   {"id":"D51","digitalComponent":"Prototyping","tags":[{"text":"prototype"},{"text":"resource"},{"text":"design"}]},
   {"id":"D52","digitalComponent":"Journey Management","tags":[{"text":"logistics"},{"text":"transport"},{"text":"shipping"},{"text":"delivery"},{"text":"place"},{"text":"venue"},{"text":"location"},{"text":"overview"},{"text":"summary"},{"text":"planning"}]},
   {"id":"D53","digitalComponent":"Fax","tags":[{"text":"contact"},{"text":"customer"},{"text":"user"},{"text":"text"},{"text":"document"}]},
-  {"id":"D54","digitalComponent":"App","tags":[{"text":"smartphone"},{"text":"app"},{"text":"program"},{"text":"download"}]},
-  {"id":"D55","digitalComponent":"SMS","tags":[{"text":"smartphone"},{"text":"sms"},{"text":"contact"},{"text":"emergency"}]},
-  {"id":"D56","digitalComponent":"Smartphone","tags":[{"text":"augmented_reality"},{"text":"glasses"},{"text":"smartphone"},{"text":"smart"},{"text":"phone"},{"text":"android"},{"text":"iOS"}]},
-  {"id":"D57","digitalComponent":"Augmented Reality","tags":[{"text":"augmented_reality"},{"text":"glasses"},{"text":"smartphone"},{"text":"smart"},{"text":"app"},{"text":"advanced"},{"text":"prototype"}]},
+  {"id":"D54","digitalComponent":"App","tags":[{"text":"smartphone"},{"text":"app"},{"text":"program"},{"text":"download"},{"text":"order"}]},
+  {"id":"D55","digitalComponent":"SMS","tags":[{"text":"smartphone"},{"text":"sms"},{"text":"contact"},{"text":"emergency"},{"text":"order"}]},
+  {"id":"D56","digitalComponent":"Smartphone","tags":[{"text":"call"},{"text":"contact"},{"text":"augmented reality"},{"text":"glasses"},{"text":"smartphone"},{"text":"smart"},{"text":"phone"},{"text":"android"},{"text":"iOS"}]},
+  {"id":"D57","digitalComponent":"Augmented Reality","tags":[{"text":"augmented_reality"},{"text":"glasses"},{"text":"smartphone"},{"text":"smart"},{"text":"app"},{"text":"advanced"},{"text":"prototype"},{"text":"tracking"}]},
   {"id":"D58","digitalComponent":"Wireless","tags":[{"text":"wireless"},{"text":"contact"},{"text":"language"},{"text":"direct"}]},
   {"id":"D59","digitalComponent":"GPS-Tracking","tags":[{"text":"gps"},{"text":"delivery"},{"text":"status"},{"text":"tracking"},{"text":"transportation"},{"text":"drive"},{"text":"duration"},{"text":"overview"},{"text":"summary"},{"text":"costs"},{"text":"place"},{"text":"venue"},{"text":"location"}]},
   {"id":"D60","digitalComponent":"Payment Service Provider","tags":[{"text":"secure"},{"text":"payment"},{"text":"service"},{"text":"customer"},{"text":"user"},{"text":"accounting"},{"text":"overview"},{"text":"summary"},{"text":"finances"}]},
   {"id":"D61","digitalComponent":"Smart Glasses","tags":[{"text":"glasses"},{"text":"smart"},{"text":"app"},{"text":"virtual_reality"},{"text":"augmented_reality"},{"text":"prototype"}]},
   {"id":"D62","digitalComponent":"Recommendation Systems","tags":[{"text":"review"},{"text":"customer"},{"text":"user"},{"text":"actor"},{"text":"rating"},{"text":"reputation"},{"text":"recommendation"},{"text":"related_products"}]},
-  {"id":"D63","digitalComponent":"Supply Management","tags":[{"text":"planning"},{"text":"stock"},{"text":"inventory"},{"text":"supply"},{"text":"material"},{"text":"stock"},{"text":"consumption"},{"text":"overview"},{"text":"summary"}]}
+  {"id":"D63","digitalComponent":"Supply Management","tags":[{"text":"planning"},{"text":"stock"},{"text":"inventory"},{"text":"supply"},{"text":"material"},{"text":"stock"},{"text":"consumption"},{"text":"overview"},{"text":"summary"}]},
+  {"id":"D64","digitalComponent":"Evaluation Systems","tags":[{"text":"review"},{"text":"customer"},{"text":"user"},{"text":"actor"},{"text":"rating"},{"text":"reputation"},{"text":"recommendation"},{"text":"related_products"}]},
+  {"id":"D65","digitalComponent":"Maps","tags": [{"text":"map"},{"text":"geography"},{"text":"place"},{"text":"GPS"},{"text":"GIS"},{"text":"transport"},{"text":"planning"},{"text":"location"}]}
 ]

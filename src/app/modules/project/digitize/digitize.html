@@ -13,12 +13,12 @@
 <div class="row">
 <div class="services-canvas cloud">
   <div ng-repeat="service in vm.suggestedServices">
-    <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable  data-jqyoui-options="{revert: 'invalid'}">
+    <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable  data-jqyoui-options="{deepCopy: true, revert: 'invalid'}">
       {{service.digitalComponent}}
     </div>
   </div>
 </div>
-<div class="selected-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{multiple: true}">
+<div class="selected-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy: true}">
   <div class="drop-service  col-md-8"  ng-show="!vm.project.services.length">
   Drop service here
   </div>
@@ -36,4 +36,3 @@
 </div>
 </div>
 </div>
-
