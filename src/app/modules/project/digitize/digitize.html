@@ -18,9 +18,22 @@
     </div>
   </div>
 </div>
-<div class="selected-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy: true}">
+<!--
+<div class="selected-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy: true, multiple: true}">
   <div class="drop-service  col-md-8"  ng-show="!vm.project.services.length">
   Drop service here
+  </div>
+    <div ng-repeat="service in vm.project.services track by $index">
+      <div class="service selected-service">
+        {{service.digitalComponent}}
+      </div>
+    </div>
+</div>
+-->
+
+<div class="drop-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy: true, multiple: true}">
+  <div class="drop-service2  col-md-8" ng-repeat="element in vm.project.elements" ng-show="!vm.project.services.length">
+  Drop Service
   </div>
     <div ng-repeat="service in vm.project.services track by $index">
       <div class="service selected-service">
@@ -32,7 +45,7 @@
 <div class="digital-canvas">
 <div ng-repeat="element in vm.project.elements track by $index">
   <i class="fa fa-long-arrow-right fa-2x" style="vertical-align: middle;" ng-show="$index != 0"></i><!--
-  --><div class="element-digital">{{element.modelElement}}</div>
+  --><div class="element-digital2">{{element.modelElement}}</div>
 </div>
 </div>
 </div>
