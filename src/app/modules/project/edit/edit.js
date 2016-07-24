@@ -18,7 +18,7 @@
       $state.go(shortHistory.from.state.name, shortHistory.from.params);
     };
     vm.undo = function() {
-      $state.reload();
+      vm.project.elements.splice(-1,1);
     };
     vm.reset = function() {
       vm.project.elements = [];
@@ -29,6 +29,7 @@
       vm.project.services = [];
       projectResource.save(this.project, function(savedProject) {
         notificator.success('Project was successfully saved');
+        $state.go('app.projects');
       });
     };
   }

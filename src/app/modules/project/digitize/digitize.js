@@ -25,12 +25,15 @@
       }
       return false;
     });
-
     vm.undo = function() {
+      vm.project.services.splice(-1,1);
+    };
+    vm.refresh = function() {
       $state.reload();
     };
     vm.reset = function() {
       vm.project.services = [];
+      $state.reload();
     };
 
     vm.update = function() {

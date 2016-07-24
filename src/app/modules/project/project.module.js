@@ -34,6 +34,20 @@
         controller: 'ProjectController',
         controllerAs: 'vm'
       })
+      .state('app.model', {
+        url: '/projects/model/:id',
+        templateUrl: 'app/modules/project/edit/model.html',
+        resolve: {
+          projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
+            return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
+          }],
+          elements: ['elementResource', function(elementResource) {
+            return elementResource.query().$promise;
+          }]
+        },
+        controller: 'ProjectController',
+        controllerAs: 'vm'
+      })
       .state('app.digitize', {
         url: '/projects/digitize/:id',
         templateUrl: 'app/modules/project/digitize/digitize.html',

@@ -4,17 +4,18 @@
   <li class="active">{{vm.project.id ? 'Digitizing' : 'Create new'}}</li>
 </ol>
 <div class="btn-group-horizontal pull-right" role="group">
-  <button type="button" class="btn btn-default" ui-sref="app.editProject({id: vm.project.id})"><i class="fa fa-arrow-left text-gray"
-                                                                          title="Cancel"></i></button>
-    <button type="button" class="btn btn-danger" ng-click="vm.reset()"><i class="fa fa-undo"
-                                                                        title="Reset services"></i></button>
-  <button type="button" class="btn btn-info" ng-click="vm.update()" ui-sref="app.editProject({id: vm.project.id})"><i class="fa fa-floppy-o" title="Save digitized model"></i></button>
+  <button type="button" class="btn btn-default" ui-sref="app.model({id: vm.project.id})"><i class="fa fa-arrow-left text-gray" title="Back"></i></button>
+  <button type="button" class="btn btn-gray" ng-click="vm.undo()"><i class="fa fa-undo" title="Undo"></i></button>
+  <button type="button" class="btn btn-warning" ng-click="vm.refresh()"><i class="fa fa-refresh" title="Reload services"></i></button>
+  <button type="button" class="btn btn-info" ng-click="vm.update()" ><i class="fa fa-floppy-o" title="Save digitized model"></i></button>
+  <button type="button" class="btn btn-danger" ng-click="vm.reset()"><i class="fa fa-ban" title="Reset selection"></i></button>
+
 </div>
 
 <div class="row">
 <div class="services-canvas cloud">
-  <div ng-repeat="service in vm.suggestedServices">
-    <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable  data-jqyoui-options="{deepCopy: true, revert: 'invalid'}">
+  <div ng-repeat="service in vm.suggestedServices | orderBy:'digitalComponent.toString()'">
+    <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
       {{service.digitalComponent}}
     </div>
   </div>
@@ -32,7 +33,7 @@
 </div>
 -->
 
-<div class="drop-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy: true, multiple: true}">
+<div class="drop-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy:true}">
   <div class="drop-service2  col-md-8" ng-repeat="element in vm.project.elements" ng-show="!vm.project.services.length">
   Drop Service
   </div>

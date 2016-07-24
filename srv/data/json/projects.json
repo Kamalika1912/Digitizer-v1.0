@@ -4,7 +4,7 @@
     "title": "Taxi Hiring App",
     "description": "This project digitizes the business procedure model of a taxi hiring app. Inspiration: Uber, Lyft ",
     "date": "2016-01-07T15:10:13.022Z",
-    "author": "Kamalika Dutta",
+    "author": "Kamalika",
     "elements": [{"id":"A61","modelElement":"Call Taxi hiring agency","tags": [{"text":"order"},{"text":"call"},{"text":"request"}]},
       {"id":"A62","modelElement":"Assign job to Taxi","tags": [{"text":"job"},{"text":"assign"},{"text":"order"},{"text":"schedule"}]},
       {"id":"A63","modelElement":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
@@ -18,7 +18,7 @@
     "title": "Apartment Renting and Lodging",
     "description": "This project digitizes the apartment renting and lodging business. Inspiration: AirBnB",
     "date": "2016-03-24T14:40:36.022Z",
-    "author": "Kamalika Dutta",
+    "author": "Kamalika",
     "elements": [],
     "services": []
   },
@@ -27,7 +27,7 @@
     "title": "Emergency Healthcare",
     "description": "This project digitizes the process of providing medical attention in an emergency. Inspiration: Ginger.io",
     "date": "2016-02-01T09:01:25.022Z",
-    "author": "Kamalika Dutta",
+    "author": "Kamalika",
     "elements": [],
     "services": []
   },
@@ -36,7 +36,7 @@
     "title": "Moving and Delivery on demand",
     "description": "This project digitizes the business model of moving and delivery on-demand. Inspiration:BuddyTruk, Muver, GoShare",
     "date": "2016-02-29T16:41:58.022Z",
-    "author": "Kamalika Dutta",
+    "author": "Kamalika",
     "elements": [],
     "services": []
   },
@@ -45,7 +45,7 @@
     "title": "Borrowing/Lending items",
     "description": "This project enables people to borrow the things they need from others in their neighborhood. Inspiration: Peerby",
     "date": "2015-03-16T18:20:04.022Z",
-    "author": "Kamalika Dutta",
+    "author": "Kamalika",
     "elements": [],
     "services": []
   }

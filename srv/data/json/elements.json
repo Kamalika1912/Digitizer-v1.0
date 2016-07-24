@@ -55,7 +55,7 @@
   {"id":"A54","modelElement":"Purchase","tags": [{"text":"planning"},{"text":"purchase"},{"text":"prices"},{"text":"costs"},{"text":"capacity"}]},
   {"id":"A55","modelElement":"Web presence","tags": [{"text":"company"},{"text":"profile"},{"text":"presentation"},{"text":"customer"},{"text":"contacts"},{"text":"fair"},{"text":"web"},{"text":"email"},{"text":"call"},{"text":"resource"},{"text":"reputation"}]},
   {"id":"A56","modelElement":"Model","tags": [{"text":"design"},{"text":"resource"},{"text":"prototype"}]},
-  {"id":"A57","modelElement":"Stock/Storage/Warehouse","tags": [{"text":"planning"},{"text":"purchase"},{"text":"consumption"},{"text":"usage"},{"text":"resource"},{"text":"stock"},{"text":"inventory"}]},
+  {"id":"A57","modelElement":"Warehouse","tags": [{"text":"planning"},{"text":"purchase"},{"text":"consumption"},{"text":"usage"},{"text":"resource"},{"text":"stock"},{"text":"inventory"}]},
   {"id":"A58","modelElement":"Financial Planning","tags": [{"text":"bill"},{"text":"billing"},{"text":"account"},{"text":"invoice"},{"text":"planning"},{"text":"summary"},{"text":"overview"},{"text":"status"},{"text":"finance"},{"text":"budget"}]},
   {"id":"A59","modelElement":"Material Planning","tags":[{"text":"planning"},{"text":"stock"},{"text":"inventory"},{"text":"usage"},{"text":"consumption"},{"text":"resources"},{"text":"documentation"}]},
   {"id":"A60","modelElement":"Recommendation","tags": [{"text":"customer"},{"text":"actor"},{"text":"user"},{"text":"reputation"},{"text":"recommendation"},{"text":"acquisition"}]},
@@ -64,5 +64,6 @@
   {"id":"A63","modelElement":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"},{"text":"location"}]},
   {"id":"A64","modelElement":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
   {"id":"A65","modelElement":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
-  {"id":"A66","modelElement":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}
+  {"id":"A66","modelElement":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]},
+  {"id":"A67","modelElement":"Feedback","tags":[{"text":"feedback"},{"text":"loyalty"},{"text":"rating"},{"text":"review"}]}
 ]

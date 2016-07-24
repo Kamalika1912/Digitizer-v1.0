@@ -3,7 +3,7 @@
   <li class="active">{{vm.project.id ? 'Edit project' : 'Create new'}}</li>
 </ol>
 
-<div class="col-md-9">
+<div class="col-md-12">
 
   <div class="row">
     <widget>
@@ -44,6 +44,19 @@
           </div>
         </div>
 
+        <div class="form-group">
+          <div class="col-sm-12">
+          <div class="btn-group-horizontal pull-right" role="group">
+            <button type="button" class="btn btn-success" ng-show="vm.project.id" ui-sref="app.model({id: vm.project.id})">
+              <i class="fa fa-pencil-square-o" aria-hidden="true">&emsp;</i>Draw Business Procedure Model
+            </button>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" title="Save details">&emsp;</i>Save Details</button>
+          </div>
+        </div>
+          </div>
+    </div>
+  </div>
+<!-- ...............
 
         <div class="form-group">
           <div class="col-sm-12">
@@ -62,7 +75,7 @@
         <div class="form-group" ng-show="vm.project.id">
           <div class="col-sm-12">
             <div class="analog-canvas" data-drop="true" ng-model="vm.project.elements"
-                 jqyoui-droppable="{multiple:true}">
+                 jqyoui-droppable="{deepCopy:true, multiple:true}">
               <div ng-repeat="element in vm.project.elements track by $index">
                 <i class="fa fa-long-arrow-right fa-lg" aria-hidden="true" ng-show="$index != 0"></i>
                 <div class="element model-element">
@@ -81,3 +94,4 @@
 
 </div>
 <div class="col-md-3" ng-include="'app/modules/project/edit/available_elements.html'"></div>
+-->

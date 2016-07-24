@@ -41,5 +41,3 @@ function remove(req) {
     var id = req.params.id;
     return projectsData.remove(id);
 };
-
-
