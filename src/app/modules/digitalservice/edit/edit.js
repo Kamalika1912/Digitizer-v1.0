@@ -12,7 +12,7 @@
     vm.showReturnBtn = vm.digitalService.id && shortHistory.from.state.name;
 
     vm.update = function() {
-      vm.digitalService.date = (new Date()).toISOString();
+      //vm.digitalService.date = (new Date()).toISOString();
       digitalServiceResource.update(vm.digitalService, function(p) {
         notificator.success('Digital Service was successfully updated')
       });
@@ -23,7 +23,7 @@
     };
 
     vm.save = function() {
-      vm.digitalService.date = (new Date()).toISOString();
+      //vm.digitalService.date = (new Date()).toISOString();
       digitalServiceResource.save(this.digitalService, function(savedDigitalService) {
         shortHistory.goTo('from');
         notificator.success('Digital Service was successfully saved')
