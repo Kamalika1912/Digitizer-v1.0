@@ -5,12 +5,12 @@
     "description": "This project digitizes the business procedure model of a taxi hiring app. Inspiration: Uber, Lyft ",
     "date": "2016-01-07T15:10:13.022Z",
     "author": "Kamalika",
-    "elements": [{"id":"A61","modelElement":"Call Taxi hiring agency","tags": [{"text":"order"},{"text":"call"},{"text":"request"}]},
-      {"id":"A62","modelElement":"Assign job to Taxi","tags": [{"text":"job"},{"text":"assign"},{"text":"order"},{"text":"schedule"}]},
-      {"id":"A63","modelElement":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
-      {"id":"A64","modelElement":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
-      {"id":"A65","modelElement":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
-      {"id":"A65","modelElement":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}],
+    "activities": [{"id":"A61","modelActivity":"Call Taxi hiring agency","tags": [{"text":"order"},{"text":"call"},{"text":"request"}]},
+      {"id":"A62","modelActivity":"Assign job to Taxi","tags": [{"text":"job"},{"text":"assign"},{"text":"order"},{"text":"schedule"}]},
+      {"id":"A63","modelActivity":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
+      {"id":"A64","modelActivity":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
+      {"id":"A65","modelActivity":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
+      {"id":"A65","modelActivity":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}],
     "services": []
   },
   {
@@ -19,7 +19,7 @@
     "description": "This project digitizes the apartment renting and lodging business. Inspiration: AirBnB",
     "date": "2016-03-24T14:40:36.022Z",
     "author": "Kamalika",
-    "elements": [],
+    "activities": [],
     "services": []
   },
   {
@@ -28,7 +28,7 @@
     "description": "This project digitizes the process of providing medical attention in an emergency. Inspiration: Ginger.io",
     "date": "2016-02-01T09:01:25.022Z",
     "author": "Kamalika",
-    "elements": [],
+    "activities": [],
     "services": []
   },
   {
@@ -37,7 +37,7 @@
     "description": "This project digitizes the business model of moving and delivery on-demand. Inspiration:BuddyTruk, Muver, GoShare",
     "date": "2016-02-29T16:41:58.022Z",
     "author": "Kamalika",
-    "elements": [],
+    "activities": [],
     "services": []
   },
   {
@@ -46,7 +46,7 @@
     "description": "This project enables people to borrow the things they need from others in their neighborhood. Inspiration: Peerby",
     "date": "2015-03-16T18:20:04.022Z",
     "author": "Kamalika",
-    "elements": [],
+    "activities": [],
     "services": []
   }
 ]

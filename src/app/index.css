@@ -11810,7 +11810,7 @@ tags-input .autocomplete .suggestion-item em {
   cursor: auto;
 }
 
-.element {
+.activity {
   display: inline-block;
   margin: 2px 5px 5px 2px;
   padding:  0.6em;
@@ -11826,14 +11826,14 @@ tags-input .autocomplete .suggestion-item em {
 }
 
 
-.element:hover,
-.element:focus {
+.activity:hover,
+.activity:focus {
   color: #fff;
   text-decoration: none;
   background-color: #449d44;
 }
 
-.element-canvas {
+.activity-canvas {
   width: 100%;
   /* height: 300px; */
   background-color: transparent;
@@ -11843,20 +11843,20 @@ tags-input .autocomplete .suggestion-item em {
   /* overflow: scroll; */
 }
 
-.element:hover,
+.activity:hover,
 .analog-canvas,
-.element-canvas {
+.activity-canvas {
   cursor:move;
 }
-.element:hover.digital-canvas {
+.activity:hover.digital-canvas {
   cursor:auto;
 }
 
-.model-element {
+.model-activity {
   font-size: 90%;
 }
 
-.element-digital {
+.activity-digital {
   display: inline-block;
   /* margin: 2px 5px; */
   padding: 0.6em;
@@ -11872,10 +11872,10 @@ tags-input .autocomplete .suggestion-item em {
 }
 
 
-.element-digital:empty {
+.activity-digital:empty {
   display: none
 }
-.element-digital2 {
+.activity-digital2 {
     display: inline-block;
     height: 40px;
     width: 120px;
@@ -11891,7 +11891,7 @@ tags-input .autocomplete .suggestion-item em {
     align-content: center;
 }
 
-.element-digital2:empty {
+.activity-digital2:empty {
   display: none
 }
 

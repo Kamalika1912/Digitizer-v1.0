@@ -2,16 +2,16 @@
 
   var module = angular.module('app.activity');
 
-  module.service('newActivityModal', newActivityModal);
+  module.service('deleteActivityModal', deleteActivityModal);
 
-  newActivityModal.$inject = ['activityResource', 'commonModal', 'notificator'];
-  function newActivityModal(activityResource, commonModal, notificator) {
+  deleteActivityModal.$inject = ['activityResource', 'commonModal', 'notificator'];
+  function deleteActivityModal(activityResource, commonModal, notificator) {
     var that = this;
     this.modalOptions = {
       closeButtonText: 'Cancel',
       actionButtonText: 'Delete',
-      headerText: 'Adding new activity',
-      bodyText: 'Activity Creation'
+      headerText: 'Confirm activity deletion',
+      bodyText: 'The activity will be deleted permanently, do you want to continue?'
     };
     this.modalDefaults = {
       windowClass: 'small-modal'
@@ -23,7 +23,7 @@
           activityResource.delete(activity, function() {
             var index = activities.indexOf(activity);
             activities.splice(index,1);
-            notificator.success('The activity was successfully created');
+            notificator.success('The activity was successfully deleted');
           });
         });
       };

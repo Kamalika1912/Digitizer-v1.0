@@ -10,7 +10,7 @@
         'app.core',
         'app.profile',
         'app.project',
-        'app.element',
+        'app.activity',
         'app.digitalService',
         'app.dashboard',
         'app.data',

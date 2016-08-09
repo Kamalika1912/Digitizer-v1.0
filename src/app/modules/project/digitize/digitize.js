@@ -1,22 +1,22 @@
 (function() {
   'use strict';
   angular.module('app.profile').controller('DigitizeController', digitizeController);
-  digitizeController.$inject = ['projects', 'projectResource', 'elements', 'digitalServices', '$state', 'shortHistory', 'notificator'];
+  digitizeController.$inject = ['projects', 'projectResource', 'activities', 'digitalServices', '$state', 'shortHistory', 'notificator'];
 
-  function digitizeController(projects, projectResource, elements, digitalServices, $state, shortHistory, notificator) {
+  function digitizeController(projects, projectResource, activities, digitalServices, $state, shortHistory, notificator) {
     var vm = this;
     vm.project = projects;
-    vm.element = elements;
+    vm.activity = activities;
     vm.services = digitalServices;
     vm.showReturnBtn = vm.project.id && shortHistory.from.state.name;
     vm.suggestedServices = vm.services;
     vm.suggestedServices = vm.services.filter(function(eachService) {
 
       for (var serviceKey in eachService.tags) {
-        for (var elementKey in vm.project.elements){
-          for (var tagKey in vm.project.elements[elementKey].tags) {
-            //console.log(vm.project.elements[elementKey].tags[tagKey].text);
-            if (eachService.tags[serviceKey].text === vm.project.elements[elementKey].tags[tagKey].text){
+        for (var activityKey in vm.project.activities){
+          for (var tagKey in vm.project.activities[activityKey].tags) {
+            //console.log(vm.project.activities[activityKey].tags[tagKey].text);
+            if (eachService.tags[serviceKey].text === vm.project.activities[activityKey].tags[tagKey].text){
               return true;
             }
           }

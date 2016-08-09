@@ -19,8 +19,8 @@
             return digitalServiceResource.query().$promise;
 
           }],
-          elements: ['elementResource', function(elementResource) {
-            return elementResource.query().$promise;
+          activities: ['activityResource', function(activityResource) {
+            return activityResource.query().$promise;
 
           }]
         },

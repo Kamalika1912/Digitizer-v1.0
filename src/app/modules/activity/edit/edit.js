@@ -1,27 +1,27 @@
 (function() {
   'use strict';
-  angular.module('app.profile').controller('ElementController', elementController);
-  elementController.$inject = ['data', 'elementResource', '$state', 'shortHistory', 'notificator', '$http'];
+  angular.module('app.profile').controller('ActivityController', activityController);
+  activityController.$inject = ['data', 'activityResource', '$state', 'shortHistory', 'notificator', '$http'];
 
-  function elementController(data, elementResource, $state, shortHistory, notificator, $http) {
+  function activityController(data, activityResource, $state, shortHistory, notificator, $http) {
     var vm = this;
-    vm.element = data;
-    vm.showReturnBtn = vm.element.id && shortHistory.from.state.name;
+    vm.activity = data;
+    vm.showReturnBtn = vm.activity.id && shortHistory.from.state.name;
     vm.update = function() {
-      //vm.element.date = (new Date()).toISOString();
-      elementResource.update(vm.element, function(p) {
+      //vm.activity.date = (new Date()).toISOString();
+      activityResource.update(vm.activity, function(p) {
         shortHistory.goTo('from');
-        notificator.success('Element was successfully updated')
+        notificator.success('Activity was successfully updated')
       });
     };
     vm.return = function() {
       $state.go(shortHistory.from.state.name, shortHistory.from.params);
     };
     vm.save = function() {
-      //vm.element.date = (new Date()).toISOString();
-      elementResource.save(this.element, function(savedElement) {
+      //vm.activity.date = (new Date()).toISOString();
+      activityResource.save(this.activity, function(savedActivity) {
         shortHistory.goTo('from');
-        notificator.success('Element was successfully saved')
+        notificator.success('Activity was successfully saved')
       });
     };
 

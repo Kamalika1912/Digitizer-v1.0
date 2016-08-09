@@ -1,25 +1,25 @@
 <ol class="breadcrumb">
   <li><span class="text-muted">YOU ARE HERE</span></li>
-  <li class="active">{{vm.element.id ? 'Editing' : 'Create new'}}</li>
+  <li class="active">{{vm.activity.id ? 'Editing' : 'Create new'}}</li>
 </ol>
 <div class="row">
     <div class="col-md-12">
         <widget>
-            <h4 class="mt-0">{{vm.element.id ? 'Editing' : 'Create new'}} Element</h4>
-            <form novalidate role="form" name="elementForm" class="form-horizontal mt" ng-submit="elementForm.$valid && (vm.element.id ? vm.update() : vm.save())" >
+            <h4 class="mt-0">{{vm.activity.id ? 'Editing' : 'Create new'}} Activity</h4>
+            <form novalidate role="form" name="activityForm" class="form-horizontal mt" ng-submit="activityForm.$valid && (vm.activity.id ? vm.update() : vm.save())" >
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="title">Title</label>
                     <div class="col-sm-10">
-                        <input type="text" id="title" name="title" class="form-control" ng-model="vm.element.modelElement"
+                        <input type="text" id="title" name="title" class="form-control" ng-model="vm.activity.modelActivity"
                                required ng-minlength=3 ng-maxlength=100 />
-                        <div ng-show="elementForm.modelElement.$invalid && (elementForm.modelElement.$dirty || elementForm.$submitted)">
-                            <small class="error" ng-show="elementForm.modelElement.$error.required">
+                        <div ng-show="activityForm.modelActivity.$invalid && (activityForm.modelActivity.$dirty || activityForm.$submitted)">
+                            <small class="error" ng-show="activityForm.modelActivity.$error.required">
                                 Title of Digital Component is required.
                             </small>
-                            <small class="error" ng-show="elementForm.modelElement.$error.minlength">
+                            <small class="error" ng-show="activityForm.modelActivity.$error.minlength">
                                 Title is required to be at least 3 characters
                             </small>
-                            <small class="error" ng-show="elementForm.modelElement.$error.maxlength">
+                            <small class="error" ng-show="activityForm.modelActivity.$error.maxlength">
                                 Title cannot be longer than 100 characters
                             </small>
                         </div>
@@ -29,7 +29,7 @@
                     <div class="form-group">
                     <label class="control-label col-sm-2">Add Tags</label>
                     <div class="col-sm-10">
-                        <tags-input ng-model="vm.element.tags" display-property="text">
+                        <tags-input ng-model="vm.activity.tags" display-property="text">
                           <auto-complete source="vm.loadTags($query)"
                                          min-length="0"
                                          load-on-focus="true"
@@ -38,11 +38,11 @@
                                          template="my-custom-template">
                           </auto-complete>
                         </tags-input>
-                        <div ng-show="elementForm.tags.$invalid && (elementForm.tags.$dirty  || elementForm.$submitted)">
-                            <small class="error" ng-show="elementForm.tags.$error.required">
+                        <div ng-show="activityForm.tags.$invalid && (activityForm.tags.$dirty  || activityForm.$submitted)">
+                            <small class="error" ng-show="activityForm.tags.$error.required">
                                 Tags are required.
                             </small>
-                            <small class="error" ng-show="elementForm.tags.$error.minlength">
+                            <small class="error" ng-show="activityForm.tags.$error.minlength">
                                 Enter at least 3 tags. Eg. "tag1", tag2" etc.
                             </small>
                         </div>
@@ -54,7 +54,7 @@
                     <span ng-if="vm.showReturnBtn">
                         <button type="button" class="btn" ng-click="vm.return()">Return</button>
                     </span>
-                    <button type="button" class="btn btn-danger" ng-click="vm.return()" ng-hide="vm.element.id">Cancel</button>
+                    <button type="button" class="btn btn-danger" ng-click="vm.return()" ng-hide="vm.activity.id">Cancel</button>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </div>
             </form>

@@ -1,0 +1,38 @@
+<ol class="breadcrumb">
+  <li><span class="text-muted">YOU ARE HERE</span></li>
+  <li class="active">Activities</li>
+</ol>
+<div class="panel panel-default">
+<div class="row">
+    <div class="col-md-12">
+          <div class="panel-heading bg-success">
+              <button type="button" class="btn btn-sm btn-default pull-right mt-xs" ui-sref="app.editActivity({id: null})"><i class="fa fa-plus">&emsp;</i>Add Activity</button>
+              <div class="pull-right col-md-8 col-xs-1 mt-xs"><input ng-model="searchActivity" class="form-control input-sm" type="search" placeholder="Search for an activity..."/></div>
+              <h4 class="widget-title text-white">Activities</h4>
+          </div>
+      <widget class="table-responsive">
+          <table class="table table-hover">
+                <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Model Activities</th>
+                  <th>Tags</th>
+                  <th>Edit/Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="activity in vm.activities | filter:searchActivity">
+                  <td class="col-md-1">{{activity.id}}</td>
+                  <td class="col-md-2">{{activity.modelActivity}}</td>
+                  <td><label ng-repeat="tag in activity.tags track by $index"><label class="label label-info"> {{tag.text}}</label>&nbsp;</label></td>
+                  <td class="text-right col-md-1"><div class="btn-group inline pull-left">
+                        <button type="button" class="btn btn-default btn-small" ui-sref="app.editActivity({id: activity.id})"><i class="fa fa-pencil-square-o" title="Edit" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger outline btn-small" ng-click="vm.delete(activity)"><i class="fa fa-trash-o" title="Delete" aria-hidden="true"></i></button>
+                    </div></td>
+                </tr>
+                </tbody>
+          </table>
+      </widget>
+    </div>
+</div>
+</div>

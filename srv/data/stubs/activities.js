@@ -1,7 +1,7 @@
 var q = require('q');
 var jsonfile = require('jsonfile');
-var stubs = require('../json/elements.json');
-var file = '../json/elements.json';
+var stubs = require('../json/activities.json');
+var file = '../json/activities.json';
 
 
 var lastStubIndex = stubs.length;
@@ -11,28 +11,28 @@ function getAll() {
 }
 
 function getOne(id) {
-    var element = null;
+    var activity = null;
     stubs.some( function(stub)  {
-        element = stub.id == id ? stub : null;
-        return element;
+        activity = stub.id == id ? stub : null;
+        return activity;
     });
-    return q(element);
+    return q(activity);
 }
 
-function save(element) {
-    element.id = 'A'+ ++lastStubIndex;
-    stubs.push(element);
-    return q(element);
-  jsonfile.writeFile(file, element, function (err) {
+function save(activity) {
+    activity.id = 'A'+ ++lastStubIndex;
+    stubs.push(activity);
+    return q(activity);
+  jsonfile.writeFile(file, activity, function (err) {
     console.error(err)
   });
 }
 
-function update(element) {
-    var stubToUpdateIndex = _getStubIndexById(element.id);
-    stubs[stubToUpdateIndex] = element;
-  //console.log(JSON.stringify(element));
-    return q(element);
+function update(activity) {
+    var stubToUpdateIndex = _getStubIndexById(activity.id);
+    stubs[stubToUpdateIndex] = activity;
+  //console.log(JSON.stringify(activity));
+    return q(activity);
   jsonfile.writeFile(file, stubs, function (err) {
     console.error(err)
   });

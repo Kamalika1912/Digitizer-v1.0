@@ -27,8 +27,8 @@
           projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
             return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
           }],
-          elements: ['elementResource', function(elementResource) {
-            return elementResource.query().$promise;
+          activities: ['activityResource', function(activityResource) {
+            return activityResource.query().$promise;
           }]
         },
         controller: 'ProjectController',
@@ -41,8 +41,8 @@
           projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
             return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
           }],
-          elements: ['elementResource', function(elementResource) {
-            return elementResource.query().$promise;
+          activities: ['activityResource', function(activityResource) {
+            return activityResource.query().$promise;
           }]
         },
         controller: 'ProjectController',
@@ -55,8 +55,8 @@
           projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
             return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
           }],
-          elements: ['elementResource', function(elementResource) {
-            return elementResource.query().$promise;
+          activities: ['activityResource', function(activityResource) {
+            return activityResource.query().$promise;
           }],
           digitalServices: ['$stateParams', 'digitalServiceUtils', 'digitalServiceResource', function($stateParams, digitalServiceUtils, digitalServiceResource) {
             return digitalServiceResource.query().$promise.then(function(allDigitalServices) {

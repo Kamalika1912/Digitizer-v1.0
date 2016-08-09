@@ -28,20 +28,20 @@
   </li>
 
   <li>
-    <a data-target="#sidebar-element" data-toggle="collapse" data-parent="#sidebar"
-       ng-class="$state.includes('app.elements') || $state.includes('app.editElement') ? 'active' : ''">
+    <a data-target="#sidebar-activity" data-toggle="collapse" data-parent="#sidebar"
+       ng-class="$state.includes('app.activities') || $state.includes('app.editActivity') ? 'active' : ''">
       <i class="fa fa-cubes fa-lg text-green" class="glyphicon glyphicon-list-alt mr-xs"></i>&nbsp;
-      Elements
+      Activities
       <b class="caret"></b>
     </a>
-    <ul id="sidebar-element" class="collapse in">
-      <li><a ui-sref="app.elements" ui-sref-active="active">
+    <ul id="sidebar-activity" class="collapse in">
+      <li><a ui-sref="app.activities" ui-sref-active="active">
         <i class="fa fa-circle-thin fa-fw" aria-hidden="true"></i>&nbsp;
         Show all</a></li>
       <li>
-        <a ui-sref="app.editElement" ui-sref-active="active">
+        <a ui-sref="app.editActivity" ui-sref-active="active">
           <i class="fa fa-plus fa-fw" aria-hidden="true"></i>&nbsp;
-          {{$state.includes('app.editElement') && $state.params.id ? 'Element editing' : 'Create new'}}
+          {{$state.includes('app.editActivity') && $state.params.id ? 'Activity editing' : 'Create new'}}
         </a>
       </li>
     </ul>

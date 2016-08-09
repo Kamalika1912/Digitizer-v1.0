@@ -5,8 +5,8 @@
     .directive('widget', widget);
 
   function widget() {
-    function link(scope, $element) {
-      $element.addClass('widget');
+    function link(scope, $activity) {
+      $activity.addClass('widget');
     }
     return {
       link: link,
