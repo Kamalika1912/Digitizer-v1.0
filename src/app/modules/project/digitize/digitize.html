@@ -1,7 +1,9 @@
 <ol class="breadcrumb">
   <li><span class="text-muted">YOU ARE HERE</span></li>
-  <li ui-sref="app.editProject({id: vm.project.id})">{{vm.project.title}}</li>
-  <li class="active">{{vm.project.id ? 'Digitizing' : 'Create new'}}</li>
+  <li ui-sref="app.projects">Projects</li>
+  <li ui-sref="app.editProject({id: vm.project.id})">{{vm.project.title}} details</li>
+  <li ui-sref="app.model({id: vm.project.id})">Edit BPM</li>
+  <li class="active">'Digitizing'</li>
 </ol>
 <div class="btn-group-horizontal pull-right" role="group">
   <button type="button" class="btn btn-default" ui-sref="app.model({id: vm.project.id})"><i class="fa fa-arrow-left text-gray" title="Back"></i></button>

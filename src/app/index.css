@@ -4120,6 +4120,58 @@ fieldset[disabled] .btn-turquoise.active {
   background-color: #fff
 }
 
+
+.btn-amethyst {
+  color: #fff;
+  background-color: #1fb8b0;
+  border-color: #1fb8b0
+}
+
+.btn-amethyst:hover,
+.btn-amethyst:focus,
+.btn-amethyst.focus,
+.btn-amethyst:active,
+.btn-amethyst.active,
+.open>.btn-amethyst.dropdown-toggle {
+  color: #fff;
+  background-color: #06888a;
+  border-color: #06888a
+}
+
+.btn-amethyst:active,
+.btn-amethyst.active,
+.open>.btn-amethyst.dropdown-toggle {
+  background-image: none
+}
+
+.btn-amethyst.disabled,
+.btn-amethyst.disabled:hover,
+.btn-amethyst.disabled:focus,
+.btn-amethyst.disabled.focus,
+.btn-amethyst.disabled:active,
+.btn-amethyst.disabled.active,
+.btn-amethyst[disabled],
+.btn-amethyst[disabled]:hover,
+.btn-amethyst[disabled]:focus,
+.btn-amethyst[disabled].focus,
+.btn-amethyst[disabled]:active,
+.btn-amethyst[disabled].active,
+fieldset[disabled] .btn-amethyst,
+fieldset[disabled] .btn-amethyst:hover,
+fieldset[disabled] .btn-amethyst:focus,
+fieldset[disabled] .btn-amethyst.focus,
+fieldset[disabled] .btn-amethyst:active,
+fieldset[disabled] .btn-amethyst.active {
+  background-color: #06888a;
+  border-color: #06888a
+}
+
+.btn-amethyst .badge {
+  color: #1fb8b0;
+  background-color: #fff
+}
+
+
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
