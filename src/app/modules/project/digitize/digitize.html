@@ -1,5 +1,5 @@
 <ol class="breadcrumb">
-  <li><span class="text-muted">YOU ARE HERE</span></li>
+  <li><span class="text-muted">Dashboard</span></li>
   <li ui-sref="app.projects">Projects</li>
   <li ui-sref="app.editProject({id: vm.project.id})">{{vm.project.title}} details</li>
   <li ui-sref="app.model({id: vm.project.id})">Edit BPM</li>
@@ -16,7 +16,7 @@
 
 <div class="row">
 <div class="services-canvas cloud">
-  <div ng-repeat="service in vm.suggestedServices | orderBy:'digitalComponent.toString()'">
+  <div ng-repeat="service in suggestedServices | orderBy:'digitalComponent.toString()'">
     <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
       {{service.digitalComponent}}
     </div>

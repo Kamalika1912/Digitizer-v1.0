@@ -1,5 +1,5 @@
 <ol class="breadcrumb">
-  <li><span class="text-muted">YOU ARE HERE</span></li>
+  <li><span class="text-muted">Dashboard</span></li>
   <li class="active">Projects</li>
 </ol>
 <div class="panel panel-default">
@@ -26,8 +26,8 @@
                     <td class="col-md-2 col-xs-1">{{project.title}}</td>
                     <td class="col-md-2 col-xs-1"><span>{{project.date | date: 'short'}}</span></td>
                     <td class="col-md-4 col-xs-4">
-                      <button type="button" class="btn btn-success" ui-sref="app.model({id: project.id})">Edit BPM </button>
-                      <button type="button" class="btn btn-amethyst" ui-sref="app.digitize({id: project.id})">View Digitized BPM </button>
+                      <button type="button" class="btn btn-sm btn-success" ui-sref="app.model({id: project.id})">Edit BPM </button>
+                      <button type="button" class="btn btn-sm btn-amethyst" ui-sref="app.digitize({id: project.id})">View Digitized BPM </button>
                     </td>
                   <!--<td class="col-md-4 col-xs-4">{{project.description}}</td>
                   <!--

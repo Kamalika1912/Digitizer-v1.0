@@ -4123,8 +4123,8 @@ fieldset[disabled] .btn-turquoise.active {
 
 .btn-amethyst {
   color: #fff;
-  background-color: #1fb8b0;
-  border-color: #1fb8b0
+  background-color: #a564b7;
+  border-color: #a564b7
 }
 
 .btn-amethyst:hover,
@@ -4134,8 +4134,8 @@ fieldset[disabled] .btn-turquoise.active {
 .btn-amethyst.active,
 .open>.btn-amethyst.dropdown-toggle {
   color: #fff;
-  background-color: #06888a;
-  border-color: #06888a
+  background-color: #8e44ad;
+  border-color: #8e44ad
 }
 
 .btn-amethyst:active,
@@ -4162,12 +4162,12 @@ fieldset[disabled] .btn-amethyst:focus,
 fieldset[disabled] .btn-amethyst.focus,
 fieldset[disabled] .btn-amethyst:active,
 fieldset[disabled] .btn-amethyst.active {
-  background-color: #06888a;
-  border-color: #06888a
+  background-color: #8e44ad;
+  border-color: #8e44ad
 }
 
 .btn-amethyst .badge {
-  color: #1fb8b0;
+  color: #8e44ad;
   background-color: #fff
 }
 
