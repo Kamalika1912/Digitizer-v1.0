@@ -16,24 +16,14 @@
 
 <div class="row">
 <div class="services-canvas cloud">
-  <div ng-repeat="service in suggestedServices | orderBy:'digitalComponent.toString()'">
-    <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
-      {{service.digitalComponent}}
-    </div>
-  </div>
-</div>
-<!--
-<div class="selected-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy: true, multiple: true}">
-  <div class="drop-service  col-md-8"  ng-show="!vm.project.services.length">
-  Drop service here
-  </div>
-    <div ng-repeat="service in vm.project.services track by $index">
-      <div class="service selected-service">
+  <div ng-repeat="serviceArray in vm.suggestedServices">
+    <div ng-repeat="service in serviceArray | orderBy:'digitalComponent.toString()'">
+      <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
         {{service.digitalComponent}}
       </div>
     </div>
+  </div>
 </div>
--->
 
 <div class="drop-services-canvas" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy:true}">
   <div class="drop-service2  col-md-8" ng-repeat="activity in vm.project.activities" ng-show="!vm.project.services.length">
