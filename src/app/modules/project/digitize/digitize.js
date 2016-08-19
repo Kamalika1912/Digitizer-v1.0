@@ -14,7 +14,12 @@
     for (var activityKey in vm.project.activities){
       vm.suggestedServices.push({});
     }
-    //console.log(vm.suggestedServices);
+    /*
+    for (var activityKey in vm.project.activities){
+      vm.project.services.push({});
+    }
+    console.log(vm.project.services);
+    */
 
     for (var activityKey in vm.project.activities){
       vm.suggestedServices[activityKey] = vm.services.filter(function(eachService) {
@@ -62,7 +67,7 @@
       $state.reload();
     };
     vm.reset = function() {
-      vm.project.services = [];
+      vm.project.services = [{}];
       $state.reload();
     };
 
