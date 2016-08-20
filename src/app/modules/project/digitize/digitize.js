@@ -26,14 +26,16 @@
         for (var serviceKey in eachService.tags) {
             for (var tagKey in vm.project.activities[activityKey].tags) {
             //console.log(eachService.tags[serviceKey].text);
-              if (eachService.tags[serviceKey].text === vm.project.activities[activityKey].tags[tagKey].text){
+              if (eachService.tags[serviceKey].text === vm.project.activities[activityKey].tags[tagKey].text || eachService.tags[serviceKey].text == 'no service'){
                 return true;
               }
             }
         }
         return false;
       });
+      vm.suggestedServices[activityKey].push(vm.services[0]);
       //console.log(vm.suggestedServices[activityKey]);
+      //console.log(vm.services[0]);
     }
     //console.log(vm.suggestedServices);
     for (var serviceKey in vm.suggestedServices) {
@@ -67,7 +69,7 @@
       $state.reload();
     };
     vm.reset = function() {
-      vm.project.services = [{}];
+      vm.project.services = [];
       $state.reload();
     };
 

@@ -1,4 +1,5 @@
 [
+  {"id":"D0","digitalComponent":"No Service","tags":[{"text":"No service"}]},
   {"id":"D1","digitalComponent":"Web Form","tags":[{"text":"form"},{"text":"web"},{"text":"database"},{"text":"overview"},{"text":"information"},{"text":"customer"},{"text":"actor"}]},
   {"id":"D2","digitalComponent":"Appointment","tags":[{"text":"appointment"},{"text":"finder"},{"text":"doodle"},{"text":"user"},{"text":"organisation"},{"text":"poll"},{"text":"voting"},{"text":"coordination"}]},
   {"id":"D3","digitalComponent":"Digital Document","tags":[{"text":"signed"},{"text":"document"},{"text":"mail"},{"text":"resource"},{"text":"text"},{"text":"exchange"}]},
