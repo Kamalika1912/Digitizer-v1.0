@@ -15,26 +15,46 @@
 </div>
 
 <div class="row">
-<div class="services-canvas cloud">
-  <div ng-repeat="serviceArray in vm.suggestedServices">
+<div class="services-canvas cloud" data-drag="true" ng-model="vm.project.services" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
+<div ng-repeat="serviceArray in vm.suggestedServices">
+    <div class="service-list">
     <div ng-repeat="service in serviceArray | orderBy:'digitalComponent.toString()'">
       <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
         {{service.digitalComponent}}
       </div>
     </div>
+    </div>
   </div>
 </div>
 
+
+    <div class="drop-canvas" data-drop="true" ng-model="vm.project.services"
+         jqyoui-droppable="{deepCopy:true, multiple:true}">
+      <span><i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Drop Service here</span>
+    </div>
+
+
 <div class="drop-services-canvas" >
-  <div class="drop-service2  col-md-8" ng-repeat="activity in vm.project.activities" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{deepCopy:true}">
-  <span ng-show="!vm.project.services.length">Drop Service</span>
-    <div ng-repeat="service in vm.project.services track by $index">
+  <div ng-repeat="service in vm.project.services track by $index">
+  <div class="drop-service" data-drop="true" ng-model="vm.project.services" jqyoui-droppable="{index: {{$index}}, deepCopy:true}">
+
       <div class="service selected-service">
         {{service.digitalComponent}}
       </div>
     </div>
   </div>
 </div>
+  <!--
+    <div class="drop-services-canvas">
+
+      <div class="drop-service" ng-repeat="service in vm.project.services" data-drop="true" ng-model="service" jqyoui-droppable="{deepCopy:true}">
+
+            <span ng-hide="!vm.project.services.length">Drop Service</span>
+          {{service.digitalComponent}}
+      </div>
+
+    </div>
+  -->
 
 <div class="digital-canvas">
 <div ng-repeat="activity in vm.project.activities track by $index">
@@ -44,4 +64,10 @@
   </div>
 </div>
 </div>
+</div>
+
+<div class="row">
+  <button type="button" class="btn btn-block btn-info" ng-click="vm.update()" ng-show="vm.project.activities.length == vm.project.services.length" ui-sref="app.digitizedBPM({id: vm.project.id})">
+    Complete Digitization Process
+  </button>
 </div>

@@ -11769,7 +11769,7 @@ tags-input .autocomplete .suggestion-item em {
 .services-canvas {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -11777,12 +11777,25 @@ tags-input .autocomplete .suggestion-item em {
   display: flex;
   /* flex-wrap: wrap; */
 }
+.drop-canvas {
+  position: relative;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 80%;
+  min-height: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  background-color: #cccccc;
+  border-radius: 1em;
+}
 
 .cloud {
   position: relative;
   width: 100%;
   min-height: 400px;
-  padding: 100px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -11796,7 +11809,7 @@ tags-input .autocomplete .suggestion-item em {
 }
 
 .drop-service {
-  min-width: 150px;
+  min-width: 125px;
   min-height: 40px;
   display: inline-block;
   margin: 2px;
@@ -11805,22 +11818,21 @@ tags-input .autocomplete .suggestion-item em {
   font-weight: 300;
   line-height: 1;
   text-align: center;
-  white-space: nowrap;
-  vertical-align: center;
+  /* white-space: nowrap; */
+  /* vertical-align: center; */
   border-radius: .50em;
   border: 1px dashed #3A3A3A;
 }
-.drop-service2 {
+
+.service-list {
   display: flex;
-  width: 120px;
-  height: 60px;
-  margin: 2px 8px;
-  padding: 6px;
+  flex-direction: column;
+  margin: 2px 5px;
   font-size: 100%;
   font-weight: 300;
   text-align: center;
   vertical-align: middle;
-  border-radius: .50em;
+  border-radius: 1em;
   justify-content: center;
   align-items: center;
   border: 1px dashed #3A3A3A;
@@ -11829,7 +11841,7 @@ tags-input .autocomplete .suggestion-item em {
 .selected-services-canvas {
   position: relative;
   width: 100%;
-  min-height: 60px;
+  min-height: 40px;
   text-align: center;
   align-content: center;
   display: flex;
@@ -11837,8 +11849,9 @@ tags-input .autocomplete .suggestion-item em {
   justify-content: center;
   cursor: auto;
 }
+
 .drop-services-canvas {
-  padding: 0px 60px;
+  margin: auto;
   position: relative;
   width: 100%;
   min-height: 60px;
@@ -11846,10 +11859,11 @@ tags-input .autocomplete .suggestion-item em {
   align-items: center;;
   align-content: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   cursor: auto;
   overflow: hidden;
 }
+
 .digital-canvas {
   display: flex;
   flex-direction: row;
@@ -11974,8 +11988,8 @@ tags-input .autocomplete .suggestion-item em {
 .service {
   /* display: inline-block; */
   height: auto;
-  width: auto;
-  margin: 6px;
+  width: 120px;
+  margin: 4px;
   padding: 0.6em;
   font-size: 90%;
   font-weight: 300;
@@ -12012,10 +12026,8 @@ tags-input .autocomplete .suggestion-item em {
 
 .service.selected-service {
     display: inline-flex;
-    height: 40px;
     width: 120px;
-    margin: 0px 13px;
-    /* padding: 0.4em; */
+    margin: 0px;
     font-weight: 300;
     line-height: 1.1;
     color: #fff;
@@ -12023,9 +12035,12 @@ tags-input .autocomplete .suggestion-item em {
     vertical-align: middle;
     border-radius: 0.5em;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     /* cursor: auto; */
     background-color: #8e44ad;
+}
+.service.final-service {
+  margin-left: 15px;
 }
 
 .service.selected-service:hover {

@@ -14,13 +14,13 @@
     for (var activityKey in vm.project.activities){
       vm.suggestedServices.push({});
     }
-    /*
-    for (var activityKey in vm.project.activities){
-      vm.project.services.push({});
+
+    if (vm.project.services == []) {
+      for (var activityKey in vm.project.activities) {
+        vm.project.services.push(' ');
+      }
     }
     console.log(vm.project.services);
-    */
-
     for (var activityKey in vm.project.activities){
       vm.suggestedServices[activityKey] = vm.services.filter(function(eachService) {
         for (var serviceKey in eachService.tags) {
@@ -35,7 +35,7 @@
       });
       //console.log(vm.suggestedServices[activityKey]);
     }
-    console.log(vm.suggestedServices);
+    //console.log(vm.suggestedServices);
     for (var serviceKey in vm.suggestedServices) {
       for (var tagKey in vm.suggestedServices.tags) {
         console.log(vm.suggestedServices[serviceKey].tags[tagKey].text);
@@ -73,9 +73,14 @@
 
     vm.update = function() {
       vm.project.date = (new Date()).toISOString();
-      projectResource.update(vm.project, function(p) {
-        notificator.success('Digitized Model was successfully saved');
-      });
+      if (vm.project.services.length <= vm.project.activities.length){
+        projectResource.update(vm.project, function(p) {
+          notificator.success('Digitized Model was successfully saved');
+        });
+      }
+      else (
+        notificator.warning('Services exceeding model activities')
+      )
     };
 
   }

@@ -27,7 +27,8 @@
                     <td class="col-md-2 col-xs-1"><span>{{project.date | date: 'short'}}</span></td>
                     <td class="col-md-4 col-xs-4">
                       <button type="button" class="btn btn-sm btn-success" ui-sref="app.model({id: project.id})">Edit BPM </button>
-                      <button type="button" class="btn btn-sm btn-amethyst" ui-sref="app.digitize({id: project.id})">View Digitized BPM </button>
+                      <button type="button" class="btn btn-sm btn-amethyst" ui-sref="app.digitize({id: project.id})">Digitize BPM </button>
+                      <button type="button" class="btn btn-sm btn-info" ui-sref="app.digitizedBPM({id: project.id})">View Digitized BPM </button>
                     </td>
                   <!--<td class="col-md-4 col-xs-4">{{project.description}}</td>
                   <!--

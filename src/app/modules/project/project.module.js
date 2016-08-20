@@ -66,6 +66,25 @@
         },
         controller: 'DigitizeController',
         controllerAs: 'vm'
-      });
+      })
+  .state('app.digitizedBPM', {
+      url: '/projects/digitize/digitizedBPM/:id',
+      templateUrl: 'app/modules/project/digitize/digitizedBPM.html',
+      resolve: {
+        projects: ['$stateParams', 'projectResource', function($stateParams, projectResource) {
+          return $stateParams.id ? projectResource.get({id: $stateParams.id}).$promise : {};
+        }],
+        activities: ['activityResource', function(activityResource) {
+          return activityResource.query().$promise;
+        }],
+        digitalServices: ['$stateParams', 'digitalServiceUtils', 'digitalServiceResource', function($stateParams, digitalServiceUtils, digitalServiceResource) {
+          return digitalServiceResource.query().$promise.then(function(allDigitalServices) {
+            return $stateParams.interval ? digitalServiceUtils.digitalServicesDuringInterval(allDigitalServices, $stateParams.interval) : allDigitalServices;
+          });
+        }]
+      },
+      controller: 'DigitizeController',
+      controllerAs: 'vm'
+    });
   }
 })();
