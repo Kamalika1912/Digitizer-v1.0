@@ -30,6 +30,7 @@ function update(req) {
         date: req.body.date,
         title: req.body.title,
         description: req.body.description,
+        domain: req.body.domain,
         author: req.body.author,
         activities: req.body.activities,
         services: req.body.services,

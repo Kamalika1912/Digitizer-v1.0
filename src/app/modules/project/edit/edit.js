@@ -7,6 +7,7 @@
     var vm = this;
     vm.project = projects;
     vm.activity = activities;
+    vm.domains = ['Accommodation','Education','E-Commerce','Logistics','Healthcare','Travel'];
     vm.showReturnBtn = vm.project.id && shortHistory.from.state.name;
     vm.update = function() {
       vm.project.date = (new Date()).toISOString();

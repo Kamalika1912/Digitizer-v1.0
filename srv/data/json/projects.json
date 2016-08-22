@@ -5,6 +5,7 @@
     "title": "Taxi Hiring App",
     "description": "This project digitizes the business procedure model of a taxi hiring app. Inspiration: Uber, Lyft ",
     "author": "Kamalika",
+    "domain": "Travel",
     "activities": [
       {
         "id": "A61",
@@ -337,6 +338,7 @@
     "title": "Apartment Renting and Lodging",
     "description": "This project digitizes the apartment renting and lodging business. Inspiration: AirBnB",
     "author": "Kamalika",
+    "domain": "Accommodation",
     "activities": [
       {
         "id": "A43",
@@ -758,7 +760,8 @@
     "date": "2016-07-25T12:51:48.581Z",
     "title": "Emergency Healthcare",
     "description": "This project digitizes the process of providing medical attention in an emergency. Inspiration: Ginger.io",
-    "author": "Kamalika",
+    "author": "Rose",
+    "domain": "Healthcare",
     "activities": [
       {
         "modelActivity": "Notaufnahme",
@@ -889,6 +892,7 @@
     "title": "Moving and Delivery on demand",
     "description": "This project digitizes the business model of moving and delivery on-demand. Inspiration:BuddyTruk, Muver, GoShare",
     "author": "Kamalika",
+    "domain": "Logistics",
     "activities": [
       {
         "id": "A1",
@@ -1447,6 +1451,7 @@
     "id": "5",
     "date": "2016-07-25T13:13:36.726Z",
     "title": "Borrowing/Lending items",
+    "domain": "E-Commerce",
     "description": "This project enables people to borrow the things they need from others in their neighborhood. Inspiration: Peerby",
     "author": "Kamalika",
     "activities": [
