@@ -19,7 +19,10 @@
 <div class="row">
 <div class="services-canvas cloud" data-drag="true" ng-model="vm.project.services" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
 <div ng-repeat="serviceArray in vm.suggestedServices track by $index">
-  <div class="activity">{{vm.project.activities[$index].modelActivity}}</div>
+  <div class="activity" data-drop="true" ng-model="vm.project.services"
+       jqyoui-droppable="{deepCopy:true, multiple:true}">
+    <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>&nbsp;{{vm.project.activities[$index].modelActivity}}
+  </div>
     <div class="service-list">
     <div ng-repeat="service in serviceArray | orderBy:'digitalComponent.toString()'">
       <div class="service" data-drag="true" ng-model="service" ng-show="service.digitalComponent && service.digitalComponent != 'No Service'" jqyoui-draggable="{deepCopy:true}" data-jqyoui-options="{revert: 'invalid'}">
@@ -36,7 +39,7 @@
 
     <div class="drop-canvas" data-drop="true" ng-model="vm.project.services"
          jqyoui-droppable="{deepCopy:true, multiple:true}">
-      <span><i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Drop Service here</span>
+      <span><i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Drop Service here or on respective activities above</span>
     </div>
 
 
@@ -103,4 +106,3 @@
     <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Complete Digitization Process
   </button>
 </div>
-

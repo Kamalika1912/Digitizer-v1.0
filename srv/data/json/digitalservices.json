@@ -67,5 +67,10 @@
   {"id":"D65","digitalComponent":"Maps","tags": [{"text":"map"},{"text":"geography"},{"text":"place"},{"text":"GPS"},{"text":"GIS"},{"text":"transport"},{"text":"planning"},{"text":"location"}]},
   {"id":"D66","digitalComponent":"PayPal","tags":[{"text":"secure"},{"text":"payment"},{"text":"service"},{"text":"customer"},{"text":"user"},{"text":"accounting"},{"text":"finances"},{"text":"online"}]},
   {"id":"D67","digitalComponent":"Google Wallet","tags":[{"text":"secure"},{"text":"payment"},{"text":"service"},{"text":"customer"},{"text":"user"},{"text":"accounting"},{"text":"finances"},{"text":"online"},{"text":"wallet"}]},
-  {"id":"D68","digitalComponent":"Bitcoin","tags":[{"text":"secure"},{"text":"payment"},{"text":"service"},{"text":"customer"},{"text":"user"},{"text":"accounting"},{"text":"finances"},{"text":"online"},{"text":"cashless"}]}
+  {"id":"D68","digitalComponent":"Bitcoin","tags":[{"text":"secure"},{"text":"payment"},{"text":"service"},{"text":"customer"},{"text":"user"},{"text":"accounting"},{"text":"finances"},{"text":"online"},{"text":"cashless"}]},
+  {"id":"D69","digitalComponent":"Calendar","tags":[{"text":"calendar"},{"text":"schedule"},{"text":"booking"}]},
+  {"id":"D70","digitalComponent":"Digital examination","tags":[{"text":"treatment"}]},
+  {"id":"D71","digitalComponent":"Video Scanning","tags":[{"text":"video"},{"text":"scanning"},{"text":"used"}]},
+  {"id":"D72","digitalComponent":"pokemonGo","tags":[{"text":"GPS"},{"text":"location"},{"text":"gamification"}]},
+  {"id":"D73","digitalComponent":"Decision Support","tags":[{"text":"decision"}]}
 ]

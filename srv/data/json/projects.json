@@ -1,52 +1,1852 @@
 [
   {
     "id": "1",
+    "date": "2016-07-25T12:18:04.777Z",
     "title": "Taxi Hiring App",
     "description": "This project digitizes the business procedure model of a taxi hiring app. Inspiration: Uber, Lyft ",
-    "date": "2016-01-07T15:10:13.022Z",
     "author": "Kamalika",
-    "activities": [{"id":"A61","modelActivity":"Call Taxi hiring agency","tags": [{"text":"order"},{"text":"call"},{"text":"request"}]},
-      {"id":"A62","modelActivity":"Assign job to Taxi","tags": [{"text":"job"},{"text":"assign"},{"text":"order"},{"text":"schedule"}]},
-      {"id":"A63","modelActivity":"Taxi rides to customer","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
-      {"id":"A64","modelActivity":"Customer is transported","tags": [{"text":"transport"},{"text":"transportation"},{"text":"tracking"},{"text":"GPS"},{"text":"GPS-Tracking"}]},
-      {"id":"A65","modelActivity":"Customer pays","tags": [{"text":"payment"},{"text":"pay"},{"text":"billing"},{"text":"transaction"}]},
-      {"id":"A65","modelActivity":"Customer ends process","tags": [{"text":"evaluation"},{"text":"evaluate"},{"text":"review"},{"text":"rating"}]}],
-    "services": []
+    "activities": [
+      {
+        "id": "A61",
+        "modelActivity": "Call Taxi hiring agency",
+        "tags": [
+          {
+            "text": "order"
+          },
+          {
+            "text": "call"
+          },
+          {
+            "text": "request"
+          },
+          {
+            "text": "contact"
+          }
+        ]
+      },
+      {
+        "id": "A62",
+        "modelActivity": "Assign job to Taxi",
+        "tags": [
+          {
+            "text": "job"
+          },
+          {
+            "text": "assign"
+          },
+          {
+            "text": "order"
+          },
+          {
+            "text": "schedule"
+          }
+        ]
+      },
+      {
+        "id": "A63",
+        "modelActivity": "Taxi rides to customer",
+        "tags": [
+          {
+            "text": "transport"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "tracking"
+          },
+          {
+            "text": "GPS"
+          },
+          {
+            "text": "GPS-Tracking"
+          },
+          {
+            "text": "location"
+          }
+        ]
+      },
+      {
+        "id": "A64",
+        "modelActivity": "Customer is transported",
+        "tags": [
+          {
+            "text": "transport"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "tracking"
+          },
+          {
+            "text": "GPS"
+          },
+          {
+            "text": "GPS-Tracking"
+          }
+        ]
+      },
+      {
+        "id": "A65",
+        "modelActivity": "Customer pays",
+        "tags": [
+          {
+            "text": "payment"
+          },
+          {
+            "text": "pay"
+          },
+          {
+            "text": "billing"
+          },
+          {
+            "text": "transaction"
+          }
+        ]
+      },
+      {
+        "id": "A66",
+        "modelActivity": "Customer ends process",
+        "tags": [
+          {
+            "text": "evaluation"
+          },
+          {
+            "text": "evaluate"
+          },
+          {
+            "text": "review"
+          },
+          {
+            "text": "rating"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "D56",
+        "digitalComponent": "Smartphone",
+        "tags": [
+          {
+            "text": "call"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "augmented reality"
+          },
+          {
+            "text": "glasses"
+          },
+          {
+            "text": "smartphone"
+          },
+          {
+            "text": "smart"
+          },
+          {
+            "text": "phone"
+          },
+          {
+            "text": "android"
+          },
+          {
+            "text": "iOS"
+          }
+        ]
+      },
+      {
+        "id": "D54",
+        "digitalComponent": "App",
+        "tags": [
+          {
+            "text": "smartphone"
+          },
+          {
+            "text": "app"
+          },
+          {
+            "text": "program"
+          },
+          {
+            "text": "download"
+          },
+          {
+            "text": "order"
+          }
+        ]
+      },
+      {
+        "id": "D59",
+        "digitalComponent": "GPS-Tracking",
+        "tags": [
+          {
+            "text": "gps"
+          },
+          {
+            "text": "delivery"
+          },
+          {
+            "text": "status"
+          },
+          {
+            "text": "tracking"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "drive"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "costs"
+          },
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          }
+        ]
+      },
+      {
+        "id": "D59",
+        "digitalComponent": "GPS-Tracking",
+        "tags": [
+          {
+            "text": "gps"
+          },
+          {
+            "text": "delivery"
+          },
+          {
+            "text": "status"
+          },
+          {
+            "text": "tracking"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "drive"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "costs"
+          },
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          }
+        ]
+      },
+      {
+        "id": "D66",
+        "digitalComponent": "PayPal",
+        "tags": [
+          {
+            "text": "secure"
+          },
+          {
+            "text": "payment"
+          },
+          {
+            "text": "service"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "accounting"
+          },
+          {
+            "text": "finances"
+          },
+          {
+            "text": "online"
+          }
+        ]
+      },
+      {
+        "id": "D64",
+        "digitalComponent": "Evaluation Systems",
+        "tags": [
+          {
+            "text": "review"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "actor"
+          },
+          {
+            "text": "rating"
+          },
+          {
+            "text": "reputation"
+          },
+          {
+            "text": "recommendation"
+          },
+          {
+            "text": "related_products"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "2",
+    "date": "2016-07-25T12:47:11.783Z",
     "title": "Apartment Renting and Lodging",
     "description": "This project digitizes the apartment renting and lodging business. Inspiration: AirBnB",
-    "date": "2016-03-24T14:40:36.022Z",
     "author": "Kamalika",
-    "activities": [],
-    "services": []
+    "activities": [
+      {
+        "id": "A43",
+        "modelActivity": "Newspaper Advertisement",
+        "tags": [
+          {
+            "text": "newspaper"
+          },
+          {
+            "text": "paper"
+          },
+          {
+            "text": "advertising"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "print"
+          },
+          {
+            "text": "newspaper"
+          }
+        ]
+      },
+      {
+        "modelActivity": "Receive phone calls",
+        "tags": [
+          {
+            "text": "phone"
+          },
+          {
+            "text": "customer"
+          }
+        ],
+        "date": "2016-07-25T12:28:56.680Z",
+        "id": "A72"
+      },
+      {
+        "id": "A19",
+        "modelActivity": "Schedule",
+        "tags": [
+          {
+            "text": "plan"
+          },
+          {
+            "text": "time"
+          },
+          {
+            "text": "document"
+          },
+          {
+            "text": "outline"
+          },
+          {
+            "text": "logistics"
+          },
+          {
+            "text": "management"
+          },
+          {
+            "text": "organization"
+          }
+        ]
+      },
+      {
+        "id": "A22",
+        "modelActivity": "Spaces/Rooms",
+        "tags": [
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "room"
+          },
+          {
+            "text": "booking"
+          },
+          {
+            "text": "event"
+          },
+          {
+            "text": "appointment"
+          }
+        ]
+      },
+      {
+        "modelActivity": "Confirm booking",
+        "tags": [
+          {
+            "text": "email"
+          },
+          {
+            "text": "phone"
+          },
+          {
+            "text": "letter"
+          }
+        ],
+        "date": "2016-07-25T12:31:37.872Z",
+        "id": "A77"
+      },
+      {
+        "modelActivity": "Customer arrives",
+        "date": "2016-07-25T12:32:44.041Z",
+        "id": "A79"
+      },
+      {
+        "modelActivity": "Service provided",
+        "date": "2016-07-25T12:32:54.708Z",
+        "id": "A80"
+      },
+      {
+        "id": "A65",
+        "modelActivity": "Customer pays",
+        "tags": [
+          {
+            "text": "payment"
+          },
+          {
+            "text": "pay"
+          },
+          {
+            "text": "billing"
+          },
+          {
+            "text": "transaction"
+          }
+        ]
+      },
+      {
+        "id": "A67",
+        "modelActivity": "Feedback",
+        "tags": [
+          {
+            "text": "feedback"
+          },
+          {
+            "text": "loyalty"
+          },
+          {
+            "text": "rating"
+          },
+          {
+            "text": "review"
+          }
+        ]
+      },
+      {
+        "id": "A66",
+        "modelActivity": "Customer ends process",
+        "tags": [
+          {
+            "text": "evaluation"
+          },
+          {
+            "text": "evaluate"
+          },
+          {
+            "text": "review"
+          },
+          {
+            "text": "rating"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "D4",
+        "digitalComponent": "Digital Advertising",
+        "tags": [
+          {
+            "text": "marketing"
+          },
+          {
+            "text": "web"
+          },
+          {
+            "text": "advertisement"
+          },
+          {
+            "text": "offer"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "customer"
+          }
+        ]
+      },
+      {
+        "id": "D37",
+        "digitalComponent": "Call",
+        "tags": [
+          {
+            "text": "actor"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "telephone"
+          },
+          {
+            "text": "phone"
+          },
+          {
+            "text": "call"
+          },
+          {
+            "text": "skype"
+          }
+        ]
+      },
+      {
+        "id": "D69",
+        "digitalComponent": "Calendar",
+        "tags": [
+          {
+            "text": "calendar"
+          },
+          {
+            "text": "schedule"
+          },
+          {
+            "text": "booking"
+          }
+        ]
+      },
+      {
+        "id": "D19",
+        "digitalComponent": "Room Reservation",
+        "tags": [
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          },
+          {
+            "text": "map"
+          },
+          {
+            "text": "database"
+          },
+          {
+            "text": "event"
+          },
+          {
+            "text": "room"
+          },
+          {
+            "text": "organisation"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "database"
+          }
+        ]
+      },
+      {
+        "id": "D18",
+        "digitalComponent": "Room Booking",
+        "tags": [
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          },
+          {
+            "text": "room"
+          },
+          {
+            "text": "reservation"
+          },
+          {
+            "text": "capacity"
+          },
+          {
+            "text": "event"
+          },
+          {
+            "text": "organisation"
+          }
+        ]
+      },
+      {
+        "id": "D20",
+        "digitalComponent": "Authority access",
+        "tags": [
+          {
+            "text": "authority"
+          },
+          {
+            "text": "administrator"
+          },
+          {
+            "text": "approval"
+          },
+          {
+            "text": "opening"
+          },
+          {
+            "text": "times"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "schedule"
+          }
+        ]
+      },
+      {
+        "id": "D58",
+        "digitalComponent": "Wireless",
+        "tags": [
+          {
+            "text": "wireless"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "language"
+          },
+          {
+            "text": "direct"
+          }
+        ]
+      },
+      {
+        "id": "D66",
+        "digitalComponent": "PayPal",
+        "tags": [
+          {
+            "text": "secure"
+          },
+          {
+            "text": "payment"
+          },
+          {
+            "text": "service"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "accounting"
+          },
+          {
+            "text": "finances"
+          },
+          {
+            "text": "online"
+          }
+        ]
+      },
+      {
+        "id": "D23",
+        "digitalComponent": "Review Portals",
+        "tags": [
+          {
+            "text": "opinion"
+          },
+          {
+            "text": "review"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "rating"
+          },
+          {
+            "text": "reputation"
+          },
+          {
+            "text": "actor"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "3",
+    "date": "2016-07-25T12:51:48.581Z",
     "title": "Emergency Healthcare",
     "description": "This project digitizes the process of providing medical attention in an emergency. Inspiration: Ginger.io",
-    "date": "2016-02-01T09:01:25.022Z",
     "author": "Kamalika",
-    "activities": [],
-    "services": []
+    "activities": [
+      {
+        "modelActivity": "Notaufnahme",
+        "tags": [
+          {
+            "text": "participants"
+          },
+          {
+            "text": "acquisition"
+          }
+        ],
+        "date": "2016-07-25T12:27:34.500Z",
+        "id": "A70"
+      },
+      {
+        "modelActivity": "Diagnosis of patient",
+        "tags": [
+          {
+            "text": "participants"
+          },
+          {
+            "text": "VoIP"
+          }
+        ],
+        "date": "2016-07-25T12:28:54.455Z",
+        "id": "A73"
+      },
+      {
+        "id": "A60",
+        "modelActivity": "Recommendation",
+        "tags": [
+          {
+            "text": "customer"
+          },
+          {
+            "text": "actor"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "reputation"
+          },
+          {
+            "text": "recommendation"
+          },
+          {
+            "text": "acquisition"
+          }
+        ]
+      },
+      {
+        "modelActivity": "Start treatment",
+        "tags": [
+          {
+            "text": "treatment"
+          }
+        ],
+        "date": "2016-07-25T12:31:21.909Z",
+        "id": "A76"
+      },
+      {
+        "modelActivity": "Monitor progress",
+        "tags": [
+          {
+            "text": "treatment"
+          }
+        ],
+        "date": "2016-07-25T12:31:56.520Z",
+        "id": "A78"
+      }
+    ],
+    "services": [
+      {
+        "id": "D49",
+        "digitalComponent": "Data Repository",
+        "tags": [
+          {
+            "text": "database"
+          },
+          {
+            "text": "repository"
+          },
+          {
+            "text": "multimedia"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "document"
+          },
+          {
+            "text": "documentation"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "planning"
+          },
+          {
+            "text": "room"
+          }
+        ]
+      },
+      {
+        "digitalComponent": "Digital examination",
+        "tags": [
+          {
+            "text": "treatment"
+          }
+        ],
+        "date": "2016-07-25T12:43:16.377Z",
+        "id": "D70"
+      }
+    ]
   },
   {
     "id": "4",
+    "date": "2016-07-25T12:36:05.875Z",
     "title": "Moving and Delivery on demand",
     "description": "This project digitizes the business model of moving and delivery on-demand. Inspiration:BuddyTruk, Muver, GoShare",
-    "date": "2016-02-29T16:41:58.022Z",
     "author": "Kamalika",
-    "activities": [],
-    "services": []
+    "activities": [
+      {
+        "id": "A1",
+        "modelActivity": "Customer Order",
+        "tags": [
+          {
+            "text": "web"
+          },
+          {
+            "text": "form"
+          },
+          {
+            "text": "paper"
+          },
+          {
+            "text": "planning"
+          },
+          {
+            "text": "survey"
+          }
+        ]
+      },
+      {
+        "id": "A53",
+        "modelActivity": "Logistics Planning",
+        "tags": [
+          {
+            "text": "logistic"
+          },
+          {
+            "text": "planning"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "capacity"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "cost"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "management"
+          }
+        ]
+      },
+      {
+        "id": "A19",
+        "modelActivity": "Schedule",
+        "tags": [
+          {
+            "text": "plan"
+          },
+          {
+            "text": "time"
+          },
+          {
+            "text": "document"
+          },
+          {
+            "text": "outline"
+          },
+          {
+            "text": "logistics"
+          },
+          {
+            "text": "management"
+          },
+          {
+            "text": "organization"
+          }
+        ]
+      },
+      {
+        "id": "A27",
+        "modelActivity": "Pickup",
+        "tags": [
+          {
+            "text": "drive"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "route"
+          },
+          {
+            "text": "cargo"
+          },
+          {
+            "text": "load"
+          },
+          {
+            "text": "pickup"
+          },
+          {
+            "text": "transport"
+          },
+          {
+            "text": "cost"
+          }
+        ]
+      },
+      {
+        "id": "A57",
+        "modelActivity": "Warehouse",
+        "tags": [
+          {
+            "text": "planning"
+          },
+          {
+            "text": "purchase"
+          },
+          {
+            "text": "consumption"
+          },
+          {
+            "text": "usage"
+          },
+          {
+            "text": "resource"
+          },
+          {
+            "text": "stock"
+          },
+          {
+            "text": "inventory"
+          }
+        ]
+      },
+      {
+        "id": "A9",
+        "modelActivity": "Delivery",
+        "tags": [
+          {
+            "text": "drive"
+          },
+          {
+            "text": "delivery"
+          },
+          {
+            "text": "shipping"
+          },
+          {
+            "text": "transport"
+          },
+          {
+            "text": "costs"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "route"
+          },
+          {
+            "text": "capacity"
+          }
+        ]
+      },
+      {
+        "id": "A6",
+        "modelActivity": "Bill / Invoice",
+        "tags": [
+          {
+            "text": "prices"
+          },
+          {
+            "text": "consumption"
+          },
+          {
+            "text": "list"
+          },
+          {
+            "text": "bill"
+          },
+          {
+            "text": "invoice"
+          },
+          {
+            "text": "resources"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "participant"
+          },
+          {
+            "text": "document"
+          },
+          {
+            "text": "payment"
+          }
+        ]
+      },
+      {
+        "id": "A65",
+        "modelActivity": "Customer pays",
+        "tags": [
+          {
+            "text": "payment"
+          },
+          {
+            "text": "pay"
+          },
+          {
+            "text": "billing"
+          },
+          {
+            "text": "transaction"
+          }
+        ]
+      },
+      {
+        "id": "A60",
+        "modelActivity": "Recommendation",
+        "tags": [
+          {
+            "text": "customer"
+          },
+          {
+            "text": "actor"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "reputation"
+          },
+          {
+            "text": "recommendation"
+          },
+          {
+            "text": "acquisition"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "D1",
+        "digitalComponent": "Web Form",
+        "tags": [
+          {
+            "text": "form"
+          },
+          {
+            "text": "web"
+          },
+          {
+            "text": "database"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "information"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "actor"
+          }
+        ]
+      },
+      {
+        "id": "D52",
+        "digitalComponent": "Journey Management",
+        "tags": [
+          {
+            "text": "logistics"
+          },
+          {
+            "text": "transport"
+          },
+          {
+            "text": "shipping"
+          },
+          {
+            "text": "delivery"
+          },
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "planning"
+          }
+        ]
+      },
+      {
+        "id": "D15",
+        "digitalComponent": "Gantt-Charts",
+        "tags": [
+          {
+            "text": "planning"
+          },
+          {
+            "text": "process"
+          },
+          {
+            "text": "critical"
+          },
+          {
+            "text": "milestone"
+          },
+          {
+            "text": "path"
+          }
+        ]
+      },
+      {
+        "id": "D59",
+        "digitalComponent": "GPS-Tracking",
+        "tags": [
+          {
+            "text": "gps"
+          },
+          {
+            "text": "delivery"
+          },
+          {
+            "text": "status"
+          },
+          {
+            "text": "tracking"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "drive"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "costs"
+          },
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          }
+        ]
+      },
+      {
+        "id": "D19",
+        "digitalComponent": "Room Reservation",
+        "tags": [
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          },
+          {
+            "text": "map"
+          },
+          {
+            "text": "database"
+          },
+          {
+            "text": "event"
+          },
+          {
+            "text": "room"
+          },
+          {
+            "text": "organisation"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "database"
+          }
+        ]
+      },
+      {
+        "id": "D59",
+        "digitalComponent": "GPS-Tracking",
+        "tags": [
+          {
+            "text": "gps"
+          },
+          {
+            "text": "delivery"
+          },
+          {
+            "text": "status"
+          },
+          {
+            "text": "tracking"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "drive"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "costs"
+          },
+          {
+            "text": "place"
+          },
+          {
+            "text": "venue"
+          },
+          {
+            "text": "location"
+          }
+        ]
+      },
+      {
+        "id": "D60",
+        "digitalComponent": "Payment Service Provider",
+        "tags": [
+          {
+            "text": "secure"
+          },
+          {
+            "text": "payment"
+          },
+          {
+            "text": "service"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "accounting"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "summary"
+          },
+          {
+            "text": "finances"
+          }
+        ]
+      },
+      {
+        "id": "D66",
+        "digitalComponent": "PayPal",
+        "tags": [
+          {
+            "text": "secure"
+          },
+          {
+            "text": "payment"
+          },
+          {
+            "text": "service"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "accounting"
+          },
+          {
+            "text": "finances"
+          },
+          {
+            "text": "online"
+          }
+        ]
+      },
+      {
+        "id": "D62",
+        "digitalComponent": "Recommendation Systems",
+        "tags": [
+          {
+            "text": "review"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "actor"
+          },
+          {
+            "text": "rating"
+          },
+          {
+            "text": "reputation"
+          },
+          {
+            "text": "recommendation"
+          },
+          {
+            "text": "related_products"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "5",
+    "date": "2016-07-25T13:13:36.726Z",
     "title": "Borrowing/Lending items",
     "description": "This project enables people to borrow the things they need from others in their neighborhood. Inspiration: Peerby",
-    "date": "2015-03-16T18:20:04.022Z",
     "author": "Kamalika",
-    "activities": [],
-    "services": []
+    "activities": [
+      {
+        "modelActivity": "Call Hardware Store",
+        "tags": [
+          {
+            "text": "call"
+          },
+          {
+            "text": "customer"
+          }
+        ],
+        "date": "2016-07-25T12:28:31.759Z",
+        "id": "A71"
+      },
+      {
+        "modelActivity": "Ask for availability of a device",
+        "tags": [
+          {
+            "text": "request"
+          },
+          {
+            "text": "research"
+          }
+        ],
+        "date": "2016-07-25T12:29:36.701Z",
+        "id": "A74"
+      },
+      {
+        "modelActivity": "Reserve",
+        "tags": [
+          {
+            "text": "booking"
+          }
+        ],
+        "date": "2016-07-25T12:31:12.193Z",
+        "id": "A75"
+      },
+      {
+        "id": "A27",
+        "modelActivity": "Pickup",
+        "tags": [
+          {
+            "text": "drive"
+          },
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "route"
+          },
+          {
+            "text": "cargo"
+          },
+          {
+            "text": "load"
+          },
+          {
+            "text": "pickup"
+          },
+          {
+            "text": "transport"
+          },
+          {
+            "text": "cost"
+          }
+        ]
+      },
+      {
+        "modelActivity": "Use",
+        "tags": [
+          {
+            "text": "user"
+          }
+        ],
+        "date": "2016-07-25T12:33:27.724Z",
+        "id": "A82"
+      },
+      {
+        "modelActivity": "Return device",
+        "date": "2016-07-25T12:33:50.001Z",
+        "id": "A83"
+      },
+      {
+        "id": "A65",
+        "modelActivity": "Customer pays",
+        "tags": [
+          {
+            "text": "payment"
+          },
+          {
+            "text": "pay"
+          },
+          {
+            "text": "billing"
+          },
+          {
+            "text": "transaction"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "D56",
+        "digitalComponent": "Smartphone",
+        "tags": [
+          {
+            "text": "call"
+          },
+          {
+            "text": "contact"
+          },
+          {
+            "text": "augmented reality"
+          },
+          {
+            "text": "glasses"
+          },
+          {
+            "text": "smartphone"
+          },
+          {
+            "text": "smart"
+          },
+          {
+            "text": "phone"
+          },
+          {
+            "text": "android"
+          },
+          {
+            "text": "iOS"
+          }
+        ]
+      },
+      {
+        "id": "D1",
+        "digitalComponent": "Web Form",
+        "tags": [
+          {
+            "text": "form"
+          },
+          {
+            "text": "web"
+          },
+          {
+            "text": "database"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "information"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "actor"
+          }
+        ]
+      },
+      {
+        "id": "D1",
+        "digitalComponent": "Web Form",
+        "tags": [
+          {
+            "text": "form"
+          },
+          {
+            "text": "web"
+          },
+          {
+            "text": "database"
+          },
+          {
+            "text": "overview"
+          },
+          {
+            "text": "information"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "actor"
+          }
+        ]
+      },
+      {
+        "id": "D22",
+        "digitalComponent": "Transportation Service",
+        "tags": [
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "drive"
+          },
+          {
+            "text": "load"
+          },
+          {
+            "text": "cargo"
+          },
+          {
+            "text": "route"
+          },
+          {
+            "text": "way"
+          },
+          {
+            "text": "map"
+          },
+          {
+            "text": "cost"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "capacity"
+          }
+        ]
+      },
+      {
+        "id": "D25",
+        "digitalComponent": "Logging Systems",
+        "tags": [
+          {
+            "text": "registration"
+          },
+          {
+            "text": "time"
+          },
+          {
+            "text": "consumption"
+          },
+          {
+            "text": "status"
+          },
+          {
+            "text": "cost"
+          },
+          {
+            "text": "planning"
+          }
+        ]
+      },
+      {
+        "id": "D22",
+        "digitalComponent": "Transportation Service",
+        "tags": [
+          {
+            "text": "transportation"
+          },
+          {
+            "text": "drive"
+          },
+          {
+            "text": "load"
+          },
+          {
+            "text": "cargo"
+          },
+          {
+            "text": "route"
+          },
+          {
+            "text": "way"
+          },
+          {
+            "text": "map"
+          },
+          {
+            "text": "cost"
+          },
+          {
+            "text": "duration"
+          },
+          {
+            "text": "capacity"
+          }
+        ]
+      },
+      {
+        "id": "D66",
+        "digitalComponent": "PayPal",
+        "tags": [
+          {
+            "text": "secure"
+          },
+          {
+            "text": "payment"
+          },
+          {
+            "text": "service"
+          },
+          {
+            "text": "customer"
+          },
+          {
+            "text": "user"
+          },
+          {
+            "text": "accounting"
+          },
+          {
+            "text": "finances"
+          },
+          {
+            "text": "online"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Neues Projekt tr",
+    "description": "Neues Projekt zum Testen der Umgebung",
+    "date": "2016-07-25T12:24:18.779Z",
+    "activities": [
+
+    ],
+    "services": [
+
+    ],
+    "id": 7
+  },
+  {
+    "id": "8",
+    "date": "2016-07-25T13:04:26.049Z",
+    "title": "Test process",
+    "description": "just used to test the combination of activities with services",
+    "activities": [
+      {
+        "modelActivity": "Search",
+        "tags": [
+          {
+            "text": "search"
+          },
+          {
+            "text": "lookup"
+          }
+        ],
+        "date": "2016-07-25T12:44:04.693Z",
+        "id": "A84"
+      },
+      {
+        "id": "A54",
+        "modelActivity": "Purchase",
+        "tags": [
+          {
+            "text": "planning"
+          },
+          {
+            "text": "purchase"
+          },
+          {
+            "text": "prices"
+          },
+          {
+            "text": "costs"
+          },
+          {
+            "text": "capacity"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "D30",
+        "digitalComponent": "Internet Research",
+        "tags": [
+          {
+            "text": "web"
+          },
+          {
+            "text": "research"
+          },
+          {
+            "text": "information"
+          },
+          {
+            "text": "competition"
+          },
+          {
+            "text": "status"
+          },
+          {
+            "text": "product"
+          },
+          {
+            "text": "search"
+          }
+        ]
+      }
+    ]
   }
 ]
