@@ -24,8 +24,13 @@
         url: '/activities/edit/:id',
         templateUrl: 'app/modules/activity/edit/edit.html',
         resolve: {
-          data: ['$stateParams', 'activityResource', function($stateParams, activityResource){
+          activity: ['$stateParams', 'activityResource', function($stateParams, activityResource){
             return $stateParams.id ? activityResource.get({id: $stateParams.id}).$promise : {};
+          }],
+          digitalServices: ['$stateParams', 'digitalServiceUtils', 'digitalServiceResource', function($stateParams, digitalServiceUtils, digitalServiceResource) {
+            return digitalServiceResource.query().$promise.then(function(allDigitalServices) {
+              return $stateParams.interval ? digitalServiceUtils.digitalServicesDuringInterval(allDigitalServices, $stateParams.interval) : allDigitalServices;
+            });
           }]
         },
         controller: 'ActivityController',

@@ -1772,86 +1772,12 @@
     ]
   },
   {
-    "title": "Neues Projekt tr",
-    "description": "Neues Projekt zum Testen der Umgebung",
-    "date": "2016-07-25T12:24:18.779Z",
-    "activities": [
-
-    ],
-    "services": [
-
-    ],
-    "id": 7
-  },
-  {
-    "id": "8",
-    "date": "2016-07-25T13:04:26.049Z",
-    "title": "Test process",
-    "description": "just used to test the combination of activities with services",
-    "activities": [
-      {
-        "modelActivity": "Search",
-        "tags": [
-          {
-            "text": "search"
-          },
-          {
-            "text": "lookup"
-          }
-        ],
-        "date": "2016-07-25T12:44:04.693Z",
-        "id": "A84"
-      },
-      {
-        "id": "A54",
-        "modelActivity": "Purchase",
-        "tags": [
-          {
-            "text": "planning"
-          },
-          {
-            "text": "purchase"
-          },
-          {
-            "text": "prices"
-          },
-          {
-            "text": "costs"
-          },
-          {
-            "text": "capacity"
-          }
-        ]
-      }
-    ],
-    "services": [
-      {
-        "id": "D30",
-        "digitalComponent": "Internet Research",
-        "tags": [
-          {
-            "text": "web"
-          },
-          {
-            "text": "research"
-          },
-          {
-            "text": "information"
-          },
-          {
-            "text": "competition"
-          },
-          {
-            "text": "status"
-          },
-          {
-            "text": "product"
-          },
-          {
-            "text": "search"
-          }
-        ]
-      }
-    ]
+    "id": "6",
+    "date": "2016-08-25T13:04:26.049Z",
+    "title": "On Demand Healthcare",
+    "description": "Healthcare on demand for virtual consultation, medical attention, scheduling immediate doctor visits and medication delivery for your everyday health crises",
+    "activities": [],
+    "services":[],
+    "domain":"Healthcare"
   }
 ]

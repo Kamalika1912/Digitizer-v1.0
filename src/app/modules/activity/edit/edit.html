@@ -55,9 +55,17 @@
                         <button type="button" class="btn" ng-click="vm.return()">Return</button>
                     </span>
                     <button type="button" class="btn btn-danger" ng-click="vm.return()" ng-hide="vm.activity.id">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-success" ng-click="vm.update()">Update</button>
+                    <button type="submit" class="btn btn-primary">Save & Return</button>
                 </div>
             </form>
+            <div class="matched-services" ng-show="vm.activity.tags">
+              <div ng-repeat="service in vm.matchedServices | orderBy:'digitalComponent.toString()'">
+                <div class="service" ng-model="service" ng-show="service.digitalComponent && service.digitalComponent != 'No Service'">
+                  {{service.digitalComponent}}
+                </div>
+              </div>
+          </div>
         </widget>
     </div>
 </div>

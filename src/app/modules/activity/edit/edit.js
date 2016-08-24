@@ -1,17 +1,20 @@
 (function() {
   'use strict';
   angular.module('app.profile').controller('ActivityController', activityController);
-  activityController.$inject = ['data', 'activityResource', '$state', 'shortHistory', 'notificator', '$http'];
+  activityController.$inject = ['activity', 'activityResource', '$state', 'shortHistory', 'notificator', '$http', 'digitalServices'];
 
-  function activityController(data, activityResource, $state, shortHistory, notificator, $http) {
+  function activityController(activity, activityResource, $state, shortHistory, notificator, $http, digitalServices) {
     var vm = this;
-    vm.activity = data;
+    vm.activity = activity;
+    vm.digitalServices = digitalServices;
+    vm.matchedServices = [];
     vm.showReturnBtn = vm.activity.id && shortHistory.from.state.name;
     vm.update = function() {
       //vm.activity.date = (new Date()).toISOString();
       activityResource.update(vm.activity, function(p) {
-        shortHistory.goTo('from');
-        notificator.success('Activity was successfully updated')
+        //shortHistory.goTo('from');
+        $state.reload();
+        notificator.success('Activity was successfully updated');
       });
     };
     vm.return = function() {
@@ -21,7 +24,7 @@
       //vm.activity.date = (new Date()).toISOString();
       activityResource.save(this.activity, function(savedActivity) {
         shortHistory.goTo('from');
-        notificator.success('Activity was successfully saved')
+        notificator.success('Activity was successfully saved');
       });
     };
 
@@ -31,6 +34,18 @@
           return tag.text.toLowerCase().indexOf($query.toLowerCase()) != -1;
         });
     };
-
+    //if (activity.tags) {
+      vm.matchedServices = vm.digitalServices.filter(function(eachService) {
+      for (var activityTag in vm.activity.tags) {
+        for (var serviceTag in eachService.tags) {
+            if (vm.activity.tags[activityTag].text === eachService.tags[serviceTag].text){
+             return true;
+          }
+        }
+      }
+      return false;
+    });
+  //}
+  console.log(vm.matchedServices);
   }
 })();

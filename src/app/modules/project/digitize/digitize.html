@@ -102,7 +102,7 @@
 </div>
 
 <div class="row">
-  <button type="button" class="btn btn-block btn-info" id="width80" ng-click="vm.update()" ng-show="vm.project.activities.length == vm.project.services.length" ui-sref="app.digitizedBPM({id: vm.project.id})">
+  <button type="button" class="btn btn-block btn-info" id="width80" ng-click="vm.update()" ng-show="vm.project.activities.length == vm.project.services.length && vm.project.services.length != 0" ui-sref="app.digitizedBPM({id: vm.project.id})">
     <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Complete Digitization Process
   </button>
 </div>
