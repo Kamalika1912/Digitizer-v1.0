@@ -29,7 +29,7 @@
             notificator.success('Hey there! Welcome to Digitizer!');
 
             $timeout(function(){
-                notificator.info('Use the Dashboard to access latest projects and services ;)', {
+                notificator.info('Use the Dashboard to access latest projects and services.', {
                     timeOut: 6000
                 });
             },4000)
