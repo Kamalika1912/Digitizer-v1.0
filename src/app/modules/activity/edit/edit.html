@@ -59,6 +59,7 @@
                     <button type="submit" class="btn btn-primary">Save & Return</button>
                 </div>
             </form>
+          <label class="control-label col-sm-2">Matching Services</label>
             <div class="matched-services" ng-show="vm.activity.tags">
               <div ng-repeat="service in vm.matchedServices | orderBy:'digitalComponent.toString()'">
                 <div class="service" ng-model="service" ng-show="service.digitalComponent && service.digitalComponent != 'No Service'">
