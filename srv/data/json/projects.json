@@ -773,13 +773,13 @@
     "domain": "Healthcare",
     "activities": [
       {
-        "modelActivity": "Notaufnahme",
+        "modelActivity": "Emergency Unit",
         "tags": [
           {
             "text": "participants"
           },
           {
-            "text": "acquisition"
+            "text": "room"
           }
         ],
         "date": "2016-07-25T12:27:34.500Z",
@@ -792,25 +792,19 @@
             "text": "participants"
           },
           {
-            "text": "VoIP"
+            "text": "healthcare"
+          },
+          {
+            "text": "mobile health"
           }
         ],
         "date": "2016-07-25T12:28:54.455Z",
         "id": "A73"
       },
       {
-        "id": "A60",
-        "modelActivity": "Recommendation",
+        "id": "A92",
+        "modelActivity": "Doctor Recommendation",
         "tags": [
-          {
-            "text": "customer"
-          },
-          {
-            "text": "actor"
-          },
-          {
-            "text": "user"
-          },
           {
             "text": "reputation"
           },
@@ -818,7 +812,7 @@
             "text": "recommendation"
           },
           {
-            "text": "acquisition"
+            "text": "review"
           }
         ]
       },
@@ -833,29 +827,62 @@
         "id": "A76"
       },
       {
+        "id": "A78",
         "modelActivity": "Monitor progress",
         "tags": [
           {
             "text": "treatment"
+          },
+          {
+            "text": "healthcare"
+          },
+          {
+            "text": "health monitoring"
+          },
+          {
+            "text": "monitoring"
           }
         ],
-        "date": "2016-07-25T12:31:56.520Z",
-        "id": "A78"
+        "date": "2016-07-25T12:31:56.520Z"
       }
     ],
     "services": [
       {
-        "id": "D49",
-        "digitalComponent": "Data Repository",
+        "id": "D0",
+        "digitalComponent": "No Service",
         "tags": [
           {
-            "text": "database"
+            "text": "No service"
+          }
+        ]
+      },
+      {
+        "id": "D74",
+        "digitalComponent": "mHealth App",
+        "tags": [
+          {
+            "text": "healthcare"
           },
           {
-            "text": "repository"
+            "text": "digital health"
           },
           {
-            "text": "multimedia"
+            "text": "mobile healthcare"
+          },
+          {
+            "text": "mobile diagnosis"
+          },
+          {
+            "text": "telemedicine"
+          }
+        ]
+      },
+      {
+        "id": "D62",
+        "digitalComponent": "Recommendation Systems",
+        "tags": [
+          {
+            "text": "review"
           },
           {
             "text": "customer"
@@ -864,34 +891,45 @@
             "text": "user"
           },
           {
-            "text": "document"
+            "text": "actor"
           },
           {
-            "text": "documentation"
+            "text": "rating"
           },
           {
-            "text": "overview"
+            "text": "reputation"
           },
           {
-            "text": "summary"
+            "text": "recommendation"
           },
           {
-            "text": "planning"
-          },
-          {
-            "text": "room"
+            "text": "related_products"
           }
         ]
       },
       {
+        "id": "D70",
         "digitalComponent": "Digital examination",
         "tags": [
           {
             "text": "treatment"
           }
-        ],
-        "date": "2016-07-25T12:43:16.377Z",
-        "id": "D70"
+        ]
+      },
+      {
+        "id": "D79",
+        "digitalComponent": "Real Time Analytics",
+        "tags": [
+          {
+            "text": "real time"
+          },
+          {
+            "text": "monitoring"
+          },
+          {
+            "text": "big data"
+          }
+        ]
       }
     ]
   },
